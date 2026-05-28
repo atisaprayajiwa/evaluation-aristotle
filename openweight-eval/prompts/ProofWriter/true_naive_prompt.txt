@@ -1,0 +1,16 @@
+Context:
+[[PREMISES]]
+
+Statement:
+[[CONJECTURE]]
+
+Clarifier for The Final Answer:
+TRUE means the statement follows from the context.
+FALSE means the context implies the opposite of the statement.
+SELF-CONTRADICTORY means the context implies both the statement and its opposite.
+UNKNOWN means the context does not imply the statement or its opposite.
+
+Question:
+Classify the statement as TRUE, FALSE, SELF-CONTRADICTORY, or UNKNOWN.
+
+Answer briefly.

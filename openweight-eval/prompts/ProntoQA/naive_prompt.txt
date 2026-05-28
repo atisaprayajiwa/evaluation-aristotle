@@ -1,0 +1,72 @@
+Task Description: You are given a context description and a conjecture. The task is to: 
+1) write one brief explanation explaining the link.
+2) decide whether the conjecture is TRUE, FALSE, SELF-CONTRADICTORY, or UNKNOWN, using only information that is stated or can be logically derived from the context.
+
+TRUE: The conjecture must hold given the context (its negation is not derivable).
+FALSE: The negation of the conjecture must hold given the context (the conjecture is not derivable).
+SELF-CONTRADICTORY: The context implies both the conjecture and its negation.
+UNKNOWN: The context does not allow deriving the conjecture or its negation.
+
+3) please give the final output in the following format. Please ensure you translate in the following order: explanation, then final answer
+
+------
+Below is an example:
+Context:
+Jompuses are not shy. Jompuses are yumpuses. Each yumpus is aggressive. Each yumpus is a dumpus. Dumpuses are not wooden. Dumpuses are wumpuses. Wumpuses are red. Every wumpus is an impus. Each impus is opaque. Impuses are tumpuses. Numpuses are bittersweet. Tumpuses are not bittersweet. Tumpuses are vumpuses. Vumpuses are earthy. Every vumpus is a zumpus. Zumpuses are small. Zumpuses are rompuses. Jerry is a yumpus.
+
+Conjecture:
+Based on the above information, is the following statement true, false, or unknown? Jerry is bittersweet.
+
+### Full Answer:
+
+Explanation:
+Jerry is a yumpus.
+Each yumpus is a dumpus. 
+Jerry is a dumpus.
+Dumpuses are wumpuses.
+Jerry is a wumpus.
+Every wumpus is an impus.
+Jerry is an impus.
+Impuses are tumpuses.
+Jerry is a tumpus.
+Tumpuses are not bittersweet.
+Jerry is not bittersweet.
+
+Final Answer:
+FALSE
+------
+Below is an example:
+Context:
+Jompuses are not shy. Jompuses are yumpuses. Each yumpus is aggressive. Each yumpus is a dumpus. Dumpuses are not wooden. Dumpuses are wumpuses. Wumpuses are red. Every wumpus is an impus. Each impus is opaque. Impuses are tumpuses. Numpuses are bittersweet. Tumpuses are not bittersweet. Tumpuses are vumpuses. Vumpuses are earthy. Every vumpus is a zumpus. Zumpuses are small. Zumpuses are rompuses. Terry is a yumpus.
+
+Conjecture:
+Based on the above information, is the following statement true, false, or unknown? Terry is not bittersweet.
+
+### Full Answer:
+
+Explanation:
+Terry is a yumpus.
+Each yumpus is a dumpus. 
+Terry is a dumpus.
+Dumpuses are wumpuses.
+Terry is a wumpus.
+Every wumpus is an impus.
+Terry is an impus.
+Impuses are tumpuses.
+Terry is a tumpus.
+Tumpuses are not bittersweet.
+Terry is not bittersweet.
+
+Final Answer:
+TRUE
+-----
+Please carefully and fully understand this important requirement before answering:
+Check the conjecture's truth value: If derived and ¬conjecture not derived → TRUE. If ¬conjecture derived and conjecture not derived → FALSE. If both conjecture and ¬conjecture derived → SELF-CONTRADICTORY. Else → UNKNOWN.
+-----
+Below is the one you need to answer:
+Context:
+[[PREMISES]]
+
+Conjecture:
+[[CONJECTURE]]
+###
