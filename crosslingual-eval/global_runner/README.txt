@@ -1,0 +1,1 @@
+python program in global_runner is used to run the entire experiment from translation_to_fol, decomposition_to_cnf, search_resolve, and including ablation as well.
