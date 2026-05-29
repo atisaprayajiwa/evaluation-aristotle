@@ -1,0 +1,161 @@
+Dataset name: ProntoQA
+Model name: qwen3-32b
+Date: 20251129
+Time: 164227
+
+Total instances (with ground truth): 500
+Accuracy: 0.8640
+
+Token Usage Statistics:
+prompt_tokens:
+  min: 239 (id=ProntoQA_60)
+  max: 304 (id=ProntoQA_260)
+  avg: 286.22
+
+completion_tokens:
+  min: 2 (id=ProntoQA_55)
+  max: 644 (id=ProntoQA_474)
+  avg: 113.98
+
+total_tokens:
+  min: 245 (id=ProntoQA_177)
+  max: 934 (id=ProntoQA_474)
+  avg: 400.21
+
+Confusion Matrix (rows = ground truth, cols = prediction):
+ 	A	B	C	D
+A	243	14	0	1
+B	52	189	1	0
+C	0	0	0	0
+D	0	0	0	0
+
+Per-class metrics:
+Label A: Precision=0.8237, Recall=0.9419, TP=243, FP=52, FN=15
+Label B: Precision=0.9310, Recall=0.7810, TP=189, FP=14, FN=53
+Label C: Precision=0.0000, Recall=0.0000, TP=0, FP=1, FN=0
+Label D: Precision=0.0000, Recall=0.0000, TP=0, FP=1, FN=0
+
+Macro Precision: 0.4387, Macro Recall: 0.4307
+
+Error ids:
+ProntoQA_4,ProntoQA_17,ProntoQA_19,ProntoQA_21,ProntoQA_37,ProntoQA_44,ProntoQA_45,ProntoQA_66,ProntoQA_78,ProntoQA_97,ProntoQA_98,ProntoQA_102,ProntoQA_118,ProntoQA_136,ProntoQA_144,ProntoQA_160,ProntoQA_161,ProntoQA_162,ProntoQA_170,ProntoQA_172,ProntoQA_177,ProntoQA_184,ProntoQA_196,ProntoQA_195,ProntoQA_201,ProntoQA_208,ProntoQA_210,ProntoQA_209,ProntoQA_216,ProntoQA_227,ProntoQA_230,ProntoQA_231,ProntoQA_255,ProntoQA_256,ProntoQA_258,ProntoQA_268,ProntoQA_270,ProntoQA_251,ProntoQA_282,ProntoQA_309,ProntoQA_320,ProntoQA_323,ProntoQA_326,ProntoQA_338,ProntoQA_339,ProntoQA_343,ProntoQA_345,ProntoQA_346,ProntoQA_347,ProntoQA_354,ProntoQA_363,ProntoQA_371,ProntoQA_377,ProntoQA_391,ProntoQA_410,ProntoQA_414,ProntoQA_418,ProntoQA_423,ProntoQA_434,ProntoQA_443,ProntoQA_448,ProntoQA_450,ProntoQA_458,ProntoQA_467,ProntoQA_471,ProntoQA_496,ProntoQA_497,ProntoQA_499
+
+Correct ids:
+ProntoQA_1,ProntoQA_3,ProntoQA_5,ProntoQA_8,ProntoQA_10,ProntoQA_12,ProntoQA_15,ProntoQA_14,ProntoQA_16,ProntoQA_20,ProntoQA_2,ProntoQA_9,ProntoQA_6,ProntoQA_7,ProntoQA_11,ProntoQA_27,ProntoQA_18,ProntoQA_28,ProntoQA_23,ProntoQA_31,ProntoQA_13,ProntoQA_32,ProntoQA_33,ProntoQA_34,ProntoQA_22,ProntoQA_26,ProntoQA_39,ProntoQA_38,ProntoQA_41,ProntoQA_25,ProntoQA_24,ProntoQA_43,ProntoQA_30,ProntoQA_36,ProntoQA_46,ProntoQA_47,ProntoQA_48,ProntoQA_29,ProntoQA_49,ProntoQA_35,ProntoQA_54,ProntoQA_55,ProntoQA_56,ProntoQA_57,ProntoQA_58,ProntoQA_59,ProntoQA_61,ProntoQA_40,ProntoQA_62,ProntoQA_51,ProntoQA_64,ProntoQA_52,ProntoQA_65,ProntoQA_68,ProntoQA_69,ProntoQA_42,ProntoQA_70,ProntoQA_72,ProntoQA_73,ProntoQA_74,ProntoQA_60,ProntoQA_50,ProntoQA_67,ProntoQA_53,ProntoQA_63,ProntoQA_82,ProntoQA_83,ProntoQA_84,ProntoQA_79,ProntoQA_81,ProntoQA_76,ProntoQA_71,ProntoQA_87,ProntoQA_89,ProntoQA_75,ProntoQA_90,ProntoQA_77,ProntoQA_80,ProntoQA_93,ProntoQA_92,ProntoQA_96,ProntoQA_94,ProntoQA_100,ProntoQA_103,ProntoQA_85,ProntoQA_88,ProntoQA_91,ProntoQA_86,ProntoQA_107,ProntoQA_95,ProntoQA_110,ProntoQA_101,ProntoQA_112,ProntoQA_113,ProntoQA_99,ProntoQA_115,ProntoQA_116,ProntoQA_104,ProntoQA_119,ProntoQA_120,ProntoQA_106,ProntoQA_109,ProntoQA_121,ProntoQA_124,ProntoQA_125,ProntoQA_114,ProntoQA_127,ProntoQA_111,ProntoQA_105,ProntoQA_129,ProntoQA_130,ProntoQA_132,ProntoQA_108,ProntoQA_133,ProntoQA_134,ProntoQA_117,ProntoQA_135,ProntoQA_137,ProntoQA_138,ProntoQA_139,ProntoQA_123,ProntoQA_140,ProntoQA_142,ProntoQA_143,ProntoQA_147,ProntoQA_148,ProntoQA_122,ProntoQA_128,ProntoQA_126,ProntoQA_151,ProntoQA_145,ProntoQA_153,ProntoQA_154,ProntoQA_155,ProntoQA_156,ProntoQA_131,ProntoQA_157,ProntoQA_159,ProntoQA_149,ProntoQA_141,ProntoQA_150,ProntoQA_164,ProntoQA_165,ProntoQA_166,ProntoQA_167,ProntoQA_171,ProntoQA_146,ProntoQA_174,ProntoQA_176,ProntoQA_178,ProntoQA_179,ProntoQA_180,ProntoQA_181,ProntoQA_152,ProntoQA_163,ProntoQA_183,ProntoQA_185,ProntoQA_158,ProntoQA_186,ProntoQA_188,ProntoQA_189,ProntoQA_182,ProntoQA_190,ProntoQA_192,ProntoQA_193,ProntoQA_173,ProntoQA_194,ProntoQA_168,ProntoQA_175,ProntoQA_198,ProntoQA_200,ProntoQA_202,ProntoQA_203,ProntoQA_204,ProntoQA_205,ProntoQA_207,ProntoQA_169,ProntoQA_211,ProntoQA_213,ProntoQA_215,ProntoQA_187,ProntoQA_217,ProntoQA_197,ProntoQA_199,ProntoQA_191,ProntoQA_206,ProntoQA_222,ProntoQA_223,ProntoQA_219,ProntoQA_212,ProntoQA_214,ProntoQA_226,ProntoQA_218,ProntoQA_229,ProntoQA_233,ProntoQA_234,ProntoQA_220,ProntoQA_221,ProntoQA_228,ProntoQA_237,ProntoQA_224,ProntoQA_236,ProntoQA_242,ProntoQA_225,ProntoQA_243,ProntoQA_244,ProntoQA_246,ProntoQA_232,ProntoQA_238,ProntoQA_240,ProntoQA_235,ProntoQA_248,ProntoQA_250,ProntoQA_247,ProntoQA_253,ProntoQA_254,ProntoQA_239,ProntoQA_241,ProntoQA_261,ProntoQA_245,ProntoQA_260,ProntoQA_249,ProntoQA_263,ProntoQA_264,ProntoQA_265,ProntoQA_267,ProntoQA_266,ProntoQA_252,ProntoQA_257,ProntoQA_274,ProntoQA_275,ProntoQA_277,ProntoQA_278,ProntoQA_273,ProntoQA_279,ProntoQA_280,ProntoQA_269,ProntoQA_262,ProntoQA_259,ProntoQA_272,ProntoQA_271,ProntoQA_288,ProntoQA_276,ProntoQA_283,ProntoQA_281,ProntoQA_285,ProntoQA_293,ProntoQA_284,ProntoQA_286,ProntoQA_287,ProntoQA_289,ProntoQA_298,ProntoQA_299,ProntoQA_292,ProntoQA_295,ProntoQA_302,ProntoQA_303,ProntoQA_290,ProntoQA_291,ProntoQA_297,ProntoQA_294,ProntoQA_308,ProntoQA_296,ProntoQA_311,ProntoQA_300,ProntoQA_312,ProntoQA_313,ProntoQA_314,ProntoQA_315,ProntoQA_304,ProntoQA_317,ProntoQA_301,ProntoQA_305,ProntoQA_319,ProntoQA_306,ProntoQA_321,ProntoQA_325,ProntoQA_327,ProntoQA_318,ProntoQA_310,ProntoQA_330,ProntoQA_331,ProntoQA_332,ProntoQA_333,ProntoQA_307,ProntoQA_335,ProntoQA_336,ProntoQA_316,ProntoQA_329,ProntoQA_337,ProntoQA_342,ProntoQA_344,ProntoQA_322,ProntoQA_349,ProntoQA_351,ProntoQA_334,ProntoQA_328,ProntoQA_353,ProntoQA_340,ProntoQA_356,ProntoQA_324,ProntoQA_341,ProntoQA_357,ProntoQA_361,ProntoQA_350,ProntoQA_362,ProntoQA_352,ProntoQA_358,ProntoQA_348,ProntoQA_364,ProntoQA_365,ProntoQA_366,ProntoQA_367,ProntoQA_368,ProntoQA_355,ProntoQA_372,ProntoQA_370,ProntoQA_374,ProntoQA_376,ProntoQA_359,ProntoQA_378,ProntoQA_379,ProntoQA_380,ProntoQA_382,ProntoQA_384,ProntoQA_386,ProntoQA_360,ProntoQA_388,ProntoQA_389,ProntoQA_390,ProntoQA_385,ProntoQA_369,ProntoQA_394,ProntoQA_395,ProntoQA_383,ProntoQA_381,ProntoQA_373,ProntoQA_397,ProntoQA_398,ProntoQA_387,ProntoQA_399,ProntoQA_375,ProntoQA_400,ProntoQA_401,ProntoQA_402,ProntoQA_405,ProntoQA_406,ProntoQA_407,ProntoQA_408,ProntoQA_412,ProntoQA_393,ProntoQA_415,ProntoQA_396,ProntoQA_416,ProntoQA_417,ProntoQA_392,ProntoQA_419,ProntoQA_420,ProntoQA_421,ProntoQA_422,ProntoQA_424,ProntoQA_403,ProntoQA_413,ProntoQA_426,ProntoQA_428,ProntoQA_409,ProntoQA_430,ProntoQA_433,ProntoQA_404,ProntoQA_411,ProntoQA_435,ProntoQA_438,ProntoQA_439,ProntoQA_427,ProntoQA_441,ProntoQA_442,ProntoQA_425,ProntoQA_432,ProntoQA_444,ProntoQA_436,ProntoQA_447,ProntoQA_431,ProntoQA_429,ProntoQA_449,ProntoQA_437,ProntoQA_451,ProntoQA_452,ProntoQA_440,ProntoQA_453,ProntoQA_456,ProntoQA_460,ProntoQA_461,ProntoQA_462,ProntoQA_463,ProntoQA_464,ProntoQA_466,ProntoQA_445,ProntoQA_469,ProntoQA_470,ProntoQA_446,ProntoQA_454,ProntoQA_457,ProntoQA_459,ProntoQA_472,ProntoQA_473,ProntoQA_477,ProntoQA_465,ProntoQA_478,ProntoQA_480,ProntoQA_482,ProntoQA_455,ProntoQA_483,ProntoQA_484,ProntoQA_481,ProntoQA_476,ProntoQA_475,ProntoQA_468,ProntoQA_488,ProntoQA_489,ProntoQA_492,ProntoQA_493,ProntoQA_494,ProntoQA_485,ProntoQA_486,ProntoQA_487,ProntoQA_479,ProntoQA_490,ProntoQA_491,ProntoQA_474,ProntoQA_495,ProntoQA_500,ProntoQA_498
+
+
+Example errors per (ground_truth, prediction) cell:
+Ground truth: A, Predicted: B
+  id: ProntoQA_21
+  original_context: Vumpuses are earthy. Vumpuses are dumpuses. Dumpuses are not wooden. Dumpuses are numpuses. Every numpus is kind. Each numpus is a rompus. Each rompus is small. Every rompus is a jompus. Every jompus is bright. Jompuses are yumpuses. Yumpuses are orange. Every yumpus is a zumpus. Zumpuses are sour. Zumpuses are impuses. Impuses are transparent. Tumpuses are not orange. Each impus is a wumpus. Max is a dumpus.
+  question: Is the following statement true or false? Max is orange.
+  conjecture: Is the following statement true or false? Max is orange.
+  naive_prompt_output_raw: Answer: **FALSE**
+  ground_truth: A
+  predicted_choice: B
+
+Ground truth: A, Predicted: D
+  id: ProntoQA_216
+  original_context: Impuses are dull. Impuses are rompuses. Vumpuses are not aggressive. Rompuses are not spicy. Each rompus is a dumpus. Dumpuses are nervous. Dumpuses are wumpuses. Wumpuses are not opaque. Every wumpus is a jompus. Jompuses are floral. Every jompus is a numpus. Numpuses are small. Each numpus is a zumpus. Each zumpus is blue. Zumpuses are tumpuses. Every tumpus is aggressive. Every tumpus is a yumpus. Max is a wumpus.
+  question: Is the following statement true or false? Max is aggressive.
+  conjecture: Is the following statement true or false? Max is aggressive.
+  naive_prompt_output_raw: Let's trace the chain of statements to determine whether **Max is aggressive**.
+
+We are told:
+
+- **Max is a wumpus.**
+- **Dumpuses are wumpuses.**
+- **Wumpuses are not aggressive.**
+- **Every wumpus is a jompus.**
+- **Jompuses are floral.**
+- **Every jompus is a numpus.**
+- **Numpuses are small.**
+- **Each numpus is a zumpus.**
+- **Each zumpus is blue.**
+- **Zumpuses are tumpuses.**
+- **Every tumpus is aggressive.**
+
+Now, let's follow the logic:
+
+1. **Max is a wumpus.**
+2. **Wumpuses are not aggressive.** → So **Max is not aggressive**.
+3. **Every wumpus is a jompus**, and **every jompus is a numpus**, and **each numpus is a zumpus**, and **zumpuses are tumpuses**, and **every tumpus is aggressive**.
+
+This creates a contradiction:
+
+- From the chain: **Max is a wumpus → jompus → numpus → zumpus → tumpus → aggressive**.
+- But also: **Wumpuses are not aggressive**, and **Max is a wumpus**, so **Max is not aggressive**.
+
+Thus, the context implies **both** that **Max is aggressive** and **Max is not aggressive**.
+
+### Final Answer:
+**SELF-CONTRADICTORY**
+  ground_truth: A
+  predicted_choice: D
+
+Ground truth: B, Predicted: A
+  id: ProntoQA_4
+  original_context: Rompuses are spicy. Every rompus is an impus. Yumpuses are not small. Impuses are orange. Impuses are zumpuses. Zumpuses are not hot. Zumpuses are numpuses. Numpuses are metallic. Numpuses are wumpuses. Every wumpus is not kind. Each wumpus is a dumpus. Each dumpus is not bright. Every dumpus is a jompus. Jompuses are small. Jompuses are vumpuses. Each vumpus is not shy. Every vumpus is a tumpus. Alex is a zumpus.
+  question: Is the following statement true or false? Alex is not small.
+  conjecture: Is the following statement true or false? Alex is not small.
+  naive_prompt_output_raw: Answer: **TRUE**
+  ground_truth: B
+  predicted_choice: A
+
+Ground truth: B, Predicted: C
+  id: ProntoQA_251
+  original_context: Every tumpus is not hot. Tumpuses are vumpuses. Every vumpus is not bright. Every zumpus is kind. Every vumpus is an impus. Every impus is earthy. Every impus is a dumpus. Each dumpus is bitter. Dumpuses are yumpuses. Yumpuses are red. Every yumpus is a numpus. Each numpus is not nervous. Numpuses are wumpuses. Wumpuses are not kind. Wumpuses are rompuses. Each rompus is not small. Rompuses are jompuses. Sam is an impus.
+  question: Is the following statement true or false? Sam is kind.
+  conjecture: Is the following statement true or false? Sam is kind.
+  naive_prompt_output_raw: Let's analyze the logical implications step by step to determine whether **"Sam is kind"** is **true**, **false**, **self-contradictory**, or **unknown**.
+
+---
+
+### Given:
+
+1. **Sam is an impus.**
+2. **Every impus is kind.** (From: "Every zumpus is kind." and "Every impus is a dumpus." and "Dumpuses are yumpuses." and "Yumpuses are red." and "Every yumpus is a numpus." and "Each numpus is not nervous." and "Numpuses are wumpuses." and "Wumpuses are not kind." — but this is **not** directly relevant to impuses.)
+
+Wait — we need to trace the **impus → kind** chain carefully.
+
+Let’s extract the relevant statements:
+
+- **Every impus is a dumpus.**
+- **Each dumpus is bitter.**
+- **Dumpuses are yumpuses.**
+- **Yumpuses are red.**
+- **Every yumpus is a numpus.**
+- **Each numpus is not nervous.**
+- **Numpuses are wumpuses.**
+- **Wumpuses are not kind.**
+- **Wumpuses are rompuses.**
+- **Each rompus is not small.**
+- **Rompuses are jompuses.**
+
+Now, the key is:
+
+- **Every zumpus is kind.**
+- **Every impus is a dumpus.**
+- **No statement says that dumpuses are kind.**
+- **No statement says that impuses are kind.**
+- **No statement says that yumpuses are kind.**
+- **Wumpuses are not kind.**
+- **Sam is an impus.**
+
+So, is there **any** statement that says **impuses are kind**?
+
+No. The only statement about **kind** is:
+
+> **Every zumpus is kind.**
+
+But **impus is not zumpus**, and there is **no transitive link** from **impus** to **kind**.
+
+Therefore, **we cannot conclude that Sam is kind** from the given information.
+
+---
+
+### Final Answer:
+
+**UNKNOWN**
+  ground_truth: B
+  predicted_choice: C

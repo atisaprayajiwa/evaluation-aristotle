@@ -1,0 +1,142 @@
+[
+  {
+    "id": "ProntoQA_1",
+    "original_context": "Jompuses are not shy. Jompuses are yumpuses. Each yumpus is aggressive. Each yumpus is a dumpus. Dumpuses are not wooden. Dumpuses are wumpuses. Wumpuses are red. Every wumpus is an impus. Each impus is opaque. Impuses are tumpuses. Numpuses are sour. Tumpuses are not sour. Tumpuses are vumpuses. Vumpuses are earthy. Every vumpus is a zumpus. Zumpuses are small. Zumpuses are rompuses. Max is a yumpus.",
+    "question": " Max is sour.",
+    "translated_context": {
+      "Translated_Facts": "Max is a yumpus ::: Yumpus(Max, True)",
+      "Translated_Rules": "s:  \nJompus($x, True) >>> Shy($x, False)  \nJompus($x, True) >>> Yumpus($x, True)  \nYumpus($x, True) >>> Aggressive($x, True)  \nYumpus($x, True) >>> Dumpus($x, True)  \nDumpus($x, True) >>> Wooden($x, False)  \nDumpus($x, True) >>> Wumpus($x, True)  \nWumpus($x, True) >>> Red($x, True)  \nWumpus($x, True) >>> Impus($x, True)  \nImpus($x, True) >>> Opaque($x, True)  \nImpus($x, True) >>> Tumpus($x, True)  \nNumpus($x, True) >>> Sour($x, True)  \nTumpus($x, True) >>> Sour($x, False)  \nTumpus($x, True) >>> Vumpus($x, True)  \nVumpus($x, True) >>> Earthy($x, True)  \nVumpus($x, True) >>> Zumpus($x, True)  \nZumpus($x, True) >>> Small($x, True)  \nZumpus($x, True) >>> Rompus($x, True)",
+      "Translated_Conjecture": "Sour(Max, True)"
+    },
+    "decomposed_process": {
+      "and_or": [
+        "Final Form:\n\nFacts:\n1. Yumpus(Max, True)\n\nRules in CNF:\n1. - \\(\\forall x \\left(Jompus(x, False) \\lor Shy(x, False)\\right)\\)\n2. - \\(\\forall x \\left(Jompus(x, False) \\lor Yumpus(x, True)\\right)\\)\n3. - \\(\\forall x \\left(Yumpus(x, False) \\lor Aggressive(x, True)\\right)\\)\n4. - \\(\\forall x \\left(Yumpus(x, False) \\lor Dumpus(x, True)\\right)\\)\n5. - \\(\\forall x \\left(Dumpus(x, False) \\lor Wooden(x, False)\\right)\\)\n6. - \\(\\forall x \\left(Dumpus(x, False) \\lor Wumpus(x, True)\\right)\\)\n7. - \\(\\forall x \\left(Wumpus(x, False) \\lor Red(x, True)\\right)\\)\n8. - \\(\\forall x \\left(Wumpus(x, False) \\lor Impus(x, True)\\right)\\)\n9. - \\(\\forall x \\left(Impus(x, False) \\lor Opaque(x, True)\\right)\\)\n10. - \\(\\forall x \\left(Impus(x, False) \\lor Tumpus(x, True)\\right)\\)\n11. - \\(\\forall x \\left(Numpus(x, False) \\lor Sour(x, True)\\right)\\)\n12. - \\(\\forall x \\left(Tumpus(x, False) \\lor Sour(x, False)\\right)\\)\n13. - \\(\\forall x \\left(Tumpus(x, False) \\lor Vumpus(x, True)\\right)\\)\n14. - \\(\\forall x \\left(Vumpus(x, False) \\lor Earthy(x, True)\\right)\\)\n15. - \\(\\forall x \\left(Vumpus(x, False) \\lor Zumpus(x, True)\\right)\\)\n16. - \\(\\forall x \\left(Zumpus(x, False) \\lor Small(x, True)\\right)\\)\n17. - \\(\\forall x \\left(Zumpus(x, False) \\lor Rompus(x, True)\\right)\\)\n\nConjecture:\nSour(Max, True)",
+        "stop"
+      ]
+    },
+    "normalized_context": {
+      "Fact": "Max is a yumpus ::: Yumpus(Max, True)",
+      "and_or": "1. Yumpus(Max, True)\n1. - \\(\\forall x \\left(Jompus(x, False) \\lor Shy(x, False)\\right)\\)\n2. - \\(\\forall x \\left(Jompus(x, False) \\lor Yumpus(x, True)\\right)\\)\n3. - \\(\\forall x \\left(Yumpus(x, False) \\lor Aggressive(x, True)\\right)\\)\n4. - \\(\\forall x \\left(Yumpus(x, False) \\lor Dumpus(x, True)\\right)\\)\n5. - \\(\\forall x \\left(Dumpus(x, False) \\lor Wooden(x, False)\\right)\\)\n6. - \\(\\forall x \\left(Dumpus(x, False) \\lor Wumpus(x, True)\\right)\\)\n7. - \\(\\forall x \\left(Wumpus(x, False) \\lor Red(x, True)\\right)\\)\n8. - \\(\\forall x \\left(Wumpus(x, False) \\lor Impus(x, True)\\right)\\)\n9. - \\(\\forall x \\left(Impus(x, False) \\lor Opaque(x, True)\\right)\\)\n10. - \\(\\forall x \\left(Impus(x, False) \\lor Tumpus(x, True)\\right)\\)\n11. - \\(\\forall x \\left(Numpus(x, False) \\lor Sour(x, True)\\right)\\)\n12. - \\(\\forall x \\left(Tumpus(x, False) \\lor Sour(x, False)\\right)\\)\n13. - \\(\\forall x \\left(Tumpus(x, False) \\lor Vumpus(x, True)\\right)\\)\n14. - \\(\\forall x \\left(Vumpus(x, False) \\lor Earthy(x, True)\\right)\\)\n15. - \\(\\forall x \\left(Vumpus(x, False) \\lor Zumpus(x, True)\\right)\\)\n16. - \\(\\forall x \\left(Zumpus(x, False) \\lor Small(x, True)\\right)\\)\n17. - \\(\\forall x \\left(Zumpus(x, False) \\lor Rompus(x, True)\\right)\\)\nSour(Max, True)",
+      "either_or": null,
+      "biconditional": null
+    },
+    "normalized_conjecture": "Sour(Max, True)",
+    "negated_label": "false",
+    "sos_list": "Sour(Max, True)",
+    "ground_truth": "B"
+  },
+  {
+    "id": "ProntoQA_2",
+    "original_context": "Every tumpus is not angry. Tumpuses are rompuses. Every numpus is not bright. Rompuses are not luminous. Rompuses are yumpuses. Yumpuses are transparent. Yumpuses are zumpuses. Each zumpus is not bitter. Zumpuses are impuses. Impuses are red. Each impus is a dumpus. Every dumpus is happy. Each dumpus is a vumpus. Vumpuses are bright. Every vumpus is a jompus. Jompuses are large. Each jompus is a wumpus. Stella is a yumpus.",
+    "question": " Stella is bright.",
+    "translated_context": {
+      "Translated_Facts": "Stella is a yumpus ::: Yumpus(Stella, True)",
+      "Translated_Rules": "s:\nTumpus($x, True) >>> Angry($x, False)\nTumpus($x, True) >>> Rompus($x, True)\nNumpus($x, True) >>> Bright($x, False)\nRompus($x, True) >>> Luminous($x, False)\nRompus($x, True) >>> Yumpus($x, True)\nYumpus($x, True) >>> Transparent($x, True)\nYumpus($x, True) >>> Zumpus($x, True)\nZumpus($x, True) >>> Bitter($x, False)\nZumpus($x, True) >>> Impus($x, True)\nImpus($x, True) >>> Red($x, True)\nImpus($x, True) >>> Dumpus($x, True)\nDumpus($x, True) >>> Happy($x, True)\nDumpus($x, True) >>> Vumpus($x, True)\nVumpus($x, True) >>> Bright($x, True)\nVumpus($x, True) >>> Jompus($x, True)\nJompus($x, True) >>> Large($x, True)\nJompus($x, True) >>> Wumpus($x, True)",
+      "Translated_Conjecture": "Bright(Stella, True)"
+    },
+    "decomposed_process": {
+      "and_or": [
+        "Final Form:\n\nFacts:\n1. - Yumpus(Max, True)\n\nRules in CNF:\n1. - \\(\\forall x \\left(Tumpus(x, False) \\lor Angry(x, False)\\right)\\)\n2. - \\(\\forall x \\left(Tumpus(x, False) \\lor Rompus(x, True)\\right)\\)\n3. - \\(\\forall x \\left(Numpus(x, False) \\lor Bright(x, False)\\right)\\)\n4. - \\(\\forall x \\left(Rompus(x, False) \\lor Luminous(x, False)\\right)\\)\n5. - \\(\\forall x \\left(Rompus(x, False) \\lor Yumpus(x, True)\\right)\\)\n6. - \\(\\forall x \\left(Yumpus(x, False) \\lor Transparent(x, True)\\right)\\)\n7. - \\(\\forall x \\left(Yumpus(x, False) \\lor Zumpus(x, True)\\right)\\)\n8. - \\(\\forall x \\left(Zumpus(x, False) \\lor Bitter(x, False)\\right)\\)\n9. - \\(\\forall x \\left(Zumpus(x, False) \\lor Impus(x, True)\\right)\\)\n10. - \\(\\forall x \\left(Impus(x, False) \\lor Red(x, True)\\right)\\)\n11. - \\(\\forall x \\left(Impus(x, False) \\lor Dumpus(x, True)\\right)\\)\n12. - \\(\\forall x \\left(Dumpus(x, False) \\lor Happy(x, True)\\right)\\)\n13. - \\(\\forall x \\left(Dumpus(x, False) \\lor Vumpus(x, True)\\right)\\)\n14. - \\(\\forall x \\left(Vumpus(x, False) \\lor Bright(x, True)\\right)\\)\n15. - \\(\\forall x \\left(Vumpus(x, False) \\lor Jompus(x, True)\\right)\\)\n16. - \\(\\forall x \\left(Jompus(x, False) \\lor Large(x, True)\\right)\\)\n17. - \\(\\forall x \\left(Jompus(x, False) \\lor Wumpus(x, True)\\right)\\)\n\nConjecture:\nSour(Max, True)",
+        "stop"
+      ]
+    },
+    "normalized_context": {
+      "Fact": "Stella is a yumpus ::: Yumpus(Stella, True)",
+      "and_or": "1. - Yumpus(Max, True)\n1. - \\(\\forall x \\left(Tumpus(x, False) \\lor Angry(x, False)\\right)\\)\n2. - \\(\\forall x \\left(Tumpus(x, False) \\lor Rompus(x, True)\\right)\\)\n3. - \\(\\forall x \\left(Numpus(x, False) \\lor Bright(x, False)\\right)\\)\n4. - \\(\\forall x \\left(Rompus(x, False) \\lor Luminous(x, False)\\right)\\)\n5. - \\(\\forall x \\left(Rompus(x, False) \\lor Yumpus(x, True)\\right)\\)\n6. - \\(\\forall x \\left(Yumpus(x, False) \\lor Transparent(x, True)\\right)\\)\n7. - \\(\\forall x \\left(Yumpus(x, False) \\lor Zumpus(x, True)\\right)\\)\n8. - \\(\\forall x \\left(Zumpus(x, False) \\lor Bitter(x, False)\\right)\\)\n9. - \\(\\forall x \\left(Zumpus(x, False) \\lor Impus(x, True)\\right)\\)\n10. - \\(\\forall x \\left(Impus(x, False) \\lor Red(x, True)\\right)\\)\n11. - \\(\\forall x \\left(Impus(x, False) \\lor Dumpus(x, True)\\right)\\)\n12. - \\(\\forall x \\left(Dumpus(x, False) \\lor Happy(x, True)\\right)\\)\n13. - \\(\\forall x \\left(Dumpus(x, False) \\lor Vumpus(x, True)\\right)\\)\n14. - \\(\\forall x \\left(Vumpus(x, False) \\lor Bright(x, True)\\right)\\)\n15. - \\(\\forall x \\left(Vumpus(x, False) \\lor Jompus(x, True)\\right)\\)\n16. - \\(\\forall x \\left(Jompus(x, False) \\lor Large(x, True)\\right)\\)\n17. - \\(\\forall x \\left(Jompus(x, False) \\lor Wumpus(x, True)\\right)\\)\nSour(Max, True)",
+      "either_or": null,
+      "biconditional": null
+    },
+    "normalized_conjecture": "Bright(Stella, True)",
+    "negated_label": "false",
+    "sos_list": "Bright(Stella, True)",
+    "ground_truth": "A"
+  },
+  {
+    "id": "ProntoQA_3",
+    "original_context": "Vumpuses are floral. Vumpuses are tumpuses. Tumpuses are brown. Each tumpus is a wumpus. Wumpuses are small. Each wumpus is a rompus. Each zumpus is metallic. Every rompus is happy. Rompuses are impuses. Each impus is amenable. Each impus is a dumpus. Every dumpus is not metallic. Dumpuses are numpuses. Each numpus is bitter. Each numpus is a jompus. Every jompus is cold. Each jompus is a yumpus. Wren is a tumpus.",
+    "question": " Wren is not metallic.",
+    "translated_context": {
+      "Translated_Facts": "Wren is a tumpus ::: Tumpus(Wren, True)",
+      "Translated_Rules": "s:\nVumpus($x, True) >>> Floral($x, True)\nVumpus($x, True) >>> Tumpus($x, True)\nTumpus($x, True) >>> Brown($x, True)\nTumpus($x, True) >>> Wumpus($x, True)\nWumpus($x, True) >>> Small($x, True)\nWumpus($x, True) >>> Rompus($x, True)\nZumpus($x, True) >>> Metallic($x, True)\nRompus($x, True) >>> Happy($x, True)\nRompus($x, True) >>> Impus($x, True)\nImpus($x, True) >>> Amenable($x, True)\nImpus($x, True) >>> Dumpus($x, True)\nDumpus($x, True) >>> Metallic($x, False)\nDumpus($x, True) >>> Numpus($x, True)\nNumpus($x, True) >>> Bitter($x, True)\nNumpus($x, True) >>> Jompus($x, True)\nJompus($x, True) >>> Cold($x, True)\nJompus($x, True) >>> Yumpus($x, True)",
+      "Translated_Conjecture": "Metallic(Wren, False)"
+    },
+    "decomposed_process": {
+      "and_or": [
+        "Final Form:\n\nFacts:\n1. - Yumpus(Max, True)\n\nRules in CNF:\n1. - \\(\\forall x \\left(Vumpus(x, False) \\lor Floral(x, True)\\right)\\)\n2. - \\(\\forall x \\left(Vumpus(x, False) \\lor Tumpus(x, True)\\right)\\)\n3. - \\(\\forall x \\left(Tumpus(x, False) \\lor Brown(x, True)\\right)\\)\n4. - \\(\\forall x \\left(Tumpus(x, False) \\lor Wumpus(x, True)\\right)\\)\n5. - \\(\\forall x \\left(Wumpus(x, False) \\lor Small(x, True)\\right)\\)\n6. - \\(\\forall x \\left(Wumpus(x, False) \\lor Rompus(x, True)\\right)\\)\n7. - \\(\\forall x \\left(Zumpus(x, False) \\lor Metallic(x, True)\\right)\\)\n8. - \\(\\forall x \\left(Rompus(x, False) \\lor Happy(x, True)\\right)\\)\n9. - \\(\\forall x \\left(Rompus(x, False) \\lor Impus(x, True)\\right)\\)\n10. - \\(\\forall x \\left(Impus(x, False) \\lor Amenable(x, True)\\right)\\)\n11. - \\(\\forall x \\left(Impus(x, False) \\lor Dumpus(x, True)\\right)\\)\n12. - \\(\\forall x \\left(Dumpus(x, False) \\lor Metallic(x, False)\\right)\\)\n13. - \\(\\forall x \\left(Dumpus(x, False) \\lor Numpus(x, True)\\right)\\)\n14. - \\(\\forall x \\left(Numpus(x, False) \\lor Bitter(x, True)\\right)\\)\n15. - \\(\\forall x \\left(Numpus(x, False) \\lor Jompus(x, True)\\right)\\)\n16. - \\(\\forall x \\left(Jompus(x, False) \\lor Cold(x, True)\\right)\\)\n17. - \\(\\forall x \\left(Jompus(x, False) \\lor Yumpus(x, True)\\right)\\)\n\nConjecture:\nYumpus(Max, True)",
+        "stop"
+      ]
+    },
+    "normalized_context": {
+      "Fact": "Wren is a tumpus ::: Tumpus(Wren, True)",
+      "and_or": "1. - Yumpus(Max, True)\n1. - \\(\\forall x \\left(Vumpus(x, False) \\lor Floral(x, True)\\right)\\)\n2. - \\(\\forall x \\left(Vumpus(x, False) \\lor Tumpus(x, True)\\right)\\)\n3. - \\(\\forall x \\left(Tumpus(x, False) \\lor Brown(x, True)\\right)\\)\n4. - \\(\\forall x \\left(Tumpus(x, False) \\lor Wumpus(x, True)\\right)\\)\n5. - \\(\\forall x \\left(Wumpus(x, False) \\lor Small(x, True)\\right)\\)\n6. - \\(\\forall x \\left(Wumpus(x, False) \\lor Rompus(x, True)\\right)\\)\n7. - \\(\\forall x \\left(Zumpus(x, False) \\lor Metallic(x, True)\\right)\\)\n8. - \\(\\forall x \\left(Rompus(x, False) \\lor Happy(x, True)\\right)\\)\n9. - \\(\\forall x \\left(Rompus(x, False) \\lor Impus(x, True)\\right)\\)\n10. - \\(\\forall x \\left(Impus(x, False) \\lor Amenable(x, True)\\right)\\)\n11. - \\(\\forall x \\left(Impus(x, False) \\lor Dumpus(x, True)\\right)\\)\n12. - \\(\\forall x \\left(Dumpus(x, False) \\lor Metallic(x, False)\\right)\\)\n13. - \\(\\forall x \\left(Dumpus(x, False) \\lor Numpus(x, True)\\right)\\)\n14. - \\(\\forall x \\left(Numpus(x, False) \\lor Bitter(x, True)\\right)\\)\n15. - \\(\\forall x \\left(Numpus(x, False) \\lor Jompus(x, True)\\right)\\)\n16. - \\(\\forall x \\left(Jompus(x, False) \\lor Cold(x, True)\\right)\\)\n17. - \\(\\forall x \\left(Jompus(x, False) \\lor Yumpus(x, True)\\right)\\)\nYumpus(Max, True)",
+      "either_or": null,
+      "biconditional": null
+    },
+    "normalized_conjecture": "Metallic(Wren, False)",
+    "negated_label": "false",
+    "sos_list": "Metallic(Wren, False)",
+    "ground_truth": "A"
+  },
+  {
+    "id": "ProntoQA_4",
+    "original_context": "Rompuses are spicy. Every rompus is an impus. Yumpuses are not small. Impuses are orange. Impuses are zumpuses. Zumpuses are not hot. Zumpuses are numpuses. Numpuses are metallic. Numpuses are wumpuses. Every wumpus is not kind. Each wumpus is a dumpus. Each dumpus is not bright. Every dumpus is a jompus. Jompuses are small. Jompuses are vumpuses. Each vumpus is not shy. Every vumpus is a tumpus. Alex is a zumpus.",
+    "question": " Alex is not small.",
+    "translated_context": {
+      "Translated_Facts": "Alex is a zumpus ::: Zumpus(Alex, True)",
+      "Translated_Rules": "s:\nRompus($x, True) >>> Spicy($x, True)\nRompus($x, True) >>> Impus($x, True)\nYumpus($x, True) >>> Small($x, False)\nImpus($x, True) >>> Orange($x, True)\nImpus($x, True) >>> Zumpus($x, True)\nZumpus($x, True) >>> Hot($x, False)\nZumpus($x, True) >>> Numpus($x, True)\nNumpus($x, True) >>> Metallic($x, True)\nNumpus($x, True) >>> Wumpus($x, True)\nWumpus($x, True) >>> Kind($x, False)\nWumpus($x, True) >>> Dumpus($x, True)\nDumpus($x, True) >>> Bright($x, False)\nDumpus($x, True) >>> Jompus($x, True)\nJompus($x, True) >>> Small($x, True)\nJompus($x, True) >>> Vumpus($x, True)\nVumpus($x, True) >>> Shy($x, False)\nVumpus($x, True) >>> Tumpus($x, True)",
+      "Translated_Conjecture": "Small(Alex, False)"
+    },
+    "decomposed_process": {
+      "and_or": [
+        "Final Form:\n\nRules in CNF:\n1. - \\(\\forall x \\left(Rompus(x, False) \\lor Spicy(x, True)\\right)\\)\n2. - \\(\\forall x \\left(Rompus(x, False) \\lor Impus(x, True)\\right)\\)\n3. - \\(\\forall x \\left(Yumpus(x, False) \\lor Small(x, False)\\right)\\)\n4. - \\(\\forall x \\left(Impus(x, False) \\lor Orange(x, True)\\right)\\)\n5. - \\(\\forall x \\left(Impus(x, False) \\lor Zumpus(x, True)\\right)\\)\n6. - \\(\\forall x \\left(Zumpus(x, False) \\lor Hot(x, False)\\right)\\)\n7. - \\(\\forall x \\left(Zumpus(x, False) \\lor Numpus(x, True)\\right)\\)\n8. - \\(\\forall x \\left(Numpus(x, False) \\lor Metallic(x, True)\\right)\\)\n9. - \\(\\forall x \\left(Numpus(x, False) \\lor Wumpus(x, True)\\right)\\)\n10. - \\(\\forall x \\left(Wumpus(x, False) \\lor Kind(x, False)\\right)\\)\n11. - \\(\\forall x \\left(Wumpus(x, False) \\lor Dumpus(x, True)\\right)\\)\n12. - \\(\\forall x \\left(Dumpus(x, False) \\lor Bright(x, False)\\right)\\)\n13. - \\(\\forall x \\left(Dumpus(x, False) \\lor Jompus(x, True)\\right)\\)\n14. - \\(\\forall x \\left(Jompus(x, False) \\lor Small(x, True)\\right)\\)\n15. - \\(\\forall x \\left(Jompus(x, False) \\lor Vumpus(x, True)\\right)\\)\n16. - \\(\\forall x \\left(Vumpus(x, False) \\lor Shy(x, False)\\right)\\)\n17. - \\(\\forall x \\left(Vumpus(x, False) \\lor Tumpus(x, True)\\right)\\)",
+        "stop"
+      ]
+    },
+    "normalized_context": {
+      "Fact": "Alex is a zumpus ::: Zumpus(Alex, True)",
+      "and_or": "1. - \\(\\forall x \\left(Rompus(x, False) \\lor Spicy(x, True)\\right)\\)\n2. - \\(\\forall x \\left(Rompus(x, False) \\lor Impus(x, True)\\right)\\)\n3. - \\(\\forall x \\left(Yumpus(x, False) \\lor Small(x, False)\\right)\\)\n4. - \\(\\forall x \\left(Impus(x, False) \\lor Orange(x, True)\\right)\\)\n5. - \\(\\forall x \\left(Impus(x, False) \\lor Zumpus(x, True)\\right)\\)\n6. - \\(\\forall x \\left(Zumpus(x, False) \\lor Hot(x, False)\\right)\\)\n7. - \\(\\forall x \\left(Zumpus(x, False) \\lor Numpus(x, True)\\right)\\)\n8. - \\(\\forall x \\left(Numpus(x, False) \\lor Metallic(x, True)\\right)\\)\n9. - \\(\\forall x \\left(Numpus(x, False) \\lor Wumpus(x, True)\\right)\\)\n10. - \\(\\forall x \\left(Wumpus(x, False) \\lor Kind(x, False)\\right)\\)\n11. - \\(\\forall x \\left(Wumpus(x, False) \\lor Dumpus(x, True)\\right)\\)\n12. - \\(\\forall x \\left(Dumpus(x, False) \\lor Bright(x, False)\\right)\\)\n13. - \\(\\forall x \\left(Dumpus(x, False) \\lor Jompus(x, True)\\right)\\)\n14. - \\(\\forall x \\left(Jompus(x, False) \\lor Small(x, True)\\right)\\)\n15. - \\(\\forall x \\left(Jompus(x, False) \\lor Vumpus(x, True)\\right)\\)\n16. - \\(\\forall x \\left(Vumpus(x, False) \\lor Shy(x, False)\\right)\\)\n17. - \\(\\forall x \\left(Vumpus(x, False) \\lor Tumpus(x, True)\\right)\\)",
+      "either_or": null,
+      "biconditional": null
+    },
+    "normalized_conjecture": "Small(Alex, False)",
+    "negated_label": "false",
+    "sos_list": "Small(Alex, False)",
+    "ground_truth": "B"
+  },
+  {
+    "id": "ProntoQA_5",
+    "original_context": "Rompuses are mean. Rompuses are zumpuses. Each zumpus is not happy. Each zumpus is a numpus. Each numpus is not temperate. Each numpus is a tumpus. Tumpuses are not large. Tumpuses are yumpuses. Every yumpus is earthy. Each yumpus is a jompus. Jompuses are blue. Every jompus is a wumpus. Wumpuses are not dull. Wumpuses are impuses. Each vumpus is dull. Impuses are sour. Impuses are dumpuses. Alex is a numpus.",
+    "question": " Alex is not dull.",
+    "translated_context": {
+      "Translated_Facts": "Alex is a numpus ::: Numpus(Alex, True)",
+      "Translated_Rules": "s:\nRompus($x, True) >>> Mean($x, True)\nRompus($x, True) >>> Zumpus($x, True)\nZumpus($x, True) >>> Happy($x, False)\nZumpus($x, True) >>> Numpus($x, True)\nNumpus($x, True) >>> Temperate($x, False)\nNumpus($x, True) >>> Tumpus($x, True)\nTumpus($x, True) >>> Large($x, False)\nTumpus($x, True) >>> Yumpus($x, True)\nYumpus($x, True) >>> Earthy($x, True)\nYumpus($x, True) >>> Jompus($x, True)\nJompus($x, True) >>> Blue($x, True)\nJompus($x, True) >>> Wumpus($x, True)\nWumpus($x, True) >>> Dull($x, False)\nWumpus($x, True) >>> Impus($x, True)\nVumpus($x, True) >>> Dull($x, True)\nImpus($x, True) >>> Sour($x, True)\nImpus($x, True) >>> Dumpus($x, True)",
+      "Translated_Conjecture": "Dull(Alex, False)"
+    },
+    "decomposed_process": {
+      "and_or": [
+        "Final Form:\n\nFacts:\n1. - Rompus(Max, True)\n\nRules in CNF:\n1. - \\(\\forall x \\left(Rompus(x, False) \\lor Mean(x, True)\\right)\\)\n2. - \\(\\forall x \\left(Rompus(x, False) \\lor Zumpus(x, True)\\right)\\)\n3. - \\(\\forall x \\left(Zumpus(x, False) \\lor Happy(x, False)\\right)\\)\n4. - \\(\\forall x \\left(Zumpus(x, False) \\lor Numpus(x, True)\\right)\\)\n5. - \\(\\forall x \\left(Numpus(x, False) \\lor Temperate(x, False)\\right)\\)\n6. - \\(\\forall x \\left(Numpus(x, False) \\lor Tumpus(x, True)\\right)\\)\n7. - \\(\\forall x \\left(Tumpus(x, False) \\lor Large(x, False)\\right)\\)\n8. - \\(\\forall x \\left(Tumpus(x, False) \\lor Yumpus(x, True)\\right)\\)\n9. - \\(\\forall x \\left(Yumpus(x, False) \\lor Earthy(x, True)\\right)\\)\n10. - \\(\\forall x \\left(Yumpus(x, False) \\lor Jompus(x, True)\\right)\\)\n11. - \\(\\forall x \\left(Jompus(x, False) \\lor Blue(x, True)\\right)\\)\n12. - \\(\\forall x \\left(Jompus(x, False) \\lor Wumpus(x, True)\\right)\\)\n13. - \\(\\forall x \\left(Wumpus(x, False) \\lor Dull(x, False)\\right)\\)\n14. - \\(\\forall x \\left(Wumpus(x, False) \\lor Impus(x, True)\\right)\\)\n15. - \\(\\forall x \\left(Vumpus(x, False) \\lor Dull(x, True)\\right)\\)\n16. - \\(\\forall x \\left(Impus(x, False) \\lor Sour(x, True)\\right)\\)\n17. - \\(\\forall x \\left(Impus(x, False) \\lor Dumpus(x, True)\\right)\\)\n\nConjecture:\nSour(Max, True)",
+        "stop"
+      ]
+    },
+    "normalized_context": {
+      "Fact": "Alex is a numpus ::: Numpus(Alex, True)",
+      "and_or": "1. - Rompus(Max, True)\n1. - \\(\\forall x \\left(Rompus(x, False) \\lor Mean(x, True)\\right)\\)\n2. - \\(\\forall x \\left(Rompus(x, False) \\lor Zumpus(x, True)\\right)\\)\n3. - \\(\\forall x \\left(Zumpus(x, False) \\lor Happy(x, False)\\right)\\)\n4. - \\(\\forall x \\left(Zumpus(x, False) \\lor Numpus(x, True)\\right)\\)\n5. - \\(\\forall x \\left(Numpus(x, False) \\lor Temperate(x, False)\\right)\\)\n6. - \\(\\forall x \\left(Numpus(x, False) \\lor Tumpus(x, True)\\right)\\)\n7. - \\(\\forall x \\left(Tumpus(x, False) \\lor Large(x, False)\\right)\\)\n8. - \\(\\forall x \\left(Tumpus(x, False) \\lor Yumpus(x, True)\\right)\\)\n9. - \\(\\forall x \\left(Yumpus(x, False) \\lor Earthy(x, True)\\right)\\)\n10. - \\(\\forall x \\left(Yumpus(x, False) \\lor Jompus(x, True)\\right)\\)\n11. - \\(\\forall x \\left(Jompus(x, False) \\lor Blue(x, True)\\right)\\)\n12. - \\(\\forall x \\left(Jompus(x, False) \\lor Wumpus(x, True)\\right)\\)\n13. - \\(\\forall x \\left(Wumpus(x, False) \\lor Dull(x, False)\\right)\\)\n14. - \\(\\forall x \\left(Wumpus(x, False) \\lor Impus(x, True)\\right)\\)\n15. - \\(\\forall x \\left(Vumpus(x, False) \\lor Dull(x, True)\\right)\\)\n16. - \\(\\forall x \\left(Impus(x, False) \\lor Sour(x, True)\\right)\\)\n17. - \\(\\forall x \\left(Impus(x, False) \\lor Dumpus(x, True)\\right)\\)\nSour(Max, True)",
+      "either_or": null,
+      "biconditional": null
+    },
+    "normalized_conjecture": "Dull(Alex, False)",
+    "negated_label": "false",
+    "sos_list": "Dull(Alex, False)",
+    "ground_truth": "A"
+  },
+  {
+    "id": "ProntoQA_6",
+    "original_context": "Every tumpus is large. Tumpuses are wumpuses. Each wumpus is not opaque. Every dumpus is not dull. Every wumpus is a rompus. Every rompus is brown. Each rompus is a vumpus. Each vumpus is temperate. Vumpuses are jompuses. Jompuses are dull. Jompuses are numpuses. Every numpus is liquid. Each numpus is an impus. Impuses are spicy. Every impus is a yumpus. Every yumpus is not nervous. Every yumpus is a zumpus. Wren is a tumpus.",
+    "question": " Wren is dull.",
+    "translated_context": {
+      "Translated_Facts": "Tumpus(Wren, True)",
+      "Translated_Rules": "s:\nTumpus($x, True) >>> Large($x, True)\nTumpus($x, True) >>> Wumpus($x, True)\nWumpus($x, True) >>> Opaque($x, False)\nDumpus($x, True) >>> Dull($x, False)\nWumpus($x, True) >>> Rompus($x, True)\nRompus($x, True) >>> Brown($x, True)\nRompus($x, True) >>> Vumpus($x, True)\nVumpus($x, True) >>> Temperate($x, True)\nVumpus($x, True) >>> Jompus($x, True)\nJompus($x, True) >>> Dull($x, True)\nJompus($x, True) >>> Numpus($x, True)\nNumpus($x, True) >>> Liquid($x, True)\nNumpus($x, True) >>> Impus($x, True)\nImpus($x, True) >>> Spicy($x, True)\nImpus($x, True) >>> Yumpus($x, True)\nYumpus($x, True) >>> Nervous($x, False)\nYumpus($x, True) >>> Zumpus($x, True)",
+      "Translated_Conjecture": "Dull(Wren, True)"
+    },
+    "decomposed_process": {
+      "and_or": 

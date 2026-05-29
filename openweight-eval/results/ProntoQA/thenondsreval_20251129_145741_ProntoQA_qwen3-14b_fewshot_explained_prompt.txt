@@ -1,0 +1,124 @@
+Dataset name: ProntoQA
+Model name: qwen3-14b
+Date: 20251129
+Time: 145741
+
+Total instances (with ground truth): 500
+Accuracy: 0.9760
+
+Token Usage Statistics:
+prompt_tokens:
+  min: 944 (id=ProntoQA_60)
+  max: 1009 (id=ProntoQA_260)
+  avg: 991.22
+
+completion_tokens:
+  min: 39 (id=ProntoQA_350)
+  max: 336 (id=ProntoQA_279)
+  avg: 111.90
+
+total_tokens:
+  min: 1030 (id=ProntoQA_170)
+  max: 1335 (id=ProntoQA_279)
+  avg: 1103.12
+
+Confusion Matrix (rows = ground truth, cols = prediction):
+ 	A	B	C	D
+A	252	0	6	0
+B	0	236	6	0
+C	0	0	0	0
+D	0	0	0	0
+
+Per-class metrics:
+Label A: Precision=1.0000, Recall=0.9767, TP=252, FP=0, FN=6
+Label B: Precision=1.0000, Recall=0.9752, TP=236, FP=0, FN=6
+Label C: Precision=0.0000, Recall=0.0000, TP=0, FP=12, FN=0
+Label D: Precision=0.0000, Recall=0.0000, TP=0, FP=0, FN=0
+
+Macro Precision: 0.5000, Macro Recall: 0.4880
+
+Error ids:
+ProntoQA_137,ProntoQA_140,ProntoQA_159,ProntoQA_244,ProntoQA_251,ProntoQA_263,ProntoQA_279,ProntoQA_335,ProntoQA_419,ProntoQA_421,ProntoQA_423,ProntoQA_441
+
+Correct ids:
+ProntoQA_1,ProntoQA_6,ProntoQA_4,ProntoQA_8,ProntoQA_7,ProntoQA_2,ProntoQA_3,ProntoQA_5,ProntoQA_9,ProntoQA_10,ProntoQA_11,ProntoQA_15,ProntoQA_12,ProntoQA_13,ProntoQA_16,ProntoQA_14,ProntoQA_17,ProntoQA_18,ProntoQA_19,ProntoQA_22,ProntoQA_21,ProntoQA_23,ProntoQA_24,ProntoQA_20,ProntoQA_25,ProntoQA_26,ProntoQA_27,ProntoQA_31,ProntoQA_29,ProntoQA_28,ProntoQA_32,ProntoQA_30,ProntoQA_33,ProntoQA_34,ProntoQA_35,ProntoQA_36,ProntoQA_38,ProntoQA_37,ProntoQA_39,ProntoQA_40,ProntoQA_42,ProntoQA_41,ProntoQA_44,ProntoQA_45,ProntoQA_43,ProntoQA_47,ProntoQA_46,ProntoQA_49,ProntoQA_48,ProntoQA_50,ProntoQA_52,ProntoQA_51,ProntoQA_54,ProntoQA_55,ProntoQA_56,ProntoQA_53,ProntoQA_57,ProntoQA_59,ProntoQA_58,ProntoQA_61,ProntoQA_60,ProntoQA_64,ProntoQA_62,ProntoQA_63,ProntoQA_65,ProntoQA_67,ProntoQA_66,ProntoQA_68,ProntoQA_70,ProntoQA_72,ProntoQA_69,ProntoQA_71,ProntoQA_73,ProntoQA_74,ProntoQA_75,ProntoQA_76,ProntoQA_77,ProntoQA_78,ProntoQA_80,ProntoQA_82,ProntoQA_81,ProntoQA_83,ProntoQA_84,ProntoQA_79,ProntoQA_88,ProntoQA_87,ProntoQA_86,ProntoQA_85,ProntoQA_89,ProntoQA_90,ProntoQA_91,ProntoQA_92,ProntoQA_94,ProntoQA_93,ProntoQA_97,ProntoQA_96,ProntoQA_95,ProntoQA_99,ProntoQA_100,ProntoQA_98,ProntoQA_101,ProntoQA_104,ProntoQA_102,ProntoQA_105,ProntoQA_103,ProntoQA_109,ProntoQA_106,ProntoQA_108,ProntoQA_107,ProntoQA_110,ProntoQA_111,ProntoQA_112,ProntoQA_113,ProntoQA_115,ProntoQA_114,ProntoQA_118,ProntoQA_116,ProntoQA_117,ProntoQA_119,ProntoQA_121,ProntoQA_120,ProntoQA_122,ProntoQA_123,ProntoQA_124,ProntoQA_125,ProntoQA_126,ProntoQA_127,ProntoQA_128,ProntoQA_130,ProntoQA_129,ProntoQA_131,ProntoQA_133,ProntoQA_132,ProntoQA_135,ProntoQA_134,ProntoQA_136,ProntoQA_139,ProntoQA_138,ProntoQA_141,ProntoQA_144,ProntoQA_143,ProntoQA_142,ProntoQA_146,ProntoQA_145,ProntoQA_148,ProntoQA_147,ProntoQA_149,ProntoQA_150,ProntoQA_151,ProntoQA_153,ProntoQA_154,ProntoQA_156,ProntoQA_158,ProntoQA_152,ProntoQA_155,ProntoQA_157,ProntoQA_160,ProntoQA_161,ProntoQA_163,ProntoQA_165,ProntoQA_164,ProntoQA_166,ProntoQA_170,ProntoQA_167,ProntoQA_162,ProntoQA_169,ProntoQA_168,ProntoQA_171,ProntoQA_172,ProntoQA_173,ProntoQA_174,ProntoQA_175,ProntoQA_177,ProntoQA_180,ProntoQA_178,ProntoQA_179,ProntoQA_176,ProntoQA_181,ProntoQA_182,ProntoQA_185,ProntoQA_184,ProntoQA_183,ProntoQA_186,ProntoQA_188,ProntoQA_187,ProntoQA_189,ProntoQA_190,ProntoQA_192,ProntoQA_193,ProntoQA_191,ProntoQA_194,ProntoQA_195,ProntoQA_196,ProntoQA_197,ProntoQA_198,ProntoQA_201,ProntoQA_199,ProntoQA_202,ProntoQA_203,ProntoQA_200,ProntoQA_204,ProntoQA_205,ProntoQA_207,ProntoQA_209,ProntoQA_210,ProntoQA_206,ProntoQA_208,ProntoQA_211,ProntoQA_212,ProntoQA_213,ProntoQA_214,ProntoQA_216,ProntoQA_215,ProntoQA_218,ProntoQA_217,ProntoQA_219,ProntoQA_221,ProntoQA_220,ProntoQA_222,ProntoQA_226,ProntoQA_225,ProntoQA_224,ProntoQA_223,ProntoQA_230,ProntoQA_228,ProntoQA_229,ProntoQA_227,ProntoQA_233,ProntoQA_232,ProntoQA_231,ProntoQA_236,ProntoQA_235,ProntoQA_234,ProntoQA_238,ProntoQA_237,ProntoQA_240,ProntoQA_239,ProntoQA_241,ProntoQA_243,ProntoQA_245,ProntoQA_246,ProntoQA_242,ProntoQA_247,ProntoQA_248,ProntoQA_249,ProntoQA_250,ProntoQA_252,ProntoQA_253,ProntoQA_255,ProntoQA_254,ProntoQA_256,ProntoQA_257,ProntoQA_259,ProntoQA_261,ProntoQA_258,ProntoQA_260,ProntoQA_262,ProntoQA_264,ProntoQA_265,ProntoQA_267,ProntoQA_270,ProntoQA_266,ProntoQA_269,ProntoQA_268,ProntoQA_271,ProntoQA_273,ProntoQA_274,ProntoQA_272,ProntoQA_275,ProntoQA_276,ProntoQA_278,ProntoQA_277,ProntoQA_280,ProntoQA_286,ProntoQA_283,ProntoQA_285,ProntoQA_284,ProntoQA_282,ProntoQA_281,ProntoQA_289,ProntoQA_288,ProntoQA_287,ProntoQA_291,ProntoQA_292,ProntoQA_290,ProntoQA_293,ProntoQA_295,ProntoQA_296,ProntoQA_294,ProntoQA_297,ProntoQA_298,ProntoQA_299,ProntoQA_300,ProntoQA_302,ProntoQA_301,ProntoQA_305,ProntoQA_303,ProntoQA_304,ProntoQA_306,ProntoQA_307,ProntoQA_308,ProntoQA_309,ProntoQA_311,ProntoQA_316,ProntoQA_313,ProntoQA_310,ProntoQA_315,ProntoQA_314,ProntoQA_312,ProntoQA_317,ProntoQA_320,ProntoQA_319,ProntoQA_318,ProntoQA_322,ProntoQA_323,ProntoQA_324,ProntoQA_321,ProntoQA_326,ProntoQA_325,ProntoQA_330,ProntoQA_327,ProntoQA_328,ProntoQA_332,ProntoQA_333,ProntoQA_331,ProntoQA_334,ProntoQA_329,ProntoQA_336,ProntoQA_337,ProntoQA_339,ProntoQA_338,ProntoQA_340,ProntoQA_341,ProntoQA_342,ProntoQA_345,ProntoQA_344,ProntoQA_343,ProntoQA_350,ProntoQA_348,ProntoQA_349,ProntoQA_346,ProntoQA_352,ProntoQA_351,ProntoQA_347,ProntoQA_353,ProntoQA_354,ProntoQA_355,ProntoQA_356,ProntoQA_357,ProntoQA_358,ProntoQA_359,ProntoQA_360,ProntoQA_362,ProntoQA_361,ProntoQA_363,ProntoQA_365,ProntoQA_368,ProntoQA_369,ProntoQA_366,ProntoQA_370,ProntoQA_367,ProntoQA_364,ProntoQA_371,ProntoQA_373,ProntoQA_376,ProntoQA_375,ProntoQA_374,ProntoQA_377,ProntoQA_372,ProntoQA_379,ProntoQA_378,ProntoQA_381,ProntoQA_380,ProntoQA_382,ProntoQA_386,ProntoQA_383,ProntoQA_385,ProntoQA_384,ProntoQA_387,ProntoQA_390,ProntoQA_389,ProntoQA_393,ProntoQA_391,ProntoQA_392,ProntoQA_394,ProntoQA_388,ProntoQA_395,ProntoQA_396,ProntoQA_400,ProntoQA_398,ProntoQA_399,ProntoQA_397,ProntoQA_401,ProntoQA_402,ProntoQA_403,ProntoQA_404,ProntoQA_407,ProntoQA_406,ProntoQA_409,ProntoQA_405,ProntoQA_408,ProntoQA_411,ProntoQA_410,ProntoQA_412,ProntoQA_418,ProntoQA_416,ProntoQA_415,ProntoQA_417,ProntoQA_413,ProntoQA_414,ProntoQA_420,ProntoQA_425,ProntoQA_424,ProntoQA_422,ProntoQA_426,ProntoQA_427,ProntoQA_428,ProntoQA_430,ProntoQA_432,ProntoQA_433,ProntoQA_429,ProntoQA_434,ProntoQA_431,ProntoQA_436,ProntoQA_437,ProntoQA_435,ProntoQA_440,ProntoQA_439,ProntoQA_442,ProntoQA_438,ProntoQA_444,ProntoQA_443,ProntoQA_446,ProntoQA_445,ProntoQA_449,ProntoQA_448,ProntoQA_450,ProntoQA_453,ProntoQA_452,ProntoQA_447,ProntoQA_451,ProntoQA_454,ProntoQA_455,ProntoQA_456,ProntoQA_457,ProntoQA_458,ProntoQA_461,ProntoQA_459,ProntoQA_460,ProntoQA_464,ProntoQA_463,ProntoQA_462,ProntoQA_465,ProntoQA_467,ProntoQA_466,ProntoQA_468,ProntoQA_469,ProntoQA_471,ProntoQA_472,ProntoQA_470,ProntoQA_473,ProntoQA_474,ProntoQA_475,ProntoQA_476,ProntoQA_477,ProntoQA_478,ProntoQA_479,ProntoQA_480,ProntoQA_481,ProntoQA_482,ProntoQA_483,ProntoQA_486,ProntoQA_485,ProntoQA_484,ProntoQA_487,ProntoQA_488,ProntoQA_491,ProntoQA_492,ProntoQA_489,ProntoQA_490,ProntoQA_493,ProntoQA_494,ProntoQA_496,ProntoQA_495,ProntoQA_500,ProntoQA_497,ProntoQA_499,ProntoQA_498
+
+
+Example errors per (ground_truth, prediction) cell:
+Ground truth: A, Predicted: C
+  id: ProntoQA_137
+  original_context: Each numpus is opaque. Numpuses are tumpuses. Tumpuses are hot. Tumpuses are rompuses. Each rompus is bright. Rompuses are yumpuses. Each yumpus is earthy. Every yumpus is a wumpus. Each wumpus is spicy. Each wumpus is a zumpus. Every zumpus is nervous. Every zumpus is an impus. Each impus is not liquid. Each impus is a jompus. Every jompus is not large. Jompuses are dumpuses. Each vumpus is liquid. Rex is a rompus.
+  question: Is the following statement true or false? Rex is not liquid.
+  conjecture: Is the following statement true or false? Rex is not liquid.
+  naive_prompt_output_raw: Explanation:
+Rex is a rompus.
+Each rompus is bright.
+Rex is bright.
+Tumpuses are rompuses.
+Rompuses are yumpuses.
+Yumpuses are wumpuses.
+Wumpuses are zumpuses.
+Zumpuses are impuses.
+Impuses are jompuses.
+Jompuses are dumpuses.
+Each impus is not liquid.
+Rex is a rompus, and rompuses are tumpuses, which are not directly linked to liquid properties in the context. However, the only information about liquid comes from "Each vumpus is liquid," which does not apply to Rex. There is no information that directly states Rex is liquid or not liquid. Therefore, we cannot determine the truth value of the conjecture based on the given context.
+
+Final Answer:
+UNKNOWN
+  explanation: Rex is a rompus.
+Each rompus is bright.
+Rex is bright.
+Tumpuses are rompuses.
+Rompuses are yumpuses.
+Yumpuses are wumpuses.
+Wumpuses are zumpuses.
+Zumpuses are impuses.
+Impuses are jompuses.
+Jompuses are dumpuses.
+Each impus is not liquid.
+Rex is a rompus, and rompuses are tumpuses, which are not directly linked to liquid properties in the context. However, the only information about liquid comes from "Each vumpus is liquid," which does not apply to Rex. There is no information that directly states Rex is liquid or not liquid. Therefore, we cannot determine the truth value of the conjecture based on the given context.
+  ground_truth: A
+  predicted_choice: C
+
+Ground truth: B, Predicted: C
+  id: ProntoQA_140
+  original_context: Each dumpus is large. Every dumpus is a wumpus. Wumpuses are cold. Every wumpus is a tumpus. Impuses are sour. Tumpuses are fruity. Every tumpus is a rompus. Every rompus is not nervous. Every rompus is a zumpus. Zumpuses are not sour. Zumpuses are jompuses. Jompuses are not luminous. Jompuses are yumpuses. Each yumpus is not dull. Every yumpus is a numpus. Each numpus is not opaque. Every numpus is a vumpus. Stella is a dumpus.
+  question: Is the following statement true or false? Stella is sour.
+  conjecture: Is the following statement true or false? Stella is sour.
+  naive_prompt_output_raw: Explanation:
+Stella is a dumpus.
+Each dumpus is a wumpus.
+Stella is a wumpus.
+Every wumpus is a tumpus.
+Stella is a tumpus.
+Tumpuses are fruity.
+Stella is fruity.
+Impuses are sour.
+Zumpuses are not sour.
+Jompuses are yumpuses.
+Each yumpus is not dull.
+Every yumpus is a numpus.
+Each numpus is not opaque.
+Every numpus is a vumpus.
+There is no information that directly links Stella to being sour. The only mention of sour is that impuses are sour, but there is no indication that Stella is an impus. Therefore, we cannot determine if Stella is sour based on the given information.
+
+Final Answer:
+UNKNOWN
+  explanation: Stella is a dumpus.
+Each dumpus is a wumpus.
+Stella is a wumpus.
+Every wumpus is a tumpus.
+Stella is a tumpus.
+Tumpuses are fruity.
+Stella is fruity.
+Impuses are sour.
+Zumpuses are not sour.
+Jompuses are yumpuses.
+Each yumpus is not dull.
+Every yumpus is a numpus.
+Each numpus is not opaque.
+Every numpus is a vumpus.
+There is no information that directly links Stella to being sour. The only mention of sour is that impuses are sour, but there is no indication that Stella is an impus. Therefore, we cannot determine if Stella is sour based on the given information.
+  ground_truth: B
+  predicted_choice: C

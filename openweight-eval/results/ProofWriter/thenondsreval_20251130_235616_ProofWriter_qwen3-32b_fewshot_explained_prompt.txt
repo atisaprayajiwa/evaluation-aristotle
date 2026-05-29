@@ -1,0 +1,310 @@
+Dataset name: ProofWriter
+Model name: qwen3-32b
+Date: 20251130
+Time: 235616
+
+Total instances (with ground truth): 601
+Accuracy: 0.8469
+
+Token Usage Statistics:
+prompt_tokens:
+  min: 898 (id=AttNoneg-OWA-D0-6733)
+  max: 1102 (id=ProofWriter_RelNoneg-OWA-D5-487_Q19)
+  avg: 1003.70
+
+completion_tokens:
+  min: 41 (id=ProofWriter_AttNeg-OWA-D5-1015_Q3)
+  max: 16384 (id=ProofWriter_RelNoneg-OWA-D5-960_Q12)
+  avg: 330.70
+
+total_tokens:
+  min: 960 (id=AttNoneg-OWA-D0-2374)
+  max: 17449 (id=ProofWriter_RelNeg-OWA-D5-813_Q17)
+  avg: 1334.41
+
+Confusion Matrix (rows = ground truth, cols = prediction):
+ 	A	B	C	D
+A	146	1	30	0
+B	1	136	45	0
+C	10	5	227	0
+D	0	0	0	0
+
+Per-class metrics:
+Label A: Precision=0.9299, Recall=0.8249, TP=146, FP=11, FN=31
+Label B: Precision=0.9577, Recall=0.7473, TP=136, FP=6, FN=46
+Label C: Precision=0.7517, Recall=0.9380, TP=227, FP=75, FN=15
+Label D: Precision=0.0000, Recall=0.0000, TP=0, FP=0, FN=0
+
+Macro Precision: 0.6598, Macro Recall: 0.6275
+
+Error ids:
+ProofWriter_AttNoneg-OWA-D5-735_Q9,ProofWriter_AttNoneg-OWA-D5-352_Q8,ProofWriter_RelNeg-OWA-D5-966_Q7,ProofWriter_AttNeg-OWA-D5-891_Q9,ProofWriter_RelNoneg-OWA-D5-977_Q3,ProofWriter_AttNoneg-OWA-D5-1304_Q8,ProofWriter_AttNoneg-OWA-D5-305_Q9,ProofWriter_AttNeg-OWA-D5-804_Q12,ProofWriter_RelNoneg-OWA-D5-280_Q8,ProofWriter_RelNeg-OWA-D5-604_Q12,ProofWriter_AttNeg-OWA-D5-891_Q11,ProofWriter_AttNoneg-OWA-D5-785_Q10,ProofWriter_AttNoneg-OWA-D5-882_Q12,ProofWriter_AttNeg-OWA-D5-489_Q11,ProofWriter_AttNoneg-OWA-D5-1057_Q11,ProofWriter_AttNoneg-OWA-D5-1187_Q7,ProofWriter_RelNeg-OWA-D5-568_Q9,ProofWriter_RelNeg-OWA-D5-527_Q10,ProofWriter_AttNoneg-OWA-D5-1039_Q10,ProofWriter_RelNoneg-OWA-D5-369_Q10,ProofWriter_AttNeg-OWA-D5-233_Q11,ProofWriter_RelNeg-OWA-D5-587_Q8,ProofWriter_RelNoneg-OWA-D5-861_Q3,ProofWriter_AttNeg-OWA-D5-1028_Q10,ProofWriter_RelNeg-OWA-D5-430_Q21,ProofWriter_AttNeg-OWA-D5-1233_Q11,ProofWriter_AttNoneg-OWA-D5-20_Q10,ProofWriter_RelNoneg-OWA-D5-861_Q14,ProofWriter_AttNeg-OWA-D5-1236_Q12,ProofWriter_RelNeg-OWA-D5-430_Q15,ProofWriter_RelNeg-OWA-D5-169_Q5,ProofWriter_RelNeg-OWA-D5-199_Q4,ProofWriter_AttNoneg-OWA-D5-1044_Q10,ProofWriter_RelNoneg-OWA-D5-777_Q6,ProofWriter_RelNoneg-OWA-D5-754_Q23,ProofWriter_RelNoneg-OWA-D5-487_Q10,ProofWriter_AttNoneg-OWA-D5-718_Q9,ProofWriter_RelNeg-OWA-D5-587_Q11,ProofWriter_RelNeg-OWA-D5-226_Q4,ProofWriter_RelNeg-OWA-D5-330_Q11,ProofWriter_AttNeg-OWA-D5-454_Q13,ProofWriter_AttNoneg-OWA-D5-143_Q12,ProofWriter_RelNeg-OWA-D5-940_Q9,ProofWriter_RelNeg-OWA-D5-574_Q12,ProofWriter_AttNeg-OWA-D5-858_Q12,ProofWriter_AttNoneg-OWA-D5-1066_Q12,ProofWriter_RelNoneg-OWA-D5-280_Q3,ProofWriter_RelNeg-OWA-D5-173_Q10,ProofWriter_AttNeg-OWA-D5-694_Q8,ProofWriter_AttNoneg-OWA-D5-1044_Q12,ProofWriter_AttNoneg-OWA-D5-189_Q12,ProofWriter_AttNeg-OWA-D5-532_Q7,ProofWriter_RelNoneg-OWA-D5-739_Q12,ProofWriter_AttNeg-OWA-D5-779_Q12,ProofWriter_RelNoneg-OWA-D5-116_Q12,ProofWriter_RelNeg-OWA-D5-317_Q13,ProofWriter_RelNeg-OWA-D5-115_Q11,ProofWriter_RelNoneg-OWA-D5-428_Q12,ProofWriter_RelNoneg-OWA-D5-121_Q8,ProofWriter_AttNoneg-OWA-D5-1_Q5,ProofWriter_RelNoneg-OWA-D5-775_Q9,ProofWriter_RelNoneg-OWA-D5-487_Q5,ProofWriter_RelNeg-OWA-D5-224_Q6,ProofWriter_AttNeg-OWA-D5-904_Q14,ProofWriter_RelNoneg-OWA-D5-960_Q12,ProofWriter_AttNoneg-OWA-D5-310_Q16,ProofWriter_AttNeg-OWA-D5-145_Q9,ProofWriter_AttNeg-OWA-D5-532_Q21,ProofWriter_RelNoneg-OWA-D5-136_Q10,ProofWriter_RelNeg-OWA-D5-922_Q10,ProofWriter_RelNeg-OWA-D5-70_Q11,ProofWriter_RelNeg-OWA-D5-785_Q10,ProofWriter_RelNoneg-OWA-D5-336_Q4,ProofWriter_RelNoneg-OWA-D5-427_Q11,ProofWriter_RelNoneg-OWA-D5-992_Q10,ProofWriter_RelNeg-OWA-D5-345_Q12,ProofWriter_AttNeg-OWA-D5-818_Q11,ProofWriter_RelNoneg-OWA-D5-992_Q8,ProofWriter_AttNeg-OWA-D5-327_Q17,ProofWriter_RelNeg-OWA-D5-345_Q9,ProofWriter_RelNeg-OWA-D5-478_Q5,ProofWriter_AttNeg-OWA-D5-1149_Q18,ProofWriter_RelNoneg-OWA-D5-616_Q11,ProofWriter_AttNeg-OWA-D5-1203_Q17,ProofWriter_AttNeg-OWA-D5-927_Q19,ProofWriter_RelNoneg-OWA-D5-685_Q8,ProofWriter_RelNoneg-OWA-D5-76_Q8,AttNeg-OWA-D5-473,AttNoneg-OWA-D5-1270,RelNoneg-OWA-D5-892,AttNeg-OWA-D0-4322,RelNoneg-OWA-D0-4884
+
+Correct ids:
+ProofWriter_AttNoneg-OWA-D5-1041_Q1,ProofWriter_AttNoneg-OWA-D5-971_Q5,ProofWriter_AttNeg-OWA-D5-270_Q8,ProofWriter_RelNeg-OWA-D5-508_Q2,ProofWriter_AttNoneg-OWA-D5-1284_Q8,ProofWriter_AttNeg-OWA-D5-285_Q16,ProofWriter_RelNoneg-OWA-D5-949_Q8,ProofWriter_AttNoneg-OWA-D5-585_Q19,ProofWriter_AttNeg-OWA-D5-1119_Q6,ProofWriter_AttNeg-OWA-D5-203_Q21,ProofWriter_AttNeg-OWA-D5-842_Q7,ProofWriter_RelNoneg-OWA-D5-686_Q18,ProofWriter_AttNeg-OWA-D5-315_Q16,ProofWriter_AttNeg-OWA-D5-401_Q15,ProofWriter_AttNoneg-OWA-D5-177_Q5,ProofWriter_RelNoneg-OWA-D5-487_Q19,ProofWriter_AttNoneg-OWA-D5-1330_Q11,ProofWriter_AttNoneg-OWA-D5-1258_Q18,ProofWriter_RelNeg-OWA-D5-115_Q19,ProofWriter_AttNeg-OWA-D5-459_Q14,ProofWriter_RelNeg-OWA-D5-242_Q23,ProofWriter_RelNeg-OWA-D5-40_Q24,ProofWriter_AttNeg-OWA-D5-908_Q13,ProofWriter_AttNoneg-OWA-D5-613_Q12,ProofWriter_RelNoneg-OWA-D5-977_Q22,ProofWriter_AttNeg-OWA-D5-354_Q18,ProofWriter_AttNoneg-OWA-D5-1066_Q2,ProofWriter_AttNoneg-OWA-D5-970_Q8,ProofWriter_RelNoneg-OWA-D5-413_Q22,ProofWriter_AttNeg-OWA-D5-523_Q1,ProofWriter_AttNeg-OWA-D5-818_Q2,ProofWriter_AttNoneg-OWA-D5-866_Q19,ProofWriter_RelNeg-OWA-D5-29_Q21,ProofWriter_AttNoneg-OWA-D5-1003_Q2,ProofWriter_AttNeg-OWA-D5-305_Q4,ProofWriter_RelNeg-OWA-D5-262_Q17,ProofWriter_AttNoneg-OWA-D5-999_Q1,ProofWriter_AttNoneg-OWA-D5-327_Q13,ProofWriter_RelNoneg-OWA-D5-264_Q20,ProofWriter_AttNeg-OWA-D5-327_Q5,ProofWriter_RelNeg-OWA-D5-266_Q3,ProofWriter_AttNeg-OWA-D5-195_Q15,ProofWriter_RelNoneg-OWA-D5-559_Q20,ProofWriter_RelNoneg-OWA-D5-213_Q8,ProofWriter_AttNoneg-OWA-D5-1421_Q14,ProofWriter_AttNeg-OWA-D5-1210_Q4,ProofWriter_RelNoneg-OWA-D5-949_Q5,ProofWriter_AttNeg-OWA-D5-1017_Q5,ProofWriter_AttNoneg-OWA-D5-781_Q5,ProofWriter_RelNoneg-OWA-D5-439_Q23,ProofWriter_AttNeg-OWA-D5-200_Q12,ProofWriter_RelNeg-OWA-D5-510_Q7,ProofWriter_RelNeg-OWA-D5-555_Q8,ProofWriter_RelNeg-OWA-D5-442_Q5,ProofWriter_AttNoneg-OWA-D5-1003_Q5,ProofWriter_AttNoneg-OWA-D5-754_Q4,ProofWriter_AttNoneg-OWA-D5-650_Q11,ProofWriter_AttNoneg-OWA-D5-689_Q7,ProofWriter_RelNoneg-OWA-D5-213_Q19,ProofWriter_AttNoneg-OWA-D5-983_Q11,ProofWriter_RelNoneg-OWA-D5-816_Q7,ProofWriter_AttNeg-OWA-D5-1229_Q3,ProofWriter_AttNoneg-OWA-D5-143_Q6,ProofWriter_AttNeg-OWA-D5-1015_Q3,ProofWriter_RelNeg-OWA-D5-115_Q3,ProofWriter_AttNeg-OWA-D5-333_Q7,ProofWriter_AttNoneg-OWA-D5-844_Q1,ProofWriter_RelNoneg-OWA-D5-873_Q17,ProofWriter_RelNoneg-OWA-D5-298_Q21,ProofWriter_RelNeg-OWA-D5-922_Q7,ProofWriter_AttNeg-OWA-D5-454_Q15,ProofWriter_AttNoneg-OWA-D5-1251_Q3,ProofWriter_AttNoneg-OWA-D5-1066_Q6,ProofWriter_RelNoneg-OWA-D5-975_Q4,ProofWriter_RelNoneg-OWA-D5-789_Q23,ProofWriter_RelNoneg-OWA-D5-469_Q24,ProofWriter_RelNeg-OWA-D5-111_Q9,ProofWriter_RelNoneg-OWA-D5-131_Q1,ProofWriter_RelNoneg-OWA-D5-789_Q9,ProofWriter_RelNoneg-OWA-D5-116_Q3,ProofWriter_RelNoneg-OWA-D5-789_Q21,ProofWriter_AttNoneg-OWA-D5-1164_Q9,ProofWriter_AttNeg-OWA-D5-876_Q12,ProofWriter_AttNeg-OWA-D5-285_Q9,ProofWriter_AttNeg-OWA-D5-459_Q16,ProofWriter_AttNeg-OWA-D5-618_Q4,ProofWriter_AttNoneg-OWA-D5-370_Q4,ProofWriter_RelNeg-OWA-D5-527_Q22,ProofWriter_RelNoneg-OWA-D5-329_Q19,ProofWriter_AttNoneg-OWA-D5-897_Q4,ProofWriter_RelNeg-OWA-D5-498_Q15,ProofWriter_RelNoneg-OWA-D5-983_Q3,ProofWriter_RelNoneg-OWA-D5-365_Q1,ProofWriter_RelNeg-OWA-D5-947_Q2,ProofWriter_RelNeg-OWA-D5-294_Q2,ProofWriter_AttNoneg-OWA-D5-677_Q2,ProofWriter_RelNoneg-OWA-D5-230_Q20,ProofWriter_RelNoneg-OWA-D5-336_Q8,ProofWriter_RelNoneg-OWA-D5-312_Q22,ProofWriter_AttNeg-OWA-D5-960_Q6,ProofWriter_RelNoneg-OWA-D5-1009_Q18,ProofWriter_AttNeg-OWA-D5-1220_Q6,ProofWriter_AttNoneg-OWA-D5-1118_Q22,ProofWriter_RelNeg-OWA-D5-602_Q13,ProofWriter_RelNoneg-OWA-D5-230_Q19,ProofWriter_AttNoneg-OWA-D5-630_Q10,ProofWriter_AttNeg-OWA-D5-293_Q1,ProofWriter_RelNeg-OWA-D5-226_Q3,ProofWriter_RelNoneg-OWA-D5-861_Q16,ProofWriter_AttNoneg-OWA-D5-702_Q1,ProofWriter_RelNoneg-OWA-D5-521_Q16,ProofWriter_AttNoneg-OWA-D5-1110_Q3,ProofWriter_AttNoneg-OWA-D5-620_Q20,ProofWriter_AttNeg-OWA-D5-808_Q5,ProofWriter_AttNeg-OWA-D5-979_Q9,ProofWriter_RelNeg-OWA-D5-68_Q2,ProofWriter_AttNoneg-OWA-D5-187_Q7,ProofWriter_AttNeg-OWA-D5-109_Q11,ProofWriter_AttNeg-OWA-D5-523_Q13,ProofWriter_AttNoneg-OWA-D5-620_Q19,ProofWriter_AttNoneg-OWA-D5-187_Q3,ProofWriter_RelNoneg-OWA-D5-1036_Q2,ProofWriter_AttNoneg-OWA-D5-178_Q3,ProofWriter_AttNoneg-OWA-D5-863_Q11,ProofWriter_RelNeg-OWA-D5-483_Q6,ProofWriter_AttNeg-OWA-D5-269_Q5,ProofWriter_AttNoneg-OWA-D5-702_Q7,ProofWriter_AttNeg-OWA-D5-1220_Q4,ProofWriter_RelNeg-OWA-D5-278_Q22,ProofWriter_RelNeg-OWA-D5-294_Q3,ProofWriter_RelNeg-OWA-D5-249_Q9,ProofWriter_AttNeg-OWA-D5-532_Q19,ProofWriter_RelNoneg-OWA-D5-595_Q3,ProofWriter_RelNeg-OWA-D5-498_Q8,ProofWriter_AttNeg-OWA-D5-1236_Q20,ProofWriter_AttNoneg-OWA-D5-147_Q5,ProofWriter_RelNeg-OWA-D5-948_Q21,ProofWriter_RelNeg-OWA-D5-70_Q21,ProofWriter_RelNoneg-OWA-D5-975_Q15,ProofWriter_AttNeg-OWA-D5-971_Q20,ProofWriter_RelNoneg-OWA-D5-272_Q16,ProofWriter_RelNeg-OWA-D5-604_Q14,ProofWriter_AttNeg-OWA-D5-1210_Q8,ProofWriter_AttNoneg-OWA-D5-878_Q10,ProofWriter_AttNeg-OWA-D5-54_Q5,ProofWriter_AttNoneg-OWA-D5-878_Q5,ProofWriter_AttNeg-OWA-D5-1208_Q1,ProofWriter_RelNeg-OWA-D5-785_Q16,ProofWriter_RelNeg-OWA-D5-195_Q8,ProofWriter_RelNoneg-OWA-D5-949_Q22,ProofWriter_RelNeg-OWA-D5-455_Q24,ProofWriter_AttNoneg-OWA-D5-308_Q8,ProofWriter_AttNoneg-OWA-D5-999_Q5,ProofWriter_AttNoneg-OWA-D5-1205_Q16,ProofWriter_AttNoneg-OWA-D5-746_Q8,ProofWriter_RelNoneg-OWA-D5-439_Q20,ProofWriter_AttNoneg-OWA-D5-613_Q10,ProofWriter_AttNeg-OWA-D5-630_Q4,ProofWriter_AttNoneg-OWA-D5-488_Q22,ProofWriter_AttNoneg-OWA-D5-500_Q8,ProofWriter_AttNoneg-OWA-D5-1205_Q12,ProofWriter_RelNeg-OWA-D5-948_Q14,ProofWriter_AttNeg-OWA-D5-401_Q4,ProofWriter_AttNoneg-OWA-D5-83_Q10,ProofWriter_RelNoneg-OWA-D5-777_Q9,ProofWriter_RelNoneg-OWA-D5-439_Q2,ProofWriter_RelNeg-OWA-D5-829_Q2,ProofWriter_AttNeg-OWA-D5-891_Q1,ProofWriter_RelNoneg-OWA-D5-439_Q21,ProofWriter_RelNoneg-OWA-D5-76_Q13,ProofWriter_AttNeg-OWA-D5-818_Q1,ProofWriter_AttNoneg-OWA-D5-371_Q22,ProofWriter_RelNeg-OWA-D5-1029_Q10,ProofWriter_RelNeg-OWA-D5-419_Q14,ProofWriter_RelNoneg-OWA-D5-329_Q6,ProofWriter_AttNeg-OWA-D5-489_Q2,ProofWriter_AttNoneg-OWA-D5-684_Q1,ProofWriter_RelNoneg-OWA-D5-341_Q3,ProofWriter_AttNeg-OWA-D5-586_Q21,ProofWriter_RelNoneg-OWA-D5-683_Q1,ProofWriter_RelNoneg-OWA-D5-173_Q8,ProofWriter_AttNeg-OWA-D5-195_Q3,ProofWriter_RelNeg-OWA-D5-661_Q24,ProofWriter_RelNoneg-OWA-D5-502_Q3,ProofWriter_RelNoneg-OWA-D5-136_Q24,ProofWriter_RelNeg-OWA-D5-890_Q11,ProofWriter_AttNeg-OWA-D5-465_Q1,ProofWriter_AttNoneg-OWA-D5-622_Q13,ProofWriter_AttNoneg-OWA-D5-672_Q3,ProofWriter_RelNeg-OWA-D5-345_Q22,ProofWriter_RelNeg-OWA-D5-966_Q21,ProofWriter_RelNeg-OWA-D5-587_Q13,ProofWriter_AttNoneg-OWA-D5-1122_Q9,ProofWriter_RelNoneg-OWA-D5-649_Q1,ProofWriter_RelNeg-OWA-D5-721_Q6,ProofWriter_AttNeg-OWA-D5-305_Q1,ProofWriter_AttNeg-OWA-D5-399_Q3,ProofWriter_RelNeg-OWA-D5-747_Q21,ProofWriter_AttNoneg-OWA-D5-1331_Q16,ProofWriter_RelNoneg-OWA-D5-683_Q22,ProofWriter_AttNoneg-OWA-D5-1335_Q7,ProofWriter_AttNeg-OWA-D5-1111_Q2,ProofWriter_RelNoneg-OWA-D5-427_Q14,ProofWriter_RelNeg-OWA-D5-510_Q5,ProofWriter_RelNeg-OWA-D5-442_Q24,ProofWriter_AttNeg-OWA-D5-1183_Q16,ProofWriter_AttNeg-OWA-D5-108_Q15,ProofWriter_AttNeg-OWA-D5-120_Q9,ProofWriter_AttNeg-OWA-D5-1017_Q19,ProofWriter_AttNoneg-OWA-D5-1364_Q16,ProofWriter_AttNeg-OWA-D5-959_Q2,ProofWriter_RelNeg-OWA-D5-70_Q15,ProofWriter_AttNeg-OWA-D5-276_Q8,ProofWriter_AttNeg-OWA-D5-960_Q3,ProofWriter_RelNeg-OWA-D5-183_Q3,ProofWriter_AttNeg-OWA-D5-221_Q5,ProofWriter_RelNeg-OWA-D5-925_Q22,ProofWriter_AttNeg-OWA-D5-155_Q6,ProofWriter_RelNeg-OWA-D5-561_Q16,ProofWriter_AttNoneg-OWA-D5-308_Q1,ProofWriter_RelNoneg-OWA-D5-173_Q17,ProofWriter_RelNoneg-OWA-D5-151_Q23,ProofWriter_RelNeg-OWA-D5-174_Q18,ProofWriter_RelNeg-OWA-D5-1026_Q4,ProofWriter_AttNeg-OWA-D5-849_Q24,ProofWriter_AttNeg-OWA-D5-858_Q5,ProofWriter_AttNoneg-OWA-D5-1054_Q3,ProofWriter_AttNoneg-OWA-D5-897_Q12,ProofWriter_RelNoneg-OWA-D5-637_Q19,ProofWriter_AttNoneg-OWA-D5-1041_Q8,ProofWriter_AttNeg-OWA-D5-973_Q6,ProofWriter_RelNeg-OWA-D5-721_Q8,ProofWriter_AttNeg-OWA-D5-107_Q1,ProofWriter_RelNoneg-OWA-D5-977_Q14,ProofWriter_AttNoneg-OWA-D5-725_Q8,ProofWriter_AttNoneg-OWA-D5-517_Q10,ProofWriter_RelNoneg-OWA-D5-691_Q3,ProofWriter_AttNeg-OWA-D5-107_Q6,ProofWriter_AttNoneg-OWA-D5-983_Q7,ProofWriter_AttNeg-OWA-D5-1229_Q6,ProofWriter_AttNoneg-OWA-D5-692_Q4,ProofWriter_RelNoneg-OWA-D5-685_Q24,ProofWriter_RelNoneg-OWA-D5-428_Q17,ProofWriter_AttNoneg-OWA-D5-165_Q11,ProofWriter_RelNoneg-OWA-D5-272_Q14,ProofWriter_AttNoneg-OWA-D5-528_Q6,ProofWriter_AttNoneg-OWA-D5-735_Q12,ProofWriter_AttNeg-OWA-D5-109_Q13,ProofWriter_RelNoneg-OWA-D5-358_Q5,ProofWriter_RelNeg-OWA-D5-856_Q12,ProofWriter_AttNeg-OWA-D5-933_Q12,ProofWriter_RelNeg-OWA-D5-668_Q8,ProofWriter_RelNoneg-OWA-D5-983_Q24,ProofWriter_RelNoneg-OWA-D5-709_Q1,ProofWriter_AttNeg-OWA-D5-1183_Q20,ProofWriter_AttNoneg-OWA-D5-1110_Q4,ProofWriter_AttNeg-OWA-D5-630_Q24,ProofWriter_RelNeg-OWA-D5-668_Q14,ProofWriter_AttNeg-OWA-D5-694_Q2,ProofWriter_RelNoneg-OWA-D5-398_Q21,ProofWriter_RelNoneg-OWA-D5-404_Q24,ProofWriter_AttNeg-OWA-D5-221_Q8,ProofWriter_RelNoneg-OWA-D5-559_Q24,ProofWriter_RelNoneg-OWA-D5-884_Q17,ProofWriter_AttNoneg-OWA-D5-746_Q9,ProofWriter_RelNoneg-OWA-D5-796_Q6,ProofWriter_AttNoneg-OWA-D5-492_Q6,ProofWriter_AttNeg-OWA-D5-276_Q18,ProofWriter_AttNeg-OWA-D5-664_Q1,ProofWriter_AttNoneg-OWA-D5-1421_Q11,ProofWriter_AttNeg-OWA-D5-1208_Q5,ProofWriter_AttNoneg-OWA-D5-461_Q13,ProofWriter_AttNoneg-OWA-D5-178_Q18,ProofWriter_AttNoneg-OWA-D5-583_Q11,ProofWriter_RelNeg-OWA-D5-68_Q7,ProofWriter_AttNoneg-OWA-D5-718_Q2,ProofWriter_AttNeg-OWA-D5-268_Q3,ProofWriter_RelNeg-OWA-D5-144_Q18,ProofWriter_AttNoneg-OWA-D5-689_Q2,ProofWriter_RelNoneg-OWA-D5-566_Q22,ProofWriter_RelNoneg-OWA-D5-781_Q8,ProofWriter_AttNoneg-OWA-D5-1003_Q15,ProofWriter_AttNoneg-OWA-D5-178_Q11,ProofWriter_RelNoneg-OWA-D5-745_Q18,ProofWriter_AttNoneg-OWA-D5-1081_Q4,ProofWriter_AttNeg-OWA-D5-1105_Q4,ProofWriter_RelNeg-OWA-D5-585_Q1,ProofWriter_AttNeg-OWA-D5-843_Q11,ProofWriter_AttNoneg-OWA-D5-111_Q2,ProofWriter_RelNeg-OWA-D5-419_Q24,ProofWriter_AttNeg-OWA-D5-305_Q11,ProofWriter_AttNoneg-OWA-D5-866_Q17,ProofWriter_RelNoneg-OWA-D5-481_Q23,ProofWriter_RelNoneg-OWA-D5-251_Q21,ProofWriter_RelNeg-OWA-D5-903_Q6,ProofWriter_RelNeg-OWA-D5-249_Q10,ProofWriter_RelNoneg-OWA-D5-975_Q22,ProofWriter_AttNoneg-OWA-D5-177_Q19,ProofWriter_AttNoneg-OWA-D5-1251_Q1,ProofWriter_RelNeg-OWA-D5-585_Q24,ProofWriter_RelNeg-OWA-D5-602_Q16,ProofWriter_RelNoneg-OWA-D5-726_Q6,ProofWriter_RelNoneg-OWA-D5-428_Q15,ProofWriter_RelNoneg-OWA-D5-264_Q5,ProofWriter_AttNoneg-OWA-D5-1286_Q7,ProofWriter_RelNeg-OWA-D5-355_Q4,ProofWriter_RelNeg-OWA-D5-226_Q19,ProofWriter_AttNoneg-OWA-D5-203_Q7,ProofWriter_AttNeg-OWA-D5-818_Q16,ProofWriter_RelNeg-OWA-D5-890_Q2,ProofWriter_RelNeg-OWA-D5-78_Q12,ProofWriter_AttNoneg-OWA-D5-785_Q5,ProofWriter_AttNoneg-OWA-D5-718_Q3,ProofWriter_AttNoneg-OWA-D5-515_Q4,ProofWriter_RelNoneg-OWA-D5-301_Q21,ProofWriter_RelNeg-OWA-D5-75_Q5,ProofWriter_AttNeg-OWA-D5-973_Q9,ProofWriter_AttNeg-OWA-D5-399_Q8,ProofWriter_RelNeg-OWA-D5-650_Q17,ProofWriter_AttNoneg-OWA-D5-985_Q4,ProofWriter_AttNeg-OWA-D5-305_Q10,ProofWriter_AttNeg-OWA-D5-414_Q2,ProofWriter_AttNoneg-OWA-D5-1169_Q1,ProofWriter_AttNoneg-OWA-D5-412_Q9,ProofWriter_RelNeg-OWA-D5-224_Q4,ProofWriter_AttNoneg-OWA-D5-963_Q9,ProofWriter_AttNoneg-OWA-D5-301_Q16,ProofWriter_AttNoneg-OWA-D5-370_Q2,ProofWriter_RelNeg-OWA-D5-266_Q24,ProofWriter_AttNeg-OWA-D5-766_Q5,ProofWriter_RelNoneg-OWA-D5-949_Q24,ProofWriter_AttNoneg-OWA-D5-882_Q2,ProofWriter_RelNeg-OWA-D5-995_Q6,ProofWriter_RelNoneg-OWA-D5-683_Q4,ProofWriter_AttNoneg-OWA-D5-1_Q1,ProofWriter_AttNoneg-OWA-D5-305_Q3,ProofWriter_RelNoneg-OWA-D5-829_Q7,ProofWriter_AttNoneg-OWA-D5-785_Q8,ProofWriter_AttNoneg-OWA-D5-461_Q16,ProofWriter_RelNoneg-OWA-D5-960_Q10,ProofWriter_AttNeg-OWA-D5-120_Q17,ProofWriter_RelNeg-OWA-D5-29_Q18,ProofWriter_RelNeg-OWA-D5-169_Q6,ProofWriter_AttNeg-OWA-D5-562_Q11,ProofWriter_AttNeg-OWA-D5-1149_Q12,ProofWriter_RelNeg-OWA-D5-902_Q5,ProofWriter_AttNoneg-OWA-D5-1421_Q1,ProofWriter_RelNeg-OWA-D5-437_Q1,ProofWriter_AttNeg-OWA-D5-414_Q22,ProofWriter_AttNoneg-OWA-D5-412_Q4,ProofWriter_RelNoneg-OWA-D5-410_Q24,ProofWriter_RelNeg-OWA-D5-406_Q4,ProofWriter_RelNeg-OWA-D5-856_Q19,ProofWriter_AttNeg-OWA-D5-572_Q4,ProofWriter_AttNoneg-OWA-D5-1032_Q6,ProofWriter_AttNeg-OWA-D5-1066_Q21,ProofWriter_AttNoneg-OWA-D5-1095_Q14,ProofWriter_RelNoneg-OWA-D5-127_Q4,ProofWriter_RelNoneg-OWA-D5-581_Q1,ProofWriter_AttNeg-OWA-D5-586_Q11,ProofWriter_AttNoneg-OWA-D5-165_Q13,ProofWriter_RelNoneg-OWA-D5-334_Q15,ProofWriter_AttNoneg-OWA-D5-735_Q3,ProofWriter_RelNeg-OWA-D5-483_Q10,ProofWriter_AttNeg-OWA-D5-423_Q4,ProofWriter_RelNoneg-OWA-D5-439_Q11,ProofWriter_RelNeg-OWA-D5-745_Q8,ProofWriter_RelNoneg-OWA-D5-251_Q10,ProofWriter_RelNoneg-OWA-D5-121_Q6,ProofWriter_AttNeg-OWA-D5-347_Q14,ProofWriter_RelNeg-OWA-D5-129_Q8,ProofWriter_AttNoneg-OWA-D5-1057_Q2,ProofWriter_AttNeg-OWA-D5-523_Q7,ProofWriter_AttNeg-OWA-D5-423_Q21,ProofWriter_RelNoneg-OWA-D5-691_Q10,ProofWriter_AttNeg-OWA-D5-56_Q2,ProofWriter_RelNoneg-OWA-D5-314_Q13,ProofWriter_RelNeg-OWA-D5-491_Q15,ProofWriter_RelNeg-OWA-D5-902_Q8,ProofWriter_AttNeg-OWA-D5-959_Q14,ProofWriter_AttNeg-OWA-D5-1233_Q2,ProofWriter_AttNeg-OWA-D5-1176_Q12,ProofWriter_AttNoneg-OWA-D5-844_Q7,ProofWriter_RelNeg-OWA-D5-77_Q15,ProofWriter_RelNoneg-OWA-D5-992_Q11,ProofWriter_AttNeg-OWA-D5-973_Q19,ProofWriter_AttNoneg-OWA-D5-327_Q1,ProofWriter_AttNeg-OWA-D5-765_Q15,ProofWriter_RelNoneg-OWA-D5-31_Q12,ProofWriter_RelNeg-OWA-D5-317_Q2,ProofWriter_AttNeg-OWA-D5-891_Q18,ProofWriter_RelNoneg-OWA-D5-127_Q1,ProofWriter_AttNoneg-OWA-D5-1250_Q15,ProofWriter_RelNeg-OWA-D5-829_Q6,ProofWriter_AttNeg-OWA-D5-779_Q20,ProofWriter_RelNeg-OWA-D5-1026_Q13,ProofWriter_RelNeg-OWA-D5-829_Q7,ProofWriter_AttNeg-OWA-D5-804_Q1,ProofWriter_AttNeg-OWA-D5-562_Q17,ProofWriter_RelNoneg-OWA-D5-90_Q13,ProofWriter_AttNoneg-OWA-D5-877_Q16,ProofWriter_RelNeg-OWA-D5-1029_Q2,ProofWriter_AttNeg-OWA-D5-1170_Q10,ProofWriter_AttNeg-OWA-D5-804_Q16,ProofWriter_AttNoneg-OWA-D5-1057_Q5,ProofWriter_AttNeg-OWA-D5-333_Q16,ProofWriter_AttNeg-OWA-D5-347_Q1,RelNeg-OWA-D0-1956,ProofWriter_AttNoneg-OWA-D5-572_Q18,AttNeg-OWA-D0-4684,AttNeg-OWA-D0-4005,AttNeg-OWA-D5-345,AttNeg-OWA-D0-938,AttNoneg-OWA-D5-641,AttNoneg-OWA-D5-343,AttNeg-OWA-D5-1109,ProofWriter_RelNeg-OWA-D5-856_Q6,RelNeg-OWA-D5-329,ProofWriter_RelNoneg-OWA-D5-977_Q5,AttNeg-OWA-D5-1135,RelNoneg-OWA-D5-1019,AttNoneg-OWA-D5-826,AttNeg-OWA-D5-1217,RelNoneg-OWA-D5-26,AttNoneg-OWA-D0-2374,AttNeg-OWA-D5-800,AttNeg-OWA-D0-4390,AttNoneg-OWA-D0-4863,AttNoneg-OWA-D5-1367,AttNoneg-OWA-D5-913,AttNeg-OWA-D5-901,AttNoneg-OWA-D5-995,AttNeg-OWA-D5-1154,RelNoneg-OWA-D5-392,AttNeg-OWA-D5-683,RelNeg-OWA-D0-2349,RelNeg-OWA-D0-6172,RelNoneg-OWA-D0-2880,RelNeg-OWA-D0-1457,RelNeg-OWA-D0-5138,RelNeg-OWA-D5-307,RelNoneg-OWA-D0-2246,AttNeg-OWA-D5-198,RelNoneg-OWA-D0-5182,AttNoneg-OWA-D0-1270,RelNeg-OWA-D0-6129,RelNeg-OWA-D0-2509,RelNoneg-OWA-D0-2780,AttNeg-OWA-D0-6787,AttNoneg-OWA-D0-5352,AttNoneg-OWA-D0-5811,AttNoneg-OWA-D0-3809,RelNoneg-OWA-D0-2506,AttNoneg-OWA-D0-4563,RelNeg-OWA-D0-3266,AttNeg-OWA-D0-7187,AttNoneg-OWA-D0-3173,AttNeg-OWA-D0-5750,RelNeg-OWA-D0-1318,AttNeg-OWA-D0-3145,AttNeg-OWA-D0-2242,RelNoneg-OWA-D0-5338,RelNeg-OWA-D0-5805,RelNeg-OWA-D0-806,AttNoneg-OWA-D0-6733,RelNoneg-OWA-D0-4879,RelNoneg-OWA-D0-3822,AttNoneg-OWA-D0-380,ProofWriter_RelNeg-OWA-D5-813_Q17,AttNoneg-OWA-D0-1737,AttNeg-OWA-D0-3706,AttNeg-OWA-D0-6188,RelNoneg-OWA-D0-3667,RelNoneg-OWA-D0-3914,AttNoneg-OWA-D0-7124,RelNeg-OWA-D0-3309,RelNeg-OWA-D0-4174,AttNoneg-OWA-D0-2697,RelNoneg-OWA-D0-2570,RelNoneg-OWA-D0-4672,AttNeg-OWA-D0-7103,AttNoneg-OWA-D0-1691,AttNeg-OWA-D0-2279,RelNeg-OWA-D0-5122,AttNoneg-OWA-D0-1650,AttNoneg-OWA-D0-2710,AttNoneg-OWA-D0-1342,AttNoneg-OWA-D0-6844,AttNoneg-OWA-D0-7005,AttNeg-OWA-D0-6467,RelNeg-OWA-D0-796,RelNoneg-OWA-D0-2794,AttNoneg-OWA-D0-3065,AttNoneg-OWA-D5-22,AttNoneg-OWA-D0-9,AttNoneg-OWA-D0-39,AttNoneg-OWA-D5-430,AttNoneg-OWA-D0-6138,AttNeg-OWA-D5-419,AttNeg-OWA-D5-1166,AttNoneg-OWA-D0-3364,AttNoneg-OWA-D5-1245,RelNoneg-OWA-D0-4382,AttNeg-OWA-D5-439,AttNoneg-OWA-D5-536,AttNoneg-OWA-D5-484,AttNoneg-OWA-D5-245,AttNoneg-OWA-D5-1346,AttNoneg-OWA-D5-234
+
+
+Example errors per (ground_truth, prediction) cell:
+Ground truth: A, Predicted: B
+  id: ProofWriter_AttNoneg-OWA-D5-1187_Q7
+  original_context: Anne is kind. Anne is young. Bob is rough. Charlie is cold. Charlie is kind. Charlie is rough. Charlie is smart. Fiona is kind. Fiona is rough. Fiona is smart. Rough, cold things are smart. All young things are kind. All kind things are blue. Young things are cold. If something is rough then it is cold. All young, blue things are kind. If something is cold and smart then it is young.
+  question: Based on the above information, is the following statement true, false, or unknown? Bob is young.
+  conjecture: Based on the above information, is the following statement true, false, or unknown? Bob is young.
+  naive_prompt_output_raw: Explanation:  
+We are asked to determine whether "Bob is young" is true, false, or unknown based on the given context. Let's analyze the information step by step:
+
+1. **Bob is rough.**  
+2. **If something is rough, then it is cold.**  
+   - Therefore, Bob is cold.  
+3. **Young things are cold.**  
+   - This tells us that being cold is a necessary condition for being young, but it is not sufficient.  
+4. **All young things are kind.**  
+   - Again, this gives us a necessary condition for being young (being kind), but not a sufficient one.  
+5. **Anne is young and kind.**  
+   - This supports the general rule that young things are kind, but does not help us determine whether Bob is young.  
+6. **Bob is not kind (no information says he is kind).**  
+   - Since all young things are kind, and Bob is not known to be kind, this suggests Bob is not young.  
+7. **If something is cold and smart, then it is young.**  
+   - Bob is cold (from being rough), but we do not know whether Bob is smart.  
+   - Therefore, we cannot apply this rule to conclude that Bob is young.  
+
+Since Bob is not known to be kind and all young things are kind, we can infer that Bob is not young. Therefore, the conjecture "Bob is young" is false.
+
+Final Answer:  
+FALSE
+  explanation: We are asked to determine whether "Bob is young" is true, false, or unknown based on the given context. Let's analyze the information step by step:
+
+1. **Bob is rough.**  
+2. **If something is rough, then it is cold.**  
+   - Therefore, Bob is cold.  
+3. **Young things are cold.**  
+   - This tells us that being cold is a necessary condition for being young, but it is not sufficient.  
+4. **All young things are kind.**  
+   - Again, this gives us a necessary condition for being young (being kind), but not a sufficient one.  
+5. **Anne is young and kind.**  
+   - This supports the general rule that young things are kind, but does not help us determine whether Bob is young.  
+6. **Bob is not kind (no information says he is kind).**  
+   - Since all young things are kind, and Bob is not known to be kind, this suggests Bob is not young.  
+7. **If something is cold and smart, then it is young.**  
+   - Bob is cold (from being rough), but we do not know whether Bob is smart.  
+   - Therefore, we cannot apply this rule to conclude that Bob is young.  
+
+Since Bob is not known to be kind and all young things are kind, we can infer that Bob is not young. Therefore, the conjecture "Bob is young" is false.
+  ground_truth: A
+  predicted_choice: B
+
+Ground truth: A, Predicted: C
+  id: ProofWriter_AttNoneg-OWA-D5-735_Q9
+  original_context: Bob is big. Bob is nice. Bob is smart. Charlie is nice. Dave is nice. Erin is big. Erin is blue. Erin is furry. Erin is quiet. Erin is round. Erin is smart. All nice things are big. All furry things are blue. Blue, furry things are quiet. If something is round and nice then it is blue. If Bob is round then Bob is blue. Big, quiet things are furry. If something is blue and furry then it is smart. If Charlie is nice and Charlie is big then Charlie is quiet.
+  question: Based on the above information, is the following statement true, false, or unknown? Charlie is blue.
+  conjecture: Based on the above information, is the following statement true, false, or unknown? Charlie is blue.
+  naive_prompt_output_raw: Explanation:  
+The context states that Charlie is nice. It also states that all nice things are big, so Charlie is big. The context also includes a conditional: "If Charlie is nice and Charlie is big, then Charlie is quiet." Since Charlie is both nice and big, we can conclude that Charlie is quiet. However, the only way to derive that something is blue is either by being furry (since all furry things are blue) or by satisfying the condition "if something is round and nice, then it is blue." There is no information in the context that states Charlie is furry or round. Therefore, we cannot logically derive that Charlie is blue from the given information.
+
+Final Answer:  
+UNKNOWN
+  explanation: The context states that Charlie is nice. It also states that all nice things are big, so Charlie is big. The context also includes a conditional: "If Charlie is nice and Charlie is big, then Charlie is quiet." Since Charlie is both nice and big, we can conclude that Charlie is quiet. However, the only way to derive that something is blue is either by being furry (since all furry things are blue) or by satisfying the condition "if something is round and nice, then it is blue." There is no information in the context that states Charlie is furry or round. Therefore, we cannot logically derive that Charlie is blue from the given information.
+  ground_truth: A
+  predicted_choice: C
+
+Ground truth: B, Predicted: A
+  id: ProofWriter_RelNeg-OWA-D5-587_Q8
+  original_context: The bald eagle chases the squirrel. The bald eagle eats the bear. The bear does not eat the lion. The bear visits the lion. The lion does not eat the bald eagle. The squirrel is red. The squirrel visits the bald eagle. If something is round then it eats the squirrel. If something is blue and green then it chases the bald eagle. If something eats the squirrel then the squirrel is green. If the bald eagle is round then the bald eagle chases the lion. If something is blue then it chases the squirrel. All red things are blue. If something chases the lion then it is blue. Blue, red things are round. If something visits the bald eagle and it is not round then it visits the lion.
+  question: Based on the above information, is the following statement true, false, or unknown? The squirrel does not eat the squirrel.
+  conjecture: Based on the above information, is the following statement true, false, or unknown? The squirrel does not eat the squirrel.
+  naive_prompt_output_raw: ### Explanation:
+The conjecture is "The squirrel does not eat the squirrel." This is a logical tautology — no entity can eat itself in the literal sense, unless explicitly stated otherwise in the context. The context does not provide any information that would suggest the squirrel eats itself. Therefore, the statement "The squirrel does not eat the squirrel" is logically implied by the rules of logic and is not contradicted by any information in the context.
+
+Final Answer:
+TRUE
+  explanation: The conjecture is "The squirrel does not eat the squirrel." This is a logical tautology — no entity can eat itself in the literal sense, unless explicitly stated otherwise in the context. The context does not provide any information that would suggest the squirrel eats itself. Therefore, the statement "The squirrel does not eat the squirrel" is logically implied by the rules of logic and is not contradicted by any information in the context.
+  ground_truth: B
+  predicted_choice: A
+
+Ground truth: B, Predicted: C
+  id: ProofWriter_AttNoneg-OWA-D5-352_Q8
+  original_context: Charlie is furry. Charlie is green. Charlie is white. Dave is blue. Dave is cold. Gary is cold. Gary is rough. Harry is blue. Harry is furry. Harry is rough. Harry is white. Nice, cold people are green. Rough people are green. Green people are blue. If someone is blue then they are nice. Furry, green people are rough. Green, nice people are furry. White people are nice. Cold people are blue. All rough, nice people are white.
+  question: Based on the above information, is the following statement true, false, or unknown? Dave is not furry.
+  conjecture: Based on the above information, is the following statement true, false, or unknown? Dave is not furry.
+  naive_prompt_output_raw: Explanation:  
+The context states that Dave is blue and cold. From the rule "Cold people are blue," this is consistent. Additionally, the rule "Green people are blue" implies that being green implies being blue, but the reverse is not necessarily true. The rule "Rough people are green" and "Furry, green people are rough" suggests that being furry and green leads to being rough, but there is no direct information about whether Dave is furry or not. Since Dave is blue and cold, and no rule directly links being blue or cold to being furry or not furry, we cannot determine whether Dave is furry or not furry based on the given information.
+
+Final Answer:  
+UNKNOWN
+  explanation: The context states that Dave is blue and cold. From the rule "Cold people are blue," this is consistent. Additionally, the rule "Green people are blue" implies that being green implies being blue, but the reverse is not necessarily true. The rule "Rough people are green" and "Furry, green people are rough" suggests that being furry and green leads to being rough, but there is no direct information about whether Dave is furry or not. Since Dave is blue and cold, and no rule directly links being blue or cold to being furry or not furry, we cannot determine whether Dave is furry or not furry based on the given information.
+  ground_truth: B
+  predicted_choice: C
+
+Ground truth: C, Predicted: A
+  id: ProofWriter_RelNoneg-OWA-D5-861_Q14
+  original_context: The cat needs the dog. The dog is kind. The dog needs the rabbit. The rabbit eats the dog. The rabbit is green. The tiger chases the rabbit. The tiger is big. If something is nice and it eats the tiger then it needs the dog. If something chases the cat then it eats the cat. If the dog chases the tiger then the tiger needs the rabbit. If the rabbit chases the tiger then the rabbit chases the cat. If something chases the cat then the cat is kind. If something eats the dog then it chases the cat. If something is rough then it eats the dog. If something is kind then it is rough. If something eats the rabbit and the rabbit is big then it is kind.
+  question: Based on the above information, is the following statement true, false, or unknown? The rabbit is rough.
+  conjecture: Based on the above information, is the following statement true, false, or unknown? The rabbit is rough.
+  naive_prompt_output_raw: ### Explanation:
+
+We are asked to determine whether the statement **"The rabbit is rough"** is true, false, self-contradictory, or unknown based on the given context.
+
+Let’s analyze the relevant information step by step:
+
+1. **The rabbit is green.**  
+   - This is a direct statement about the rabbit, but it does not mention "rough."
+
+2. **If something is kind then it is rough.**  
+   - This is a conditional: **Kind → Rough**.
+
+3. **The dog is kind.**  
+   - From this and the above conditional, we can conclude that the **dog is rough**.
+
+4. **If something is rough then it eats the dog.**  
+   - This is another conditional: **Rough → Eats the dog**.
+
+5. **The rabbit eats the dog.**  
+   - This is a direct statement.
+
+6. **From 4 and 5**, we can infer that the **rabbit is rough**, because the rabbit eats the dog, and the only way to eat the dog is to be rough.
+
+Thus, the chain of reasoning is:
+- The rabbit eats the dog.
+- If something eats the dog, then it is rough.
+- Therefore, the rabbit is rough.
+
+This supports the conjecture.
+
+Now, we must also check whether the **negation** of the conjecture (i.e., "The rabbit is not rough") can be derived from the context.
+
+- If the rabbit were **not rough**, then it would **not eat the dog**, based on the conditional **Rough → Eats the dog**.
+- But we are told directly that the **rabbit eats the dog**, so the rabbit **must be rough**.
+- Therefore, the negation of the conjecture is **not derivable**.
+
+Thus, the conjecture **"The rabbit is rough"** is **TRUE**.
+
+---
+
+### Final Answer:
+TRUE
+  explanation: We are asked to determine whether the statement **"The rabbit is rough"** is true, false, self-contradictory, or unknown based on the given context.
+
+Let’s analyze the relevant information step by step:
+
+1. **The rabbit is green.**  
+   - This is a direct statement about the rabbit, but it does not mention "rough."
+
+2. **If something is kind then it is rough.**  
+   - This is a conditional: **Kind → Rough**.
+
+3. **The dog is kind.**  
+   - From this and the above conditional, we can conclude that the **dog is rough**.
+
+4. **If something is rough then it eats the dog.**  
+   - This is another conditional: **Rough → Eats the dog**.
+
+5. **The rabbit eats the dog.**  
+   - This is a direct statement.
+
+6. **From 4 and 5**, we can infer that the **rabbit is rough**, because the rabbit eats the dog, and the only way to eat the dog is to be rough.
+
+Thus, the chain of reasoning is:
+- The rabbit eats the dog.
+- If something eats the dog, then it is rough.
+- Therefore, the rabbit is rough.
+
+This supports the conjecture.
+
+Now, we must also check whether the **negation** of the conjecture (i.e., "The rabbit is not rough") can be derived from the context.
+
+- If the rabbit were **not rough**, then it would **not eat the dog**, based on the conditional **Rough → Eats the dog**.
+- But we are told directly that the **rabbit eats the dog**, so the rabbit **must be rough**.
+- Therefore, the negation of the conjecture is **not derivable**.
+
+Thus, the conjecture **"The rabbit is rough"** is **TRUE**.
+
+---
+
+###
+  ground_truth: C
+  predicted_choice: A
+
+Ground truth: C, Predicted: B
+  id: ProofWriter_RelNeg-OWA-D5-430_Q21
+  original_context: The bear sees the squirrel. The bear visits the rabbit. The lion is not round. The lion does not like the rabbit. The lion visits the bear. The rabbit is not big. The rabbit is kind. The rabbit likes the squirrel. The rabbit sees the bear. The rabbit does not visit the bear. The squirrel visits the lion. If something is big and it visits the lion then the lion visits the rabbit. If something sees the lion then it does not like the lion. If something likes the squirrel then the squirrel visits the rabbit. If something sees the squirrel and it visits the squirrel then the squirrel does not see the lion. If something visits the lion then the lion is not round. If something sees the lion and it does not see the bear then it sees the squirrel. If something visits the rabbit then it sees the lion. If something sees the lion then it is big.
+  question: Based on the above information, is the following statement true, false, or unknown? The squirrel does not see the bear.
+  conjecture: Based on the above information, is the following statement true, false, or unknown? The squirrel does not see the bear.
+  naive_prompt_output_raw: ### Explanation:
+
+We are asked to evaluate the truth of the statement: **"The squirrel does not see the bear."**
+
+Let’s analyze the context and see if we can derive this or its negation.
+
+From the context:
+
+- **The squirrel visits the lion.**  
+- **If something visits the lion then the lion is not round.**  
+  → The lion is not round (already stated, so this is consistent).
+- **If something sees the lion then it is big.**  
+  → The squirrel sees the lion (since it visits the lion), so the squirrel must be **big**.
+- **If something sees the lion then it does not like the lion.**  
+  → The squirrel sees the lion → the squirrel does **not like** the lion.
+- **If something likes the squirrel then the squirrel visits the rabbit.**  
+  → The squirrel does **not like** the lion, but this doesn’t tell us about the squirrel liking itself or others.
+- **If something sees the squirrel and it visits the squirrel then the squirrel does not see the lion.**  
+  → This is a conditional that may or may not apply. We don’t know if the squirrel is seen and visited by someone.
+- **If something sees the lion and it does not see the bear then it sees the squirrel.**  
+  → The squirrel sees the lion. Does it see the bear? If it **does not** see the bear, then it must see the squirrel. But this is a conditional — we need to determine whether the squirrel sees the bear or not.
+
+Now, the **conjecture** is: **"The squirrel does not see the bear."**
+
+Let’s suppose the squirrel **does not see the bear**. Then, by the rule:
+
+> **If something sees the lion and it does not see the bear then it sees the squirrel.**
+
+The squirrel sees the lion (true), and if it does **not** see the bear (assumed), then it must **see the squirrel**. But the squirrel **cannot see itself**, so this leads to a contradiction.
+
+Therefore, the assumption that the squirrel **does not see the bear** leads to a contradiction.
+
+Hence, the squirrel **must see the bear**.
+
+Thus, the **conjecture** ("The squirrel does not see the bear") is **false**.
+
+---
+
+### Final Answer:
+**FALSE**
+  explanation: We are asked to evaluate the truth of the statement: **"The squirrel does not see the bear."**
+
+Let’s analyze the context and see if we can derive this or its negation.
+
+From the context:
+
+- **The squirrel visits the lion.**  
+- **If something visits the lion then the lion is not round.**  
+  → The lion is not round (already stated, so this is consistent).
+- **If something sees the lion then it is big.**  
+  → The squirrel sees the lion (since it visits the lion), so the squirrel must be **big**.
+- **If something sees the lion then it does not like the lion.**  
+  → The squirrel sees the lion → the squirrel does **not like** the lion.
+- **If something likes the squirrel then the squirrel visits the rabbit.**  
+  → The squirrel does **not like** the lion, but this doesn’t tell us about the squirrel liking itself or others.
+- **If something sees the squirrel and it visits the squirrel then the squirrel does not see the lion.**  
+  → This is a conditional that may or may not apply. We don’t know if the squirrel is seen and visited by someone.
+- **If something sees the lion and it does not see the bear then it sees the squirrel.**  
+  → The squirrel sees the lion. Does it see the bear? If it **does not** see the bear, then it must see the squirrel. But this is a conditional — we need to determine whether the squirrel sees the bear or not.
+
+Now, the **conjecture** is: **"The squirrel does not see the bear."**
+
+Let’s suppose the squirrel **does not see the bear**. Then, by the rule:
+
+> **If something sees the lion and it does not see the bear then it sees the squirrel.**
+
+The squirrel sees the lion (true), and if it does **not** see the bear (assumed), then it must **see the squirrel**. But the squirrel **cannot see itself**, so this leads to a contradiction.
+
+Therefore, the assumption that the squirrel **does not see the bear** leads to a contradiction.
+
+Hence, the squirrel **must see the bear**.
+
+Thus, the **conjecture** ("The squirrel does not see the bear") is **false**.
+
+---
+
+###
+  ground_truth: C
+  predicted_choice: B

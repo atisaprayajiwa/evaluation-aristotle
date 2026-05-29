@@ -1,0 +1,736 @@
+Dataset name: ProntoQA
+Model name: deepseek
+Date: 20251129
+Time: 180425
+
+Total instances (with ground truth): 500
+Accuracy: 0.9280
+
+Token Usage Statistics:
+prompt_tokens:
+  min: 230 (id=ProntoQA_60)
+  max: 292 (id=ProntoQA_173)
+  avg: 276.04
+
+completion_tokens:
+  min: 875 (id=ProntoQA_200)
+  max: 4760 (id=ProntoQA_331)
+  avg: 1581.04
+
+total_tokens:
+  min: 1110 (id=ProntoQA_200)
+  max: 5043 (id=ProntoQA_331)
+  avg: 1857.08
+
+Confusion Matrix (rows = ground truth, cols = prediction):
+ 	A	B	C	D
+A	240	0	9	9
+B	0	224	16	2
+C	0	0	0	0
+D	0	0	0	0
+
+Per-class metrics:
+Label A: Precision=1.0000, Recall=0.9302, TP=240, FP=0, FN=18
+Label B: Precision=1.0000, Recall=0.9256, TP=224, FP=0, FN=18
+Label C: Precision=0.0000, Recall=0.0000, TP=0, FP=25, FN=0
+Label D: Precision=0.0000, Recall=0.0000, TP=0, FP=11, FN=0
+
+Macro Precision: 0.5000, Macro Recall: 0.4640
+
+Error ids:
+ProntoQA_9,ProntoQA_31,ProntoQA_48,ProntoQA_55,ProntoQA_70,ProntoQA_76,ProntoQA_84,ProntoQA_91,ProntoQA_104,ProntoQA_123,ProntoQA_126,ProntoQA_128,ProntoQA_167,ProntoQA_172,ProntoQA_200,ProntoQA_210,ProntoQA_259,ProntoQA_275,ProntoQA_309,ProntoQA_311,ProntoQA_316,ProntoQA_335,ProntoQA_353,ProntoQA_358,ProntoQA_382,ProntoQA_396,ProntoQA_407,ProntoQA_421,ProntoQA_429,ProntoQA_431,ProntoQA_438,ProntoQA_446,ProntoQA_452,ProntoQA_455,ProntoQA_462,ProntoQA_470
+
+Correct ids:
+ProntoQA_3,ProntoQA_8,ProntoQA_1,ProntoQA_7,ProntoQA_2,ProntoQA_4,ProntoQA_6,ProntoQA_10,ProntoQA_5,ProntoQA_14,ProntoQA_12,ProntoQA_11,ProntoQA_16,ProntoQA_15,ProntoQA_17,ProntoQA_18,ProntoQA_13,ProntoQA_20,ProntoQA_19,ProntoQA_21,ProntoQA_23,ProntoQA_24,ProntoQA_22,ProntoQA_25,ProntoQA_27,ProntoQA_28,ProntoQA_26,ProntoQA_29,ProntoQA_32,ProntoQA_33,ProntoQA_30,ProntoQA_36,ProntoQA_38,ProntoQA_37,ProntoQA_34,ProntoQA_35,ProntoQA_40,ProntoQA_39,ProntoQA_44,ProntoQA_43,ProntoQA_46,ProntoQA_42,ProntoQA_45,ProntoQA_47,ProntoQA_41,ProntoQA_49,ProntoQA_50,ProntoQA_52,ProntoQA_53,ProntoQA_51,ProntoQA_54,ProntoQA_57,ProntoQA_58,ProntoQA_61,ProntoQA_59,ProntoQA_60,ProntoQA_56,ProntoQA_62,ProntoQA_64,ProntoQA_65,ProntoQA_63,ProntoQA_69,ProntoQA_66,ProntoQA_68,ProntoQA_71,ProntoQA_67,ProntoQA_72,ProntoQA_74,ProntoQA_73,ProntoQA_75,ProntoQA_77,ProntoQA_80,ProntoQA_78,ProntoQA_82,ProntoQA_83,ProntoQA_86,ProntoQA_85,ProntoQA_79,ProntoQA_81,ProntoQA_87,ProntoQA_88,ProntoQA_90,ProntoQA_89,ProntoQA_92,ProntoQA_93,ProntoQA_95,ProntoQA_94,ProntoQA_96,ProntoQA_99,ProntoQA_101,ProntoQA_98,ProntoQA_97,ProntoQA_103,ProntoQA_100,ProntoQA_105,ProntoQA_102,ProntoQA_107,ProntoQA_106,ProntoQA_110,ProntoQA_108,ProntoQA_109,ProntoQA_112,ProntoQA_111,ProntoQA_114,ProntoQA_113,ProntoQA_118,ProntoQA_117,ProntoQA_119,ProntoQA_115,ProntoQA_116,ProntoQA_120,ProntoQA_121,ProntoQA_124,ProntoQA_122,ProntoQA_125,ProntoQA_127,ProntoQA_129,ProntoQA_131,ProntoQA_130,ProntoQA_133,ProntoQA_132,ProntoQA_136,ProntoQA_135,ProntoQA_138,ProntoQA_134,ProntoQA_140,ProntoQA_137,ProntoQA_139,ProntoQA_141,ProntoQA_143,ProntoQA_142,ProntoQA_144,ProntoQA_147,ProntoQA_145,ProntoQA_148,ProntoQA_151,ProntoQA_153,ProntoQA_152,ProntoQA_146,ProntoQA_154,ProntoQA_149,ProntoQA_150,ProntoQA_156,ProntoQA_155,ProntoQA_160,ProntoQA_158,ProntoQA_157,ProntoQA_159,ProntoQA_161,ProntoQA_162,ProntoQA_164,ProntoQA_163,ProntoQA_166,ProntoQA_168,ProntoQA_170,ProntoQA_165,ProntoQA_169,ProntoQA_171,ProntoQA_173,ProntoQA_174,ProntoQA_175,ProntoQA_179,ProntoQA_177,ProntoQA_176,ProntoQA_178,ProntoQA_180,ProntoQA_184,ProntoQA_182,ProntoQA_185,ProntoQA_183,ProntoQA_186,ProntoQA_192,ProntoQA_193,ProntoQA_189,ProntoQA_188,ProntoQA_181,ProntoQA_187,ProntoQA_191,ProntoQA_190,ProntoQA_198,ProntoQA_201,ProntoQA_197,ProntoQA_196,ProntoQA_195,ProntoQA_194,ProntoQA_199,ProntoQA_204,ProntoQA_207,ProntoQA_202,ProntoQA_208,ProntoQA_206,ProntoQA_203,ProntoQA_209,ProntoQA_205,ProntoQA_214,ProntoQA_211,ProntoQA_216,ProntoQA_213,ProntoQA_217,ProntoQA_215,ProntoQA_218,ProntoQA_219,ProntoQA_221,ProntoQA_220,ProntoQA_222,ProntoQA_226,ProntoQA_223,ProntoQA_224,ProntoQA_227,ProntoQA_228,ProntoQA_212,ProntoQA_225,ProntoQA_231,ProntoQA_233,ProntoQA_232,ProntoQA_229,ProntoQA_235,ProntoQA_234,ProntoQA_236,ProntoQA_237,ProntoQA_238,ProntoQA_230,ProntoQA_239,ProntoQA_243,ProntoQA_241,ProntoQA_242,ProntoQA_244,ProntoQA_240,ProntoQA_248,ProntoQA_247,ProntoQA_245,ProntoQA_246,ProntoQA_249,ProntoQA_250,ProntoQA_254,ProntoQA_255,ProntoQA_251,ProntoQA_253,ProntoQA_256,ProntoQA_252,ProntoQA_257,ProntoQA_258,ProntoQA_263,ProntoQA_260,ProntoQA_262,ProntoQA_261,ProntoQA_264,ProntoQA_265,ProntoQA_268,ProntoQA_271,ProntoQA_267,ProntoQA_269,ProntoQA_272,ProntoQA_274,ProntoQA_277,ProntoQA_266,ProntoQA_278,ProntoQA_270,ProntoQA_279,ProntoQA_280,ProntoQA_273,ProntoQA_282,ProntoQA_281,ProntoQA_283,ProntoQA_285,ProntoQA_276,ProntoQA_284,ProntoQA_286,ProntoQA_288,ProntoQA_289,ProntoQA_287,ProntoQA_293,ProntoQA_291,ProntoQA_290,ProntoQA_292,ProntoQA_294,ProntoQA_295,ProntoQA_296,ProntoQA_297,ProntoQA_298,ProntoQA_300,ProntoQA_301,ProntoQA_299,ProntoQA_303,ProntoQA_302,ProntoQA_304,ProntoQA_307,ProntoQA_308,ProntoQA_305,ProntoQA_306,ProntoQA_310,ProntoQA_314,ProntoQA_313,ProntoQA_312,ProntoQA_322,ProntoQA_320,ProntoQA_315,ProntoQA_323,ProntoQA_324,ProntoQA_317,ProntoQA_325,ProntoQA_319,ProntoQA_321,ProntoQA_326,ProntoQA_318,ProntoQA_327,ProntoQA_328,ProntoQA_332,ProntoQA_330,ProntoQA_333,ProntoQA_329,ProntoQA_334,ProntoQA_336,ProntoQA_339,ProntoQA_340,ProntoQA_337,ProntoQA_338,ProntoQA_343,ProntoQA_342,ProntoQA_344,ProntoQA_341,ProntoQA_345,ProntoQA_349,ProntoQA_350,ProntoQA_348,ProntoQA_351,ProntoQA_352,ProntoQA_354,ProntoQA_346,ProntoQA_347,ProntoQA_355,ProntoQA_331,ProntoQA_356,ProntoQA_360,ProntoQA_361,ProntoQA_359,ProntoQA_363,ProntoQA_362,ProntoQA_357,ProntoQA_367,ProntoQA_366,ProntoQA_368,ProntoQA_364,ProntoQA_371,ProntoQA_370,ProntoQA_365,ProntoQA_373,ProntoQA_374,ProntoQA_372,ProntoQA_375,ProntoQA_376,ProntoQA_369,ProntoQA_381,ProntoQA_379,ProntoQA_377,ProntoQA_380,ProntoQA_378,ProntoQA_383,ProntoQA_385,ProntoQA_386,ProntoQA_384,ProntoQA_389,ProntoQA_390,ProntoQA_388,ProntoQA_387,ProntoQA_393,ProntoQA_397,ProntoQA_398,ProntoQA_392,ProntoQA_394,ProntoQA_395,ProntoQA_399,ProntoQA_391,ProntoQA_401,ProntoQA_400,ProntoQA_404,ProntoQA_405,ProntoQA_403,ProntoQA_408,ProntoQA_402,ProntoQA_409,ProntoQA_406,ProntoQA_412,ProntoQA_410,ProntoQA_416,ProntoQA_417,ProntoQA_414,ProntoQA_413,ProntoQA_411,ProntoQA_418,ProntoQA_415,ProntoQA_420,ProntoQA_419,ProntoQA_422,ProntoQA_423,ProntoQA_428,ProntoQA_426,ProntoQA_424,ProntoQA_425,ProntoQA_427,ProntoQA_432,ProntoQA_430,ProntoQA_433,ProntoQA_434,ProntoQA_439,ProntoQA_435,ProntoQA_441,ProntoQA_436,ProntoQA_437,ProntoQA_440,ProntoQA_447,ProntoQA_442,ProntoQA_444,ProntoQA_445,ProntoQA_443,ProntoQA_448,ProntoQA_449,ProntoQA_453,ProntoQA_450,ProntoQA_451,ProntoQA_458,ProntoQA_456,ProntoQA_457,ProntoQA_460,ProntoQA_454,ProntoQA_459,ProntoQA_461,ProntoQA_463,ProntoQA_465,ProntoQA_466,ProntoQA_464,ProntoQA_467,ProntoQA_469,ProntoQA_473,ProntoQA_472,ProntoQA_468,ProntoQA_475,ProntoQA_471,ProntoQA_474,ProntoQA_478,ProntoQA_479,ProntoQA_476,ProntoQA_477,ProntoQA_481,ProntoQA_483,ProntoQA_480,ProntoQA_482,ProntoQA_485,ProntoQA_484,ProntoQA_488,ProntoQA_486,ProntoQA_489,ProntoQA_487,ProntoQA_492,ProntoQA_491,ProntoQA_496,ProntoQA_493,ProntoQA_490,ProntoQA_497,ProntoQA_494,ProntoQA_499,ProntoQA_498,ProntoQA_495,ProntoQA_500
+
+
+Example errors per (ground_truth, prediction) cell:
+Ground truth: A, Predicted: C
+  id: ProntoQA_31
+  original_context: Each jompus is not small. Each wumpus is angry. Each jompus is a zumpus. Zumpuses are temperate. Zumpuses are tumpuses. Tumpuses are brown. Tumpuses are yumpuses. Yumpuses are wooden. Yumpuses are dumpuses. Each dumpus is not angry. Every dumpus is a numpus. Numpuses are not dull. Every numpus is a vumpus. Wren is a jompus.
+  question: Is the following statement true or false? Wren is not angry.
+  conjecture: Is the following statement true or false? Wren is not angry.
+  naive_prompt_output_raw: <think>
+First, I need to analyze the context and see what it tells me about Wren and whether Wren is angry or not. The context is a series of statements about different creatures: jompus, wumpus, zumpus, tumpus, yumpus, dumpus, numpus, vumpus, and specifically, Wren is a jompus.
+
+Here are all the statements from the context:
+
+1. Each jompus is not small. (But size isn't relevant to anger, so I'll ignore this unless needed.)
+
+2. Each wumpus is angry.
+
+3. Each jompus is a zumpus.
+
+4. Zumpuses are temperate. (I need to know what "temperate" means. In logic puzzles, it might imply calm or not angry, but I should confirm.)
+
+The statement is about anger, so "temperate" might mean not angry. Similarly, "not dull" might be unrelated. I need to focus on the anger attribute.
+
+Let me list all attributes related to anger:
+
+- Each wumpus is angry.
+
+- Each dumpus is not angry.
+
+Now, I need to trace the relationships from jompus to dumpus or wumpus because Wren is a jompus.
+
+Start from Wren: Wren is a jompus.
+
+From statement 3: Each jompus is a zumpus. So Wren is a zumpus.
+
+Statement 4: Zumpuses are temperate. What does "temperate" mean? In this context, it might mean not angry, but I should see if it's defined. The context doesn't define it, so I have to assume it's an attribute. Later, we have "not angry" for dumpus, so perhaps temperate is related.
+
+Statement 5: Zumpuses are tumpuses. So zumpuses are tumpuses. Therefore, since Wren is a zumpus, Wren is a tumpus.
+
+Statement 6: Tumpuses are brown. (Not relevant to anger.)
+
+Statement 7: Tumpuses are yumpuses. So tumpuses are yumpuses, thus Wren is a yumpus.
+
+Statement 8: Yumpuses are wooden. (Not relevant.)
+
+Statement 9: Yumpuses are dumpuses. So yumpuses are dumpuses, thus Wren is a dumpus.
+
+Statement 10: Each dumpus is not angry. So if Wren is a dumpus, then Wren is not angry.
+
+But earlier, there's also wumpus: each wumpus is angry. Is Wren a wumpus? The context doesn't say that jompus is a wumpus or anything directly linking to wumpus.
+
+Let me see the chain:
+
+Jompus → zumpus (from 3)
+
+Zumpus → tumpus (from 5)
+
+Tumpus → yumpus (from 7)
+
+Yumpus → dumpus (from 9)
+
+So jompus → dumpus.
+
+Therefore, since Wren is a jompus, Wren is a dumpus.
+
+And dumpus is not angry (from 10).
+
+So Wren is not angry.
+
+But is there any connection to wumpus? Wumpus is angry, but Wren is not a wumpus as far as I can tell. The context doesn't link jompus to wumpus.
+
+Statement 2 says each wumpus is angry, but it doesn't say anything about jompus being wumpus or vice versa.
+
+Also, statement 1: each jompus is not small, but that's not about anger.
+
+Now, what about numpus and vumpus?
+
+Statement 11: Every dumpus is a numpus. (From "Each dumpus is a numpus"? Let me check: "Every dumpus is a numpus." Yes, statement 10 is "Each dumpus is not angry." and then "Every dumpus is a numpus." So dumpus is a numpus.
+
+Since Wren is a dumpus, Wren is a numpus.
+
+Statement 12: Numpuses are not dull. (Not relevant to anger.)
+
+Statement 13: Every numpus is a vumpus. So Wren is a vumpus, but no attributes given for vumpus.
+
+So, from the chain, Wren is a dumpus, and dumpus is not angry, so Wren is not angry.
+
+The statement to evaluate is: "Wren is not angry."
+
+Based on the above, this should be true.
+
+But let me make sure there's no contradiction.
+
+Is there any path that could make Wren angry?
+
+For example, if jompus were related to wumpus, but there's no such link.
+
+Statement 2 is about wumpus, but it's separate.
+
+Also, zumpuses are temperate. What does temperate mean? It might imply not angry, but since we have explicit "not angry" for dumpus, and we derived Wren is dumpus, it should be fine.
+
+Perhaps "temperate" is meant to be not angry, but I don't need to rely on that because dumpus directly says not angry.
+
+Similarly, other attributes like brown, wooden, not dull, etc., don't affect anger.
+
+So, Wren is not angry.
+
+Therefore, the statement "Wren is not angry" is true.
+
+But let me confirm the clarifier:
+
+TRUE means the statement follows from the context.
+
+FALSE means the context implies the opposite.
+
+SELF-CONTRADICTORY means both are implied.
+
+UNKNOWN if neither.
+
+In this case, it follows that Wren is not angry.
+
+Is there any way that Wren could be angry?
+
+Suppose that jompus is also a wumpus or something, but the context doesn't say that.
+
+For example, from the statements, jompus is a zumpus, but zumpus is not said to be wumpus.
+
+Wumpus is only mentioned in statement 2, with no connection to other categories.
+
+Similarly, dumpus is connected, and it says not angry.
+
+Moreover, all jompus are dumpus via the chain.
+
+Let me write the implications clearly.
+
+Define the sets:
+
+Let J be jompus.
+
+W be wumpus.
+
+Z be zumpus.
+
+T be tumpus.
+
+Y be yumpus.
+
+D be dumpus.
+
+N be numpus.
+
+V be vumpus.
+
+Statements:
+
+1. Each J is not small. (irrelevant)
+
+2. Each W is angry. → ∀w, W(w) → angry(w)
+
+3. Each J is a Z. → ∀j, J(j) → Z(j)
+
+4. Z are temperate. → ∀z, Z(z) → temperate(z)  // but temperate not defined wrt anger
+
+5. Z are T. → ∀z, Z(z) → T(z)
+
+6. T are brown. → ∀t, T(t) → brown(t)  // irrelevant
+
+7. T are Y. → ∀t, T(t) → Y(t)
+
+8. Y are wooden. → ∀y, Y(y) → wooden(y)  // irrelevant
+
+9. Y are D. → ∀y, Y(y) → D(y)
+
+10. Each D is not angry. → ∀d, D(d) → ¬angry(d)
+
+11. Every D is N. → ∀d, D(d) → N(d)
+
+12. N are not dull. → ∀n, N(n) → ¬dull(n)  // irrelevant
+
+13. Every N is V. → ∀n, N(n) → V(n)  // no attribute
+
+Given: Wren is J. → J(Wren)
+
+Now, from J(Wren) and (3) J(j) → Z(j), so Z(Wren)
+
+From Z(Wren) and (5) Z(z) → T(z), so T(Wren)
+
+From T(Wren) and (7) T(t) → Y(t), so Y(Wren)
+
+From Y(Wren) and (9) Y(y) → D(y), so D(Wren)
+
+From D(Wren) and (10) D(d) → ¬angry(d), so ¬angry(Wren)
+
+Therefore, Wren is not angry.
+
+The statement is "Wren is not angry", which matches ¬angry(Wren), so it is true.
+
+Now, about temperate: statement 4 says Z are temperate. Since Z(Wren), temperate(Wren). But "temperate" might mean calm or not angry, but even if it does, it's consistent with not angry. If it means something else, it doesn't contradict because we have direct derivation from dumpus.
+
+Similarly, wumpus is angry, but Wren is not a wumpus, so no issue.
+
+Therefore, there is no contradiction; the context implies that Wren is not angry.
+
+So the statement is TRUE.
+
+The clarifier says: TRUE means the statement follows from the context.
+
+Yes, it does.
+
+FALSE would be if context implies Wren is angry, but it doesn't.
+
+SELF-CONTRADICTORY if both, but not here.
+
+UNKNOWN if neither, but here it follows.
+
+So answer should be TRUE.
+
+But let me see if there's any trick.
+
+Statement 1: each jompus is not small. But that doesn't affect anger.
+
+Also, numpus and vumpus: since D implies N, and N implies V, but V has no attributes, so irrelevant.
+
+Moreover, statement 12: numpuses are not dull, which is fine.
+
+So no issue.
+
+Perhaps "temperate" could be interpreted differently, but in the context, since we have explicit not angry for dumpus, and Wren is dumpus, it should be fine.
+
+To be thorough, suppose temperate means not angry. Then from Z(Wren), temperate(Wren), so not angry(Wren), same conclusion.
+
+If temperate means something else, it doesn't affect the anger derivation.
+
+So in all cases, Wren is not angry.
+
+Therefore, the statement "Wren is not angry" is true.
+</think>
+The context establishes that Wren is a jompus. Each jompus is a zumpus (statement 3), each zumpus is a tumpus (statement 5), each tumpus is a yumpus (statement 7), and each yumpus is a dumpus (statement 9). Therefore, Wren is a dumpus. Each dumpus is not angry (statement 10), so Wren is not angry.
+
+The statement "Wren is not angry" follows directly from the context. There is no implication that Wren is angry, as the context does not link jompus to wumpus (which are angry) or provide any contradictory path regarding anger.
+
+Thus, the statement is **TRUE**.
+
+**Clarifier Explanation**:  
+- **TRUE**: The statement follows from the context, as derived above.  
+- **FALSE**: Not applicable, as the context does not imply Wren is angry.  
+- **SELF-CONTRADICTORY**: Not applicable, as there is no contradiction in the context.  
+- **UNKNOWN**: Not applicable, as the context provides sufficient information to conclude the statement.
+  ground_truth: A
+  predicted_choice: C
+
+Ground truth: A, Predicted: D
+  id: ProntoQA_9
+  original_context: Every dumpus is not shy. Each dumpus is a tumpus. Rompuses are not wooden. Tumpuses are opaque. Every tumpus is a wumpus. Wumpuses are not floral. Each wumpus is an impus. Impuses are bitter. Every impus is a vumpus. Vumpuses are small. Each vumpus is a numpus. Every numpus is wooden. Each numpus is a yumpus. Each yumpus is orange. Each yumpus is a jompus. Each jompus is amenable. Every jompus is a zumpus. Wren is a tumpus.
+  question: Is the following statement true or false? Wren is wooden.
+  conjecture: Is the following statement true or false? Wren is wooden.
+  naive_prompt_output_raw: <think>
+First, I need to determine if "Wren is wooden" is true, false, self-contradictory, or unknown based on the given context. The context provides a series of statements about various creatures, and Wren is specified as a tumpus.
+
+Here's the context summarized:
+
+1. Every dumpus is not shy. (But this might not be directly relevant.)
+
+2. Each dumpus is a tumpus.
+
+3. Rompuses are not wooden. (Rompuses aren't mentioned elsewhere, so this might not connect.)
+
+4. Tumpuses are opaque.
+
+5. Every tumpus is a wumpus.
+
+6. Wumpuses are not floral.
+
+7. Each wumpus is an impus.
+
+8. Impuses are bitter.
+
+9. Every impus is a vumpus.
+
+10. Vumpuses are small.
+
+11. Each vumpus is a numpus.
+
+12. Every numpus is wooden.
+
+13. Each numpus is a yumpus.
+
+14. Each yumpus is orange.
+
+15. Each yumpus is a jompus.
+
+16. Each jompus is amenable.
+
+17. Every jompus is a zumpus.
+
+18. Wren is a tumpus.
+
+The statement is: "Wren is wooden."
+
+Since Wren is a tumpus, I need to trace the properties from tumpus to see if it leads to being wooden.
+
+Start from Wren: Wren is a tumpus.
+
+From 5: Every tumpus is a wumpus, so Wren is a wumpus.
+
+From 7: Each wumpus is an impus, so Wren is an impus.
+
+From 9: Every impus is a vumpus, so Wren is a vumpus.
+
+From 11: Each vumpus is a numpus, so Wren is a numpus.
+
+From 12: Every numpus is wooden, so Wren is wooden.
+
+That seems straightforward. So, according to this chain, Wren should be wooden.
+
+But let me check if there's any contradiction. For example, point 3 says "Rompuses are not wooden." But rompuses aren't mentioned in the chain involving Wren, so that shouldn't affect Wren.
+
+Also, dumpus is related: each dumpus is a tumpus, but Wren is directly a tumpus, not necessarily a dumpus. But since tumpus leads to numpus and wooden, it should be fine.
+
+Is there any property that might contradict wooden? For instance, tumpuses are opaque, but that doesn't conflict with being wooden. Wumpuses are not floral, impuses are bitter, vumpuses are small, numpuses are wooden, yumpuses are orange, etc. None of these seem to contradict being wooden.
+
+In fact, numpuses are explicitly wooden, and since Wren is a numpus, Wren is wooden.
+
+The chain: Wren (tumpus) → wumpus → impus → vumpus → numpus → wooden.
+
+Yes.
+
+But let me make sure about the definitions. All these "is a" seem to be subset relations or type inclusions. For example, every tumpus is a wumpus means that tumpuses are a subset of wumpuses, and so on.
+
+Similarly, properties like "wooden" are attributed to the entire set.
+
+So, for numpuses, every numpus is wooden, so if Wren is a numpus, Wren is wooden.
+
+Now, is there any statement that says something is not wooden? Point 3 says rompuses are not wooden, but rompuses aren't connected to this chain. Wren is not a rompus, as far as we know.
+
+Also, dumpus: every dumpus is a tumpus, but dumpus might have its own properties, but the context says "every dumpus is not shy," which isn't relevant to being wooden.
+
+So, no contradiction.
+
+Therefore, the statement "Wren is wooden" should be true.
+
+But let me double-check the clarifier: TRUE means the statement follows from the context.
+
+Yes, it seems to follow directly.
+
+FALSE would mean the context implies the opposite, which isn't the case.
+
+SELF-CONTRADICTORY would mean both are implied, but I don't see that.
+
+UNKNOWN would mean neither is implied, but here it is implied.
+
+In the chain, we have that numpuses are wooden, and Wren is a numpus.
+
+But is Wren a numpus? From the steps:
+
+- Wren is tumpus
+
+- Tumpus is wumpus (every tumpus is a wumpus)
+
+- Wumpus is impus (each wumpus is an impus)
+
+- Impus is vumpus (every impus is a vumpus)
+
+- Vumpus is numpus (each vumpus is a numpus)
+
+- Numpus is wooden (every numpus is wooden)
+
+So yes.
+
+The context also says "each numpus is a yumpus" and so on, but that doesn't change the wooden property; it adds more, but since wooden is already stated for numpus, it should be fine.
+
+Point 12: "Every numpus is wooden." Directly.
+
+And Wren is a numpus via the chain.
+
+Therefore, Wren is wooden.
+
+So, the statement is TRUE.
+
+But just to be thorough, let's see if there's any mention of tumpus not being wooden or something.
+
+Tumpuses are opaque, but opaque doesn't conflict with wooden.
+
+Wumpuses are not floral, but again, not relevant.
+
+Impuses are bitter, vumpuses small, etc.
+
+No issue.
+
+Also, rompuses are not wooden, but since rompuses aren't part of this hierarchy, it doesn't affect Wren.
+
+Similarly, dumpus: every dumpus is a tumpus, but dumpus might not be wooden? But since dumpus is a tumpus, and tumpus leads to wooden, dumpus should also be wooden, but that's consistent.
+
+For example, if dumpus were said to be not wooden, but it's not; it says "every dumpus is not shy," which is different.
+
+So, no contradiction.
+
+Therefore, the answer should be TRUE.
+</think>
+The statement "Wren is wooden" is **TRUE** because it follows logically from the given context.
+
+- Wren is a tumpus (given).
+- Every tumpus is a wumpus (context).
+- Each wumpus is an impus (context).
+- Every impus is a vumpus (context).
+- Each vumpus is a numpus (context).
+- Every numpus is wooden (context).
+
+Therefore, Wren, being a numpus, is wooden. There are no contradictory statements in the context that affect this conclusion, as properties like "rompuses are not wooden" do not connect to Wren or the chain of inclusions leading to numpus.
+  ground_truth: A
+  predicted_choice: D
+
+Ground truth: B, Predicted: C
+  id: ProntoQA_84
+  original_context: Vumpuses are floral. Vumpuses are wumpuses. Each wumpus is not spicy. Wumpuses are zumpuses. Zumpuses are orange. Zumpuses are tumpuses. Every tumpus is dull. Every tumpus is a dumpus. Every dumpus is amenable. Every yumpus is not opaque. Dumpuses are impuses. Each impus is not feisty. Every impus is a jompus. Each jompus is opaque. Jompuses are numpuses. Rex is a zumpus.
+  question: Is the following statement true or false? Rex is not opaque.
+  conjecture: Is the following statement true or false? Rex is not opaque.
+  naive_prompt_output_raw: <think>
+First, I need to determine if the statement "Rex is not opaque" is true, false, self-contradictory, or unknown based on the given context. I must use the clarifier to interpret what each classification means.
+
+The context provides a series of statements about various creatures: vumpuses, wumpuses, zumpuses, tumpuses, dumpuses, impuses, jompuses, numpuses, and yumpuses. Rex is specified as a zumpus.
+
+Here are all the statements from the context:
+
+1. Vumpuses are floral. (But vumpuses might not be directly relevant to Rex.)
+
+2. Vumpuses are wumpuses. So vumpuses are a subset of wumpuses.
+
+3. Each wumpus is not spicy. So all wumpuses are not spicy.
+
+4. Wumpuses are zumpuses. So wumpuses are a subset of zumpuses.
+
+5. Zumpuses are orange. So all zumpuses are orange.
+
+6. Zumpuses are tumpuses. So zumpuses are a subset of tumpuses.
+
+7. Every tumpus is dull. So all tumpuses are dull.
+
+8. Every tumpus is a dumpus. So tumpuses are a subset of dumpuses.
+
+9. Every dumpus is amenable. So all dumpuses are amenable.
+
+10. Every yumpus is not opaque. So all yumpuses are not opaque; they are transparent or something.
+
+11. Dumpuses are impuses. So dumpuses are a subset of impuses.
+
+12. Each impus is not feisty. So all impuses are not feisty; they are calm or something.
+
+13. Every impus is a jompus. So impuses are a subset of jompuses.
+
+14. Each jompus is opaque. So all jompuses are opaque.
+
+15. Jompuses are numpuses. So jompuses are a subset of numpuses.
+
+16. Rex is a zumpus. This is key for the statement about Rex.
+
+The statement to evaluate is: "Rex is not opaque."
+
+I need to trace the properties related to opacity for Rex.
+
+Rex is a zumpus. From point 6, zumpuses are tumpuses. So Rex is a tumpus.
+
+From point 8, every tumpus is a dumpus, so Rex is a dumpus.
+
+From point 11, dumpuses are impuses, so Rex is an impus.
+
+From point 13, every impus is a jompus, so Rex is a jompus.
+
+From point 14, each jompus is opaque, so Rex is opaque.
+
+Therefore, Rex is opaque.
+
+But the statement is "Rex is not opaque," which would be false based on this chain.
+
+Now, is there any contradiction or other information that might affect this?
+
+Let's look at point 10: "Every yumpus is not opaque." But yumpuses are not mentioned in relation to Rex or the other chains. Rex is a zumpus, which leads to jompus, which is opaque. There's no connection to yumpus here, so this doesn't affect Rex.
+
+Also, point 15 says jompuses are numpuses, but since jompuses are already opaque, and numpuses might have properties, but no properties are given for numpuses, so it doesn't add new information about opacity.
+
+Similarly, vumpuses and wumpuses are mentioned, but they lead to zumpuses, which we already have.
+
+So, from Rex being a zumpus, we can infer:
+
+- Rex is a zumpus (given)
+
+- Zumpus is a tumpus (point 6)
+
+- Tumpus is a dumpus (point 8)
+
+- Dumpus is an impus (point 11)
+
+- Impus is a jompus (point 13)
+
+- Jompus is opaque (point 14)
+
+Therefore, Rex is opaque.
+
+Thus, the statement "Rex is not opaque" is false.
+
+But according to the clarifier:
+
+- TRUE means the statement follows from the context.
+
+- FALSE means the context implies the opposite of the statement.
+
+- SELF-CONTRADICTORY means the context implies both the statement and its opposite.
+
+- UNKNOWN means the context does not imply the statement or its opposite.
+
+In this case, the context implies that Rex is opaque, which is the opposite of "Rex is not opaque." So, it should be FALSE.
+
+Is there any way that Rex could be not opaque? For example, if there was a connection to yumpus, but Rex is not stated to be a yumpus. Yumpuses are separate; they are not opaque, but Rex is not a yumpus based on the information.
+
+The context doesn't say anything about yumpuses being related to zumpuses or anything else. So, no link.
+
+Also, point 3 says wumpuses are not spicy, but that's not about opacity.
+
+Point 5 says zumpuses are orange, but again, not relevant to opacity.
+
+Point 7 says tumpuses are dull, point 9 says dumpuses are amenable, point 12 says impuses are not feisty—none of these affect opacity.
+
+So, the only relevant chain for opacity is through jompus.
+
+Therefore, Rex is opaque, so "Rex is not opaque" is false.
+
+But let me double-check if there's any contradiction.
+
+For example, jompuses are opaque, but yumpuses are not opaque. But since Rex is a jompus and not a yumpus, no contradiction.
+
+The context doesn't say that jompuses and yumpuses are the same or related; they seem to be different categories.
+
+Similarly, numpuses are mentioned, but no properties given, so opacity comes from being a jompus.
+
+Thus, no self-contradiction.
+
+And it's not unknown because we can derive that Rex is opaque.
+
+So, the answer should be FALSE.
+
+The statement is "Rex is not opaque," and we derived that Rex is opaque, so the context implies the opposite, which is that Rex is opaque.
+
+Therefore, FALSE.
+
+Now, just to be thorough, let's list the chain for Rex:
+
+- Rex is a zumpus (given)
+
+- Zumpuses are tumpuses (6)
+
+- Tumpuses are dumpuses (8)
+
+- Dumpuses are impuses (11)
+
+- Impuses are jompuses (13)
+
+- Jompuses are opaque (14)
+
+Hence, Rex is opaque.
+
+No other paths or properties suggest otherwise.
+
+So, I think it's clear.
+</think>
+Based on the context, the statement "Rex is not opaque" is **FALSE**.
+
+### Reasoning:
+- Rex is a zumpus (given).
+- Zumpuses are tumpuses (from context: "Zumpuses are tumpuses").
+- Tumpuses are dumpuses (from context: "Every tumpus is a dumpus").
+- Dumpuses are impuses (from context: "Dumpuses are impuses").
+- Impuses are jompuses (from context: "Every impus is a jompus").
+- Jompuses are opaque (from context: "Each jompus is opaque").
+
+Therefore, Rex is opaque. This means the context implies the opposite of the statement "Rex is not opaque," satisfying the clarifier's definition of FALSE.
+
+No contradictions or uncertainties arise from the context, as properties like "Every yumpus is not opaque" do not apply to Rex (Rex is not linked to yumpuses). Thus, the classification is not SELF-CONTRADICTORY or UNKNOWN.
+  ground_truth: B
+  predicted_choice: C
+
+Ground truth: B, Predicted: D
+  id: ProntoQA_70
+  original_context: Each jompus is earthy. Jompuses are yumpuses. Yumpuses are metallic. Each yumpus is an impus. Each dumpus is not transparent. Impuses are nervous. Impuses are rompuses. Every rompus is small. Rompuses are tumpuses. Tumpuses are transparent. Tumpuses are vumpuses. Rex is a jompus.
+  question: Is the following statement true or false? Rex is not transparent.
+  conjecture: Is the following statement true or false? Rex is not transparent.
+  naive_prompt_output_raw: <think>
+First, I need to analyze the context and see what it tells me about Rex and whether Rex is transparent or not.
+
+The context is:
+
+- Each jompus is earthy.
+
+- Jompuses are yumpuses.
+
+- Yumpuses are metallic.
+
+- Each yumpus is an impus.
+
+- Each dumpus is not transparent.
+
+- Impuses are nervous.
+
+- Impuses are rompuses.
+
+- Every rompus is small.
+
+- Rompuses are tumpuses.
+
+- Tumpuses are transparent.
+
+- Tumpuses are vumpuses.
+
+- Rex is a jompus.
+
+The statement is: "Rex is not transparent."
+
+I need to classify this as TRUE, FALSE, SELF-CONTRADICTORY, or UNKNOWN based on whether it follows from the context, the context implies the opposite, both, or neither.
+
+Since Rex is a jompus, I should trace the properties of jompuses through the chain.
+
+Start with Rex: Rex is a jompus.
+
+From the context:
+
+- Jompuses are yumpuses. So Rex is a yumpus.
+
+- Yumpuses are metallic. So Rex is metallic, but that might not be directly relevant to transparency.
+
+- Each yumpus is an impus. So Rex is an impus.
+
+- Impuses are rompuses. So Rex is a rompus.
+
+- Rompuses are tumpuses. So Rex is a tumpus.
+
+- Tumpuses are transparent. So Rex is transparent.
+
+Therefore, from the context, Rex is transparent.
+
+But the statement is "Rex is not transparent." So, if Rex is transparent, then "Rex is not transparent" should be false.
+
+Now, I need to check if there's any contradiction or other information that might affect this.
+
+Look at the other parts:
+
+- Each dumpus is not transparent. But Rex is not mentioned as a dumpus. Rex is a jompus, and from the chain, jompuses are yumpuses, impuses, rompuses, tumpuses, all leading to transparent. There's no connection to dumpus here.
+
+- Impuses are nervous, but that doesn't relate to transparency.
+
+- Every rompus is small, but again, not relevant.
+
+- Tumpuses are vumpuses, but no property given for vumpuses.
+
+So, the key chain is: Rex (jompus) → yumpus → impus → rompus → tumpus → transparent.
+
+Therefore, Rex is transparent.
+
+Thus, the statement "Rex is not transparent" is false because the context implies that Rex is transparent, which is the opposite.
+
+Now, about the clarifier:
+
+- TRUE: statement follows from context.
+
+- FALSE: context implies the opposite.
+
+- SELF-CONTRADICTORY: context implies both statement and opposite.
+
+- UNKNOWN: context implies neither.
+
+In this case, the context implies that Rex is transparent, so it implies the opposite of "Rex is not transparent." Therefore, it should be FALSE.
+
+Is there any part that might suggest Rex is not transparent?
+
+For example, dumpuses are not transparent, but Rex is not a dumpus. There's no statement linking jompuses or anything in Rex's chain to dumpuses.
+
+Also, impuses are nervous and rompuses, but no mention of transparency except through tumpuses.
+
+Tumpuses are transparent, and Rex is a tumpus, so definitely transparent.
+
+Moreover, each dumpus is not transparent, but since Rex isn't a dumpus, that doesn't affect Rex.
+
+So, no contradiction; the context consistently points to Rex being transparent.
+
+Therefore, the statement "Rex is not transparent" is FALSE.
+
+Answer briefly: FALSE.
+</think>
+FALSE
+
+**Explanation:**  
+The context states that Rex is a jompus. Jompuses are yumpuses, yumpuses are impuses, impuses are rompuses, rompuses are tumpuses, and tumpuses are transparent. Therefore, Rex is transparent. The statement "Rex is not transparent" is the opposite of what the context implies, making it FALSE according to the clarifier. There is no contradictory information in the context that would suggest Rex is not transparent.
+  ground_truth: B
+  predicted_choice: D

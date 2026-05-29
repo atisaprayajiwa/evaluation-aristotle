@@ -1,0 +1,224 @@
+Dataset name: ProntoQA
+Model name: qwen3-32b
+Date: 20251130
+Time: 021138
+
+Total distinct IDs in dev: 500
+Missing (no non-empty final_answer) in search_negation_True: 0
+
+Missing (no non-empty final_answer) in search_negation_False: 0
+
+Missing in at least one of the two files (under this definition): 0
+
+Total evaluated instances: 500
+Accuracy: 0.5080
+
+Token Usage Statistics (restricted to evaluated IDs):
+search_negation_True:
+  prompt_tokens:
+    min: 0 (id=ProntoQA_291)
+    max: 11098 (id=ProntoQA_445)
+    avg: 5158.09
+  completion_tokens:
+    min: 0 (id=ProntoQA_291)
+    max: 3294 (id=ProntoQA_213)
+    avg: 1416.83
+  total_tokens:
+    min: 0 (id=ProntoQA_291)
+    max: 14382 (id=ProntoQA_213)
+    avg: 6574.92
+
+search_negation_False:
+  prompt_tokens:
+    min: 0 (id=ProntoQA_153)
+    max: 11143 (id=ProntoQA_314)
+    avg: 4910.45
+  completion_tokens:
+    min: 0 (id=ProntoQA_153)
+    max: 4297 (id=ProntoQA_314)
+    avg: 1355.10
+  total_tokens:
+    min: 0 (id=ProntoQA_153)
+    max: 15440 (id=ProntoQA_314)
+    avg: 6265.55
+
+trans_decompose_no_negation:
+  prompt_tokens:
+    min: 2572 (id=ProntoQA_60)
+    max: 2750 (id=ProntoQA_140)
+    avg: 2709.56
+  completion_tokens:
+    min: 527 (id=ProntoQA_349)
+    max: 866 (id=ProntoQA_338)
+    avg: 767.78
+  total_tokens:
+    min: 3100 (id=ProntoQA_60)
+    max: 3591 (id=ProntoQA_338)
+    avg: 3477.34
+
+Combined_per_ID_across_all_stages:
+  prompt_tokens:
+    min: 4568 (id=ProntoQA_308)
+    max: 23114 (id=ProntoQA_314)
+    avg: 12778.10
+  completion_tokens:
+    min: 1259 (id=ProntoQA_308)
+    max: 7784 (id=ProntoQA_314)
+    avg: 3539.71
+  total_tokens:
+    min: 5827 (id=ProntoQA_308)
+    max: 30898 (id=ProntoQA_314)
+    avg: 16317.81
+
+Confusion Matrix (rows = ground truth, cols = prediction):
+ 	A	B	C	D
+A	127	6	121	4
+B	4	127	108	3
+C	0	0	0	0
+D	0	0	0	0
+
+Per-class metrics:
+Label A: Precision=0.9695, Recall=0.4922, TP=127, FP=4, FN=131
+Label B: Precision=0.9549, Recall=0.5248, TP=127, FP=6, FN=115
+Label C: Precision=0.0000, Recall=0.0000, TP=0, FP=229, FN=0
+Label D: Precision=0.0000, Recall=0.0000, TP=0, FP=7, FN=0
+
+Macro Precision: 0.4811, Macro Recall: 0.2543
+
+Error ids:
+ProntoQA_1,ProntoQA_10,ProntoQA_101,ProntoQA_102,ProntoQA_103,ProntoQA_104,ProntoQA_105,ProntoQA_107,ProntoQA_113,ProntoQA_117,ProntoQA_120,ProntoQA_121,ProntoQA_122,ProntoQA_125,ProntoQA_127,ProntoQA_129,ProntoQA_13,ProntoQA_130,ProntoQA_131,ProntoQA_133,ProntoQA_136,ProntoQA_137,ProntoQA_138,ProntoQA_140,ProntoQA_141,ProntoQA_142,ProntoQA_147,ProntoQA_148,ProntoQA_155,ProntoQA_156,ProntoQA_157,ProntoQA_16,ProntoQA_160,ProntoQA_162,ProntoQA_164,ProntoQA_165,ProntoQA_166,ProntoQA_167,ProntoQA_168,ProntoQA_169,ProntoQA_17,ProntoQA_179,ProntoQA_183,ProntoQA_184,ProntoQA_185,ProntoQA_19,ProntoQA_190,ProntoQA_192,ProntoQA_194,ProntoQA_195,ProntoQA_197,ProntoQA_198,ProntoQA_199,ProntoQA_200,ProntoQA_201,ProntoQA_204,ProntoQA_208,ProntoQA_209,ProntoQA_212,ProntoQA_214,ProntoQA_215,ProntoQA_219,ProntoQA_22,ProntoQA_224,ProntoQA_225,ProntoQA_226,ProntoQA_227,ProntoQA_228,ProntoQA_229,ProntoQA_23,ProntoQA_230,ProntoQA_232,ProntoQA_233,ProntoQA_234,ProntoQA_235,ProntoQA_236,ProntoQA_239,ProntoQA_24,ProntoQA_240,ProntoQA_242,ProntoQA_245,ProntoQA_250,ProntoQA_251,ProntoQA_26,ProntoQA_261,ProntoQA_262,ProntoQA_264,ProntoQA_265,ProntoQA_266,ProntoQA_268,ProntoQA_269,ProntoQA_271,ProntoQA_272,ProntoQA_273,ProntoQA_275,ProntoQA_277,ProntoQA_28,ProntoQA_280,ProntoQA_281,ProntoQA_282,ProntoQA_283,ProntoQA_284,ProntoQA_287,ProntoQA_288,ProntoQA_291,ProntoQA_292,ProntoQA_293,ProntoQA_295,ProntoQA_299,ProntoQA_3,ProntoQA_301,ProntoQA_304,ProntoQA_308,ProntoQA_31,ProntoQA_310,ProntoQA_312,ProntoQA_313,ProntoQA_314,ProntoQA_317,ProntoQA_319,ProntoQA_32,ProntoQA_320,ProntoQA_322,ProntoQA_323,ProntoQA_324,ProntoQA_325,ProntoQA_326,ProntoQA_328,ProntoQA_332,ProntoQA_333,ProntoQA_335,ProntoQA_338,ProntoQA_34,ProntoQA_340,ProntoQA_341,ProntoQA_345,ProntoQA_347,ProntoQA_35,ProntoQA_350,ProntoQA_351,ProntoQA_353,ProntoQA_354,ProntoQA_356,ProntoQA_357,ProntoQA_358,ProntoQA_359,ProntoQA_36,ProntoQA_360,ProntoQA_362,ProntoQA_363,ProntoQA_367,ProntoQA_369,ProntoQA_370,ProntoQA_372,ProntoQA_373,ProntoQA_375,ProntoQA_376,ProntoQA_381,ProntoQA_382,ProntoQA_383,ProntoQA_385,ProntoQA_388,ProntoQA_39,ProntoQA_393,ProntoQA_397,ProntoQA_399,ProntoQA_4,ProntoQA_40,ProntoQA_401,ProntoQA_402,ProntoQA_407,ProntoQA_411,ProntoQA_413,ProntoQA_416,ProntoQA_418,ProntoQA_421,ProntoQA_422,ProntoQA_424,ProntoQA_425,ProntoQA_427,ProntoQA_428,ProntoQA_429,ProntoQA_43,ProntoQA_430,ProntoQA_431,ProntoQA_433,ProntoQA_435,ProntoQA_438,ProntoQA_439,ProntoQA_44,ProntoQA_440,ProntoQA_441,ProntoQA_442,ProntoQA_446,ProntoQA_447,ProntoQA_451,ProntoQA_454,ProntoQA_455,ProntoQA_457,ProntoQA_458,ProntoQA_460,ProntoQA_461,ProntoQA_462,ProntoQA_466,ProntoQA_467,ProntoQA_468,ProntoQA_469,ProntoQA_47,ProntoQA_472,ProntoQA_474,ProntoQA_475,ProntoQA_476,ProntoQA_478,ProntoQA_479,ProntoQA_48,ProntoQA_481,ProntoQA_483,ProntoQA_485,ProntoQA_486,ProntoQA_489,ProntoQA_49,ProntoQA_490,ProntoQA_495,ProntoQA_496,ProntoQA_497,ProntoQA_498,ProntoQA_52,ProntoQA_54,ProntoQA_57,ProntoQA_58,ProntoQA_61,ProntoQA_62,ProntoQA_64,ProntoQA_67,ProntoQA_7,ProntoQA_70,ProntoQA_71,ProntoQA_73,ProntoQA_80,ProntoQA_81,ProntoQA_83,ProntoQA_84,ProntoQA_93,ProntoQA_94,ProntoQA_95,ProntoQA_99
+
+Correct ids:
+ProntoQA_100,ProntoQA_106,ProntoQA_108,ProntoQA_109,ProntoQA_11,ProntoQA_110,ProntoQA_111,ProntoQA_112,ProntoQA_114,ProntoQA_115,ProntoQA_116,ProntoQA_118,ProntoQA_119,ProntoQA_12,ProntoQA_123,ProntoQA_124,ProntoQA_126,ProntoQA_128,ProntoQA_132,ProntoQA_134,ProntoQA_135,ProntoQA_139,ProntoQA_14,ProntoQA_143,ProntoQA_144,ProntoQA_145,ProntoQA_146,ProntoQA_149,ProntoQA_15,ProntoQA_150,ProntoQA_151,ProntoQA_152,ProntoQA_153,ProntoQA_154,ProntoQA_158,ProntoQA_159,ProntoQA_161,ProntoQA_163,ProntoQA_170,ProntoQA_171,ProntoQA_172,ProntoQA_173,ProntoQA_174,ProntoQA_175,ProntoQA_176,ProntoQA_177,ProntoQA_178,ProntoQA_18,ProntoQA_180,ProntoQA_181,ProntoQA_182,ProntoQA_186,ProntoQA_187,ProntoQA_188,ProntoQA_189,ProntoQA_191,ProntoQA_193,ProntoQA_196,ProntoQA_2,ProntoQA_20,ProntoQA_202,ProntoQA_203,ProntoQA_205,ProntoQA_206,ProntoQA_207,ProntoQA_21,ProntoQA_210,ProntoQA_211,ProntoQA_213,ProntoQA_216,ProntoQA_217,ProntoQA_218,ProntoQA_220,ProntoQA_221,ProntoQA_222,ProntoQA_223,ProntoQA_231,ProntoQA_237,ProntoQA_238,ProntoQA_241,ProntoQA_243,ProntoQA_244,ProntoQA_246,ProntoQA_247,ProntoQA_248,ProntoQA_249,ProntoQA_25,ProntoQA_252,ProntoQA_253,ProntoQA_254,ProntoQA_255,ProntoQA_256,ProntoQA_257,ProntoQA_258,ProntoQA_259,ProntoQA_260,ProntoQA_263,ProntoQA_267,ProntoQA_27,ProntoQA_270,ProntoQA_274,ProntoQA_276,ProntoQA_278,ProntoQA_279,ProntoQA_285,ProntoQA_286,ProntoQA_289,ProntoQA_29,ProntoQA_290,ProntoQA_294,ProntoQA_296,ProntoQA_297,ProntoQA_298,ProntoQA_30,ProntoQA_300,ProntoQA_302,ProntoQA_303,ProntoQA_305,ProntoQA_306,ProntoQA_307,ProntoQA_309,ProntoQA_311,ProntoQA_315,ProntoQA_316,ProntoQA_318,ProntoQA_321,ProntoQA_327,ProntoQA_329,ProntoQA_33,ProntoQA_330,ProntoQA_331,ProntoQA_334,ProntoQA_336,ProntoQA_337,ProntoQA_339,ProntoQA_342,ProntoQA_343,ProntoQA_344,ProntoQA_346,ProntoQA_348,ProntoQA_349,ProntoQA_352,ProntoQA_355,ProntoQA_361,ProntoQA_364,ProntoQA_365,ProntoQA_366,ProntoQA_368,ProntoQA_37,ProntoQA_371,ProntoQA_374,ProntoQA_377,ProntoQA_378,ProntoQA_379,ProntoQA_38,ProntoQA_380,ProntoQA_384,ProntoQA_386,ProntoQA_387,ProntoQA_389,ProntoQA_390,ProntoQA_391,ProntoQA_392,ProntoQA_394,ProntoQA_395,ProntoQA_396,ProntoQA_398,ProntoQA_400,ProntoQA_403,ProntoQA_404,ProntoQA_405,ProntoQA_406,ProntoQA_408,ProntoQA_409,ProntoQA_41,ProntoQA_410,ProntoQA_412,ProntoQA_414,ProntoQA_415,ProntoQA_417,ProntoQA_419,ProntoQA_42,ProntoQA_420,ProntoQA_423,ProntoQA_426,ProntoQA_432,ProntoQA_434,ProntoQA_436,ProntoQA_437,ProntoQA_443,ProntoQA_444,ProntoQA_445,ProntoQA_448,ProntoQA_449,ProntoQA_45,ProntoQA_450,ProntoQA_452,ProntoQA_453,ProntoQA_456,ProntoQA_459,ProntoQA_46,ProntoQA_463,ProntoQA_464,ProntoQA_465,ProntoQA_470,ProntoQA_471,ProntoQA_473,ProntoQA_477,ProntoQA_480,ProntoQA_482,ProntoQA_484,ProntoQA_487,ProntoQA_488,ProntoQA_491,ProntoQA_492,ProntoQA_493,ProntoQA_494,ProntoQA_499,ProntoQA_5,ProntoQA_50,ProntoQA_500,ProntoQA_51,ProntoQA_53,ProntoQA_55,ProntoQA_56,ProntoQA_59,ProntoQA_6,ProntoQA_60,ProntoQA_63,ProntoQA_65,ProntoQA_66,ProntoQA_68,ProntoQA_69,ProntoQA_72,ProntoQA_74,ProntoQA_75,ProntoQA_76,ProntoQA_77,ProntoQA_78,ProntoQA_79,ProntoQA_8,ProntoQA_82,ProntoQA_85,ProntoQA_86,ProntoQA_87,ProntoQA_88,ProntoQA_89,ProntoQA_9,ProntoQA_90,ProntoQA_91,ProntoQA_92,ProntoQA_96,ProntoQA_97,ProntoQA_98
+
+
+Example errors per (ground_truth, prediction) cell:
+Ground truth: A, Predicted: B
+  id: ProntoQA_121
+  original_context: Every dumpus is not cold. Every dumpus is a zumpus. Each zumpus is metallic. Zumpuses are rompuses. Rompuses are dull. Each rompus is a yumpus. Each yumpus is floral. Yumpuses are impuses. Impuses are not mean. Impuses are wumpuses. Wumpuses are small. Every wumpus is a jompus. Jompuses are not transparent. Each jompus is a vumpus. Every vumpus is sour. Every vumpus is a numpus. Tumpuses are mean. Max is a dumpus.
+  question:  Max is not mean.
+  ground_truth: A
+  predicted_label: B
+  search_negation_True final_choice: No final answer found in the text.
+  search_negation_True final_answer: cannot find sos with complement
+  search_negation_True reasoning_step: 1. ['Mean(Max, True)', '9.  \\forall x (Impus(x, False) \\lor Mean(x, False))', 'Impus(Max, False)']
+2. ['Impus(Max, False)', '8.  \\forall x (Yumpus(x, False) \\lor Impus(x, True))', 'Impus(Max, False)']
+  search_negation_True translated_context: {'Translated_Facts': 'Max is a dumpus ::: Dumpus(Max, True)', 'Translated_Rules': 'Dumpus($x, True) >>> Cold($x, False)\nDumpus($x, True) >>> Zumpus($x, True)\nZumpus($x, True) >>> Metallic($x, True)\nZumpus($x, True) >>> Rompus($x, True)\nRompus($x, True) >>> Dull($x, True)\nRompus($x, True) >>> Yumpus($x, True)\nYumpus($x, True) >>> Floral($x, True)\nYumpus($x, True) >>> Impus($x, True)\nImpus($x, True) >>> Mean($x, False)\nImpus($x, True) >>> Wumpus($x, True)\nWumpus($x, True) >>> Small($x, True)\nWumpus($x, True) >>> Jompus($x, True)\nJompus($x, True) >>> Transparent($x, False)\nJompus($x, True) >>> Vumpus($x, True)\nVumpus($x, True) >>> Sour($x, True)\nVumpus($x, True) >>> Numpus($x, True)\nTumpus($x, True) >>> Mean($x, True)', 'Translated_Conjecture': 'Mean(Max, False)'}
+  search_negation_True normalized_context: {'Fact': 'Max is a dumpus ::: Dumpus(Max, True)', 'and_or': '(No facts provided in the input)\n1. - $\\forall x \\left(Dumpus(x, False) \\lor Cold(x, False)\\right)$\n2. - $\\forall x \\left(Dumpus(x, False) \\lor Zumpus(x, True)\\right)$\n3. - $\\forall x \\left(Zumpus(x, False) \\lor Metallic(x, True)\\right)$\n4. - $\\forall x \\left(Zumpus(x, False) \\lor Rompus(x, True)\\right)$\n5. - $\\forall x \\left(Rompus(x, False) \\lor Dull(x, True)\\right)$\n6. - $\\forall x \\left(Rompus(x, False) \\lor Yumpus(x, True)\\right)$\n7. - $\\forall x \\left(Yumpus(x, False) \\lor Floral(x, True)\\right)$\n8. - $\\forall x \\left(Yumpus(x, False) \\lor Impus(x, True)\\right)$\n9. - $\\forall x \\left(Impus(x, False) \\lor Mean(x, False)\\right)$\n10. - $\\forall x \\left(Impus(x, False) \\lor Wumpus(x, True)\\right)$\n11. - $\\forall x \\left(Wumpus(x, False) \\lor Small(x, True)\\right)$\n12. - $\\forall x \\left(Wumpus(x, False) \\lor Jompus(x, True)\\right)$\n13. - $\\forall x \\left(Jompus(x, False) \\lor Transparent(x, False)\\right)$\n14. - $\\forall x \\left(Jompus(x, False) \\lor Vumpus(x, True)\\right)$\n15. - $\\forall x \\left(Vumpus(x, False) \\lor Sour(x, True)\\right)$\n16. - $\\forall x \\left(Vumpus(x, False) \\lor Numpus(x, True)\\right)$\n17. - $\\forall x \\left(Tumpus(x, False) \\lor Mean(x, True)\\right)$\nMean($x, True)', 'either_or': None, 'biconditional': None}
+  search_negation_False final_choice: B
+  search_negation_False final_answer: False
+  search_negation_False reasoning_step: 1. ['Mean(Max, False)', 'Mean(x, True)', 'Contradiction']
+  search_negation_False translated_context: {'Translated_Facts': 'Max is a dumpus ::: Dumpus(Max, True)', 'Translated_Rules': 'Dumpus($x, True) >>> Cold($x, False)\nDumpus($x, True) >>> Zumpus($x, True)\nZumpus($x, True) >>> Metallic($x, True)\nZumpus($x, True) >>> Rompus($x, True)\nRompus($x, True) >>> Dull($x, True)\nRompus($x, True) >>> Yumpus($x, True)\nYumpus($x, True) >>> Floral($x, True)\nYumpus($x, True) >>> Impus($x, True)\nImpus($x, True) >>> Mean($x, False)\nImpus($x, True) >>> Wumpus($x, True)\nWumpus($x, True) >>> Small($x, True)\nWumpus($x, True) >>> Jompus($x, True)\nJompus($x, True) >>> Transparent($x, False)\nJompus($x, True) >>> Vumpus($x, True)\nVumpus($x, True) >>> Sour($x, True)\nVumpus($x, True) >>> Numpus($x, True)\nTumpus($x, True) >>> Mean($x, True)', 'Translated_Conjecture': 'Mean(Max, False)'}
+  search_negation_False normalized_context: {'Fact': 'Max is a dumpus ::: Dumpus(Max, True)', 'and_or': '(No facts provided in the input)\n1. - $\\forall x \\left(Dumpus(x, False) \\lor Cold(x, False)\\right)$\n2. - $\\forall x \\left(Dumpus(x, False) \\lor Zumpus(x, True)\\right)$\n3. - $\\forall x \\left(Zumpus(x, False) \\lor Metallic(x, True)\\right)$\n4. - $\\forall x \\left(Zumpus(x, False) \\lor Rompus(x, True)\\right)$\n5. - $\\forall x \\left(Rompus(x, False) \\lor Dull(x, True)\\right)$\n6. - $\\forall x \\left(Rompus(x, False) \\lor Yumpus(x, True)\\right)$\n7. - $\\forall x \\left(Yumpus(x, False) \\lor Floral(x, True)\\right)$\n8. - $\\forall x \\left(Yumpus(x, False) \\lor Impus(x, True)\\right)$\n9. - $\\forall x \\left(Impus(x, False) \\lor Mean(x, False)\\right)$\n10. - $\\forall x \\left(Impus(x, False) \\lor Wumpus(x, True)\\right)$\n11. - $\\forall x \\left(Wumpus(x, False) \\lor Small(x, True)\\right)$\n12. - $\\forall x \\left(Wumpus(x, False) \\lor Jompus(x, True)\\right)$\n13. - $\\forall x \\left(Jompus(x, False) \\lor Transparent(x, False)\\right)$\n14. - $\\forall x \\left(Jompus(x, False) \\lor Vumpus(x, True)\\right)$\n15. - $\\forall x \\left(Vumpus(x, False) \\lor Sour(x, True)\\right)$\n16. - $\\forall x \\left(Vumpus(x, False) \\lor Numpus(x, True)\\right)$\n17. - $\\forall x \\left(Tumpus(x, False) \\lor Mean(x, True)\\right)$\nMean($x, True)', 'either_or': None, 'biconditional': None}
+  normalized answers: (True_run=C, False_run=B)
+
+Ground truth: A, Predicted: C
+  id: ProntoQA_104
+  original_context: Yumpuses are not temperate. Yumpuses are jompuses. Jompuses are floral. Every jompus is a wumpus. Wumpuses are mean. Wumpuses are impuses. Impuses are not liquid. Each impus is a vumpus. Every vumpus is red. Each vumpus is a dumpus. Every dumpus is not sour. Each dumpus is a zumpus. Each rompus is not red. Each zumpus is large. Zumpuses are numpuses. Numpuses are opaque. Numpuses are tumpuses. Stella is a yumpus.
+  question:  Stella is red.
+  ground_truth: A
+  predicted_label: C
+  search_negation_True final_choice: No final answer found in the text.
+  search_negation_True final_answer: No complement found in the context.
+  search_negation_True reasoning_step: 1. ['Red(Stella, False)', '9.  \\forall x (Vumpus(x, False) \\lor Red(x, True))', '$ Vumpus(Stella, False) $']
+2. ['$ Vumpus(Stella, False) $', '8.  \\forall x (Impus(x, False) \\lor Vumpus(x, True))', 'Impus(Stella, False)']
+3. ['Impus(Stella, False)', '6.  \\forall x (Wumpus(x, False) \\lor Impus(x, True))', 'Wumpus(Stella, False)']
+4. ['Wumpus(Stella, False)', '4.  \\forall x (Jompus(x, False) \\lor Wumpus(x, True))', 'and']
+  search_negation_True translated_context: {'Translated_Facts': 'Stella is a yumpus ::: Yumpus(Stella, True)', 'Translated_Rules': 'Yumpus($x, True) >>> Temperate($x, False)  \nYumpus($x, True) >>> Jompus($x, True)  \nJompus($x, True) >>> Floral($x, True)  \nJompus($x, True) >>> Wumpus($x, True)  \nWumpus($x, True) >>> Mean($x, True)  \nWumpus($x, True) >>> Impus($x, True)  \nImpus($x, True) >>> Liquid($x, False)  \nImpus($x, True) >>> Vumpus($x, True)  \nVumpus($x, True) >>> Red($x, True)  \nVumpus($x, True) >>> Dumpus($x, True)  \nDumpus($x, True) >>> Sour($x, False)  \nDumpus($x, True) >>> Zumpus($x, True)  \nRompus($x, True) >>> Red($x, False)  \nZumpus($x, True) >>> Large($x, True)  \nZumpus($x, True) >>> Numpus($x, True)  \nNumpus($x, True) >>> Opaque($x, True)  \nNumpus($x, True) >>> Tumpus($x, True)', 'Translated_Conjecture': 'Red(Stella, True)'}
+  search_negation_True normalized_context: {'Fact': 'Stella is a yumpus ::: Yumpus(Stella, True)', 'and_or': '(No facts provided in the input)\n1. - $\\forall x \\left(Yumpus(x, False) \\lor Temperate(x, False)\\right)$\n2. - $\\forall x \\left(Yumpus(x, False) \\lor Jompus(x, True)\\right)$\n3. - $\\forall x \\left(Jompus(x, False) \\lor Floral(x, True)\\right)$\n4. - $\\forall x \\left(Jompus(x, False) \\lor Wumpus(x, True)\\right)$\n5. - $\\forall x \\left(Wumpus(x, False) \\lor Mean(x, True)\\right)$\n6. - $\\forall x \\left(Wumpus(x, False) \\lor Impus(x, True)\\right)$\n7. - $\\forall x \\left(Impus(x, False) \\lor Liquid(x, False)\\right)$\n8. - $\\forall x \\left(Impus(x, False) \\lor Vumpus(x, True)\\right)$\n9. - $\\forall x \\left(Vumpus(x, False) \\lor Red(x, True)\\right)$\n10. - $\\forall x \\left(Vumpus(x, False) \\lor Dumpus(x, True)\\right)$\n11. - $\\forall x \\left(Dumpus(x, False) \\lor Sour(x, False)\\right)$\n12. - $\\forall x \\left(Dumpus(x, False) \\lor Zumpus(x, True)\\right)$\n13. - $\\forall x \\left(Rompus(x, False) \\lor Red(x, False)\\right)$\n14. - $\\forall x \\left(Zumpus(x, False) \\lor Large(x, True)\\right)$\n15. - $\\forall x \\left(Zumpus(x, False) \\lor Numpus(x, True)\\right)$\n16. - $\\forall x \\left(Numpus(x, False) \\lor Opaque(x, True)\\right)$\n17. - $\\forall x \\left(Numpus(x, False) \\lor Tumpus(x, True)\\right)$\nSour(Max, True)', 'either_or': None, 'biconditional': None}
+  search_negation_False final_choice: No final answer found in the text.
+  search_negation_False final_answer: No complement found in the context.
+  search_negation_False reasoning_step: 1. ['Red(Stella, True)', '13.  \\forall x (Rompus(x, False) \\lor Red(x, False))', '$ Rompus(Stella, False) $']
+  search_negation_False translated_context: {'Translated_Facts': 'Stella is a yumpus ::: Yumpus(Stella, True)', 'Translated_Rules': 'Yumpus($x, True) >>> Temperate($x, False)  \nYumpus($x, True) >>> Jompus($x, True)  \nJompus($x, True) >>> Floral($x, True)  \nJompus($x, True) >>> Wumpus($x, True)  \nWumpus($x, True) >>> Mean($x, True)  \nWumpus($x, True) >>> Impus($x, True)  \nImpus($x, True) >>> Liquid($x, False)  \nImpus($x, True) >>> Vumpus($x, True)  \nVumpus($x, True) >>> Red($x, True)  \nVumpus($x, True) >>> Dumpus($x, True)  \nDumpus($x, True) >>> Sour($x, False)  \nDumpus($x, True) >>> Zumpus($x, True)  \nRompus($x, True) >>> Red($x, False)  \nZumpus($x, True) >>> Large($x, True)  \nZumpus($x, True) >>> Numpus($x, True)  \nNumpus($x, True) >>> Opaque($x, True)  \nNumpus($x, True) >>> Tumpus($x, True)', 'Translated_Conjecture': 'Red(Stella, True)'}
+  search_negation_False normalized_context: {'Fact': 'Stella is a yumpus ::: Yumpus(Stella, True)', 'and_or': '(No facts provided in the input)\n1. - $\\forall x \\left(Yumpus(x, False) \\lor Temperate(x, False)\\right)$\n2. - $\\forall x \\left(Yumpus(x, False) \\lor Jompus(x, True)\\right)$\n3. - $\\forall x \\left(Jompus(x, False) \\lor Floral(x, True)\\right)$\n4. - $\\forall x \\left(Jompus(x, False) \\lor Wumpus(x, True)\\right)$\n5. - $\\forall x \\left(Wumpus(x, False) \\lor Mean(x, True)\\right)$\n6. - $\\forall x \\left(Wumpus(x, False) \\lor Impus(x, True)\\right)$\n7. - $\\forall x \\left(Impus(x, False) \\lor Liquid(x, False)\\right)$\n8. - $\\forall x \\left(Impus(x, False) \\lor Vumpus(x, True)\\right)$\n9. - $\\forall x \\left(Vumpus(x, False) \\lor Red(x, True)\\right)$\n10. - $\\forall x \\left(Vumpus(x, False) \\lor Dumpus(x, True)\\right)$\n11. - $\\forall x \\left(Dumpus(x, False) \\lor Sour(x, False)\\right)$\n12. - $\\forall x \\left(Dumpus(x, False) \\lor Zumpus(x, True)\\right)$\n13. - $\\forall x \\left(Rompus(x, False) \\lor Red(x, False)\\right)$\n14. - $\\forall x \\left(Zumpus(x, False) \\lor Large(x, True)\\right)$\n15. - $\\forall x \\left(Zumpus(x, False) \\lor Numpus(x, True)\\right)$\n16. - $\\forall x \\left(Numpus(x, False) \\lor Opaque(x, True)\\right)$\n17. - $\\forall x \\left(Numpus(x, False) \\lor Tumpus(x, True)\\right)$\nSour(Max, True)', 'either_or': None, 'biconditional': None}
+  normalized answers: (True_run=C, False_run=C)
+
+Ground truth: A, Predicted: D
+  id: ProntoQA_113
+  original_context: Every rompus is wooden. Every zumpus is happy. Each zumpus is a jompus. Jompuses are kind. Jompuses are impuses. Impuses are spicy. Impuses are dumpuses. Each dumpus is large. Dumpuses are vumpuses. Vumpuses are not wooden. Each vumpus is a yumpus. Every yumpus is transparent. Each yumpus is a numpus. Rex is a zumpus.
+  question:  Rex is not wooden.
+  ground_truth: A
+  predicted_label: D
+  search_negation_True final_choice: A
+  search_negation_True final_answer: True
+  search_negation_True reasoning_step: 1. ['Wooden(Rex, True)', '10.  \\forall x (Vumpus(x, False) \\lor Wooden(x, False))', 'Vumpus(Rex, False)']
+2. ['Vumpus(Rex, False)', '9.  \\forall x (Dumpus(x, False) \\lor Vumpus(x, True))', 'Dumpus(Rex, False)']
+3. ['Dumpus(Rex, False)', '7.  \\forall x (Impus(x, False) \\lor Dumpus(x, True))', 'Impus(Rex, False)']
+4. ['Impus(Rex, False)', '5.  \\forall x (Jompus(x, False) \\lor Impus(x, True))', '$ Jompus(Rex, False) $']
+5. ['$ Jompus(Rex, False) $', '3.  \\forall x (Zumpus(x, False) \\lor Jompus(x, True))', 'Zumpus(Rex, False)']
+6. ['Zumpus(Rex, False)', 'Zumpus(Rex, True)', 'Contradiction']
+  search_negation_True translated_context: {'Translated_Facts': 'Rex is a zumpus ::: Zumpus(Rex, True)', 'Translated_Rules': 'Rompus($x, True) >>> Wooden($x, True)  \nZumpus($x, True) >>> Happy($x, True)  \nZumpus($x, True) >>> Jompus($x, True)  \nJompus($x, True) >>> Kind($x, True)  \nJompus($x, True) >>> Impus($x, True)  \nImpus($x, True) >>> Spicy($x, True)  \nImpus($x, True) >>> Dumpus($x, True)  \nDumpus($x, True) >>> Large($x, True)  \nDumpus($x, True) >>> Vumpus($x, True)  \nVumpus($x, True) >>> Wooden($x, False)  \nVumpus($x, True) >>> Yumpus($x, True)  \nYumpus($x, True) >>> Transparent($x, True)  \nYumpus($x, True) >>> Numpus($x, True)', 'Translated_Conjecture': 'Wooden(Rex, False)'}
+  search_negation_True normalized_context: {'Fact': 'Rex is a zumpus ::: Zumpus(Rex, True)', 'and_or': '1. - $\\forall x \\left(Rompus(x, False) \\lor Wooden(x, True)\\right)$\n2. - $\\forall x \\left(Zumpus(x, False) \\lor Happy(x, True)\\right)$\n3. - $\\forall x \\left(Zumpus(x, False) \\lor Jompus(x, True)\\right)$\n4. - $\\forall x \\left(Jompus(x, False) \\lor Kind(x, True)\\right)$\n5. - $\\forall x \\left(Jompus(x, False) \\lor Impus(x, True)\\right)$\n6. - $\\forall x \\left(Impus(x, False) \\lor Spicy(x, True)\\right)$\n7. - $\\forall x \\left(Impus(x, False) \\lor Dumpus(x, True)\\right)$\n8. - $\\forall x \\left(Dumpus(x, False) \\lor Large(x, True)\\right)$\n9. - $\\forall x \\left(Dumpus(x, False) \\lor Vumpus(x, True)\\right)$\n10. - $\\forall x \\left(Vumpus(x, False) \\lor Wooden(x, False)\\right)$\n11. - $\\forall x \\left(Vumpus(x, False) \\lor Yumpus(x, True)\\right)$\n12. - $\\forall x \\left(Yumpus(x, False) \\lor Transparent(x, True)\\right)$\n13. - $\\forall x \\left(Yumpus(x, False) \\lor Numpus(x, True)\\right)$\nRompus($x, True)', 'either_or': None, 'biconditional': None}
+  search_negation_False final_choice: B
+  search_negation_False final_answer: False
+  search_negation_False reasoning_step: 1. ['Wooden(Rex, False)', '1.  \\forall x (Rompus(x, False) \\lor Wooden(x, True))', 'Rompus(Rex, False)']
+2. ['Rompus(Rex, False)', 'Rompus(x, True)', 'Contradiction']
+  search_negation_False translated_context: {'Translated_Facts': 'Rex is a zumpus ::: Zumpus(Rex, True)', 'Translated_Rules': 'Rompus($x, True) >>> Wooden($x, True)  \nZumpus($x, True) >>> Happy($x, True)  \nZumpus($x, True) >>> Jompus($x, True)  \nJompus($x, True) >>> Kind($x, True)  \nJompus($x, True) >>> Impus($x, True)  \nImpus($x, True) >>> Spicy($x, True)  \nImpus($x, True) >>> Dumpus($x, True)  \nDumpus($x, True) >>> Large($x, True)  \nDumpus($x, True) >>> Vumpus($x, True)  \nVumpus($x, True) >>> Wooden($x, False)  \nVumpus($x, True) >>> Yumpus($x, True)  \nYumpus($x, True) >>> Transparent($x, True)  \nYumpus($x, True) >>> Numpus($x, True)', 'Translated_Conjecture': 'Wooden(Rex, False)'}
+  search_negation_False normalized_context: {'Fact': 'Rex is a zumpus ::: Zumpus(Rex, True)', 'and_or': '1. - $\\forall x \\left(Rompus(x, False) \\lor Wooden(x, True)\\right)$\n2. - $\\forall x \\left(Zumpus(x, False) \\lor Happy(x, True)\\right)$\n3. - $\\forall x \\left(Zumpus(x, False) \\lor Jompus(x, True)\\right)$\n4. - $\\forall x \\left(Jompus(x, False) \\lor Kind(x, True)\\right)$\n5. - $\\forall x \\left(Jompus(x, False) \\lor Impus(x, True)\\right)$\n6. - $\\forall x \\left(Impus(x, False) \\lor Spicy(x, True)\\right)$\n7. - $\\forall x \\left(Impus(x, False) \\lor Dumpus(x, True)\\right)$\n8. - $\\forall x \\left(Dumpus(x, False) \\lor Large(x, True)\\right)$\n9. - $\\forall x \\left(Dumpus(x, False) \\lor Vumpus(x, True)\\right)$\n10. - $\\forall x \\left(Vumpus(x, False) \\lor Wooden(x, False)\\right)$\n11. - $\\forall x \\left(Vumpus(x, False) \\lor Yumpus(x, True)\\right)$\n12. - $\\forall x \\left(Yumpus(x, False) \\lor Transparent(x, True)\\right)$\n13. - $\\forall x \\left(Yumpus(x, False) \\lor Numpus(x, True)\\right)$\nRompus($x, True)', 'either_or': None, 'biconditional': None}
+  normalized answers: (True_run=A, False_run=B)
+
+Ground truth: B, Predicted: A
+  id: ProntoQA_1
+  original_context: Jompuses are not shy. Jompuses are yumpuses. Each yumpus is aggressive. Each yumpus is a dumpus. Dumpuses are not wooden. Dumpuses are wumpuses. Wumpuses are red. Every wumpus is an impus. Each impus is opaque. Impuses are tumpuses. Numpuses are sour. Tumpuses are not sour. Tumpuses are vumpuses. Vumpuses are earthy. Every vumpus is a zumpus. Zumpuses are small. Zumpuses are rompuses. Max is a yumpus.
+  question:  Max is sour.
+  ground_truth: B
+  predicted_label: A
+  search_negation_True final_choice: A
+  search_negation_True final_answer: True
+  search_negation_True reasoning_step: 1. ['Sour(Max, False)', 'Sour(Max, True)', 'Contradiction']
+  search_negation_True translated_context: {'Translated_Facts': 'Max is a yumpus ::: Yumpus(Max, True)', 'Translated_Rules': 'Jompus($x, True) >>> Shy($x, False)\nJompus($x, True) >>> Yumpus($x, True)\nYumpus($x, True) >>> Aggressive($x, True)\nYumpus($x, True) >>> Dumpus($x, True)\nDumpus($x, True) >>> Wooden($x, False)\nDumpus($x, True) >>> Wumpus($x, True)\nWumpus($x, True) >>> Red($x, True)\nWumpus($x, True) >>> Impus($x, True)\nImpus($x, True) >>> Opaque($x, True)\nImpus($x, True) >>> Tumpus($x, True)\nNumpus($x, True) >>> Sour($x, True)\nTumpus($x, True) >>> Sour($x, False)\nTumpus($x, True) >>> Vumpus($x, True)\nVumpus($x, True) >>> Earthy($x, True)\nVumpus($x, True) >>> Zumpus($x, True)\nZumpus($x, True) >>> Small($x, True)\nZumpus($x, True) >>> Rompus($x, True)', 'Translated_Conjecture': 'Sour(Max, True)'}
+  search_negation_True normalized_context: {'Fact': 'Max is a yumpus ::: Yumpus(Max, True)', 'and_or': '1. - $\\forall x \\left(Jompus(x, False) \\lor Shy(x, False)\\right)$\n2. - $\\forall x \\left(Jompus(x, False) \\lor Yumpus(x, True)\\right)$\n3. - $\\forall x \\left(Yumpus(x, False) \\lor Aggressive(x, True)\\right)$\n4. - $\\forall x \\left(Yumpus(x, False) \\lor Dumpus(x, True)\\right)$\n5. - $\\forall x \\left(Dumpus(x, False) \\lor Wooden(x, False)\\right)$\n6. - $\\forall x \\left(Dumpus(x, False) \\lor Wumpus(x, True)\\right)$\n7. - $\\forall x \\left(Wumpus(x, False) \\lor Red(x, True)\\right)$\n8. - $\\forall x \\left(Wumpus(x, False) \\lor Impus(x, True)\\right)$\n9. - $\\forall x \\left(Impus(x, False) \\lor Opaque(x, True)\\right)$\n10. - $\\forall x \\left(Impus(x, False) \\lor Tumpus(x, True)\\right)$\n11. - $\\forall x \\left(Numpus(x, False) \\lor Sour(x, True)\\right)$\n12. - $\\forall x \\left(Tumpus(x, False) \\lor Sour(x, False)\\right)$\n13. - $\\forall x \\left(Tumpus(x, False) \\lor Vumpus(x, True)\\right)$\n14. - $\\forall x \\left(Vumpus(x, False) \\lor Earthy(x, True)\\right)$\n15. - $\\forall x \\left(Vumpus(x, False) \\lor Zumpus(x, True)\\right)$\n16. - $\\forall x \\left(Zumpus(x, False) \\lor Small(x, True)\\right)$\n17. - $\\forall x \\left(Zumpus(x, False) \\lor Rompus(x, True)\\right)$\nSour(Max, True)', 'either_or': None, 'biconditional': None}
+  search_negation_False final_choice: No final answer found in the text.
+  search_negation_False final_answer: No complement found in the context.
+  search_negation_False reasoning_step: 1. ['Sour(Max, True)', '12.  \\forall x (Tumpus(x, False) \\lor Sour(x, False))', 'Tumpus(Max, False)']
+2. ['Tumpus(Max, False)', '10.  \\forall x (Impus(x, False) \\lor Tumpus(x, True))', 'Impus(Max, False)']
+3. ['Impus(Max, False)', '8.  \\forall x (Wumpus(x, False) \\lor Impus(x, True))', 'Wumpus(Max, False)']
+4. ['Wumpus(Max, False)', '6.  \\forall x (Dumpus(x, False) \\lor Wumpus(x, True))', 'Dumpus(Max, False)']
+5. ['Dumpus(Max, False)', '4.  \\forall x (Yumpus(x, False) \\lor Dumpus(x, True))', 'and']
+  search_negation_False translated_context: {'Translated_Facts': 'Max is a yumpus ::: Yumpus(Max, True)', 'Translated_Rules': 'Jompus($x, True) >>> Shy($x, False)\nJompus($x, True) >>> Yumpus($x, True)\nYumpus($x, True) >>> Aggressive($x, True)\nYumpus($x, True) >>> Dumpus($x, True)\nDumpus($x, True) >>> Wooden($x, False)\nDumpus($x, True) >>> Wumpus($x, True)\nWumpus($x, True) >>> Red($x, True)\nWumpus($x, True) >>> Impus($x, True)\nImpus($x, True) >>> Opaque($x, True)\nImpus($x, True) >>> Tumpus($x, True)\nNumpus($x, True) >>> Sour($x, True)\nTumpus($x, True) >>> Sour($x, False)\nTumpus($x, True) >>> Vumpus($x, True)\nVumpus($x, True) >>> Earthy($x, True)\nVumpus($x, True) >>> Zumpus($x, True)\nZumpus($x, True) >>> Small($x, True)\nZumpus($x, True) >>> Rompus($x, True)', 'Translated_Conjecture': 'Sour(Max, True)'}
+  search_negation_False normalized_context: {'Fact': 'Max is a yumpus ::: Yumpus(Max, True)', 'and_or': '1. - $\\forall x \\left(Jompus(x, False) \\lor Shy(x, False)\\right)$\n2. - $\\forall x \\left(Jompus(x, False) \\lor Yumpus(x, True)\\right)$\n3. - $\\forall x \\left(Yumpus(x, False) \\lor Aggressive(x, True)\\right)$\n4. - $\\forall x \\left(Yumpus(x, False) \\lor Dumpus(x, True)\\right)$\n5. - $\\forall x \\left(Dumpus(x, False) \\lor Wooden(x, False)\\right)$\n6. - $\\forall x \\left(Dumpus(x, False) \\lor Wumpus(x, True)\\right)$\n7. - $\\forall x \\left(Wumpus(x, False) \\lor Red(x, True)\\right)$\n8. - $\\forall x \\left(Wumpus(x, False) \\lor Impus(x, True)\\right)$\n9. - $\\forall x \\left(Impus(x, False) \\lor Opaque(x, True)\\right)$\n10. - $\\forall x \\left(Impus(x, False) \\lor Tumpus(x, True)\\right)$\n11. - $\\forall x \\left(Numpus(x, False) \\lor Sour(x, True)\\right)$\n12. - $\\forall x \\left(Tumpus(x, False) \\lor Sour(x, False)\\right)$\n13. - $\\forall x \\left(Tumpus(x, False) \\lor Vumpus(x, True)\\right)$\n14. - $\\forall x \\left(Vumpus(x, False) \\lor Earthy(x, True)\\right)$\n15. - $\\forall x \\left(Vumpus(x, False) \\lor Zumpus(x, True)\\right)$\n16. - $\\forall x \\left(Zumpus(x, False) \\lor Small(x, True)\\right)$\n17. - $\\forall x \\left(Zumpus(x, False) \\lor Rompus(x, True)\\right)$\nSour(Max, True)', 'either_or': None, 'biconditional': None}
+  normalized answers: (True_run=A, False_run=C)
+
+Ground truth: B, Predicted: C
+  id: ProntoQA_10
+  original_context: Every impus is earthy. Each impus is a jompus. Jompuses are small. Jompuses are rompuses. Rompuses are not amenable. Rompuses are wumpuses. Wumpuses are wooden. Wumpuses are zumpuses. Every zumpus is temperate. Every zumpus is a dumpus. Dumpuses are dull. Dumpuses are vumpuses. Every vumpus is not shy. Every yumpus is sweet. Vumpuses are numpuses. Numpuses are not sweet. Numpuses are tumpuses. Fae is a wumpus.
+  question:  Fae is sweet.
+  ground_truth: B
+  predicted_label: C
+  search_negation_True final_choice: No final answer found in the text.
+  search_negation_True final_answer: No complement found in the context.
+  search_negation_True reasoning_step: 1. ['Sweet(Fae, False)', '14.  \\forall x (Yumpus(x, False) \\lor Sweet(x, True))', 'Yumpus(Fae, False)']
+  search_negation_True translated_context: {'Translated_Facts': 'Fae is a wumpus ::: Wumpus(Fae, True)', 'Translated_Rules': 'Impus($x, True) >>> Earthy($x, True)\nImpus($x, True) >>> Jompus($x, True)\nJompus($x, True) >>> Small($x, True)\nJompus($x, True) >>> Rompus($x, True)\nRompus($x, True) >>> Amenable($x, False)\nRompus($x, True) >>> Wumpus($x, True)\nWumpus($x, True) >>> Wooden($x, True)\nWumpus($x, True) >>> Zumpus($x, True)\nZumpus($x, True) >>> Temperate($x, True)\nZumpus($x, True) >>> Dumpus($x, True)\nDumpus($x, True) >>> Dull($x, True)\nDumpus($x, True) >>> Vumpus($x, True)\nVumpus($x, True) >>> Shy($x, False)\nYumpus($x, True) >>> Sweet($x, True)\nVumpus($x, True) >>> Numpus($x, True)\nNumpus($x, True) >>> Sweet($x, False)\nNumpus($x, True) >>> Tumpus($x, True)', 'Translated_Conjecture': 'Sweet(Fae, True)'}
+  search_negation_True normalized_context: {'Fact': 'Fae is a wumpus ::: Wumpus(Fae, True)', 'and_or': '1. - $\\forall x \\left(Impus(x, False) \\lor Earthy(x, True)\\right)$\n2. - $\\forall x \\left(Impus(x, False) \\lor Jompus(x, True)\\right)$\n3. - $\\forall x \\left(Jompus(x, False) \\lor Small(x, True)\\right)$\n4. - $\\forall x \\left(Jompus(x, False) \\lor Rompus(x, True)\\right)$\n5. - $\\forall x \\left(Rompus(x, False) \\lor Amenable(x, False)\\right)$\n6. - $\\forall x \\left(Rompus(x, False) \\lor Wumpus(x, True)\\right)$\n7. - $\\forall x \\left(Wumpus(x, False) \\lor Wooden(x, True)\\right)$\n8. - $\\forall x \\left(Wumpus(x, False) \\lor Zumpus(x, True)\\right)$\n9. - $\\forall x \\left(Zumpus(x, False) \\lor Temperate(x, True)\\right)$\n10. - $\\forall x \\left(Zumpus(x, False) \\lor Dumpus(x, True)\\right)$\n11. - $\\forall x \\left(Dumpus(x, False) \\lor Dull(x, True)\\right)$\n12. - $\\forall x \\left(Dumpus(x, False) \\lor Vumpus(x, True)\\right)$\n13. - $\\forall x \\left(Vumpus(x, False) \\lor Shy(x, False)\\right)$\n14. - $\\forall x \\left(Yumpus(x, False) \\lor Sweet(x, True)\\right)$\n15. - $\\forall x \\left(Vumpus(x, False) \\lor Numpus(x, True)\\right)$\n16. - $\\forall x \\left(Numpus(x, False) \\lor Sweet(x, False)\\right)$\n17. - $\\forall x \\left(Numpus(x, False) \\lor Tumpus(x, True)\\right)$', 'either_or': None, 'biconditional': None}
+  search_negation_False final_choice: No final answer found in the text.
+  search_negation_False final_answer: No complement found in the context.
+  search_negation_False reasoning_step: 1. ['Sweet(Fae, True)', '16.  \\forall x (Numpus(x, False) \\lor Sweet(x, False))', 'Numpus(Fae, False)']
+2. ['Numpus(Fae, False)', '15.  \\forall x (Vumpus(x, False) \\lor Numpus(x, True))', '$ Vumpus(Fae, False) $']
+3. ['$ Vumpus(Fae, False) $', '12.  \\forall x (Dumpus(x, False) \\lor Vumpus(x, True))', 'nothing']
+  search_negation_False translated_context: {'Translated_Facts': 'Fae is a wumpus ::: Wumpus(Fae, True)', 'Translated_Rules': 'Impus($x, True) >>> Earthy($x, True)\nImpus($x, True) >>> Jompus($x, True)\nJompus($x, True) >>> Small($x, True)\nJompus($x, True) >>> Rompus($x, True)\nRompus($x, True) >>> Amenable($x, False)\nRompus($x, True) >>> Wumpus($x, True)\nWumpus($x, True) >>> Wooden($x, True)\nWumpus($x, True) >>> Zumpus($x, True)\nZumpus($x, True) >>> Temperate($x, True)\nZumpus($x, True) >>> Dumpus($x, True)\nDumpus($x, True) >>> Dull($x, True)\nDumpus($x, True) >>> Vumpus($x, True)\nVumpus($x, True) >>> Shy($x, False)\nYumpus($x, True) >>> Sweet($x, True)\nVumpus($x, True) >>> Numpus($x, True)\nNumpus($x, True) >>> Sweet($x, False)\nNumpus($x, True) >>> Tumpus($x, True)', 'Translated_Conjecture': 'Sweet(Fae, True)'}
+  search_negation_False normalized_context: {'Fact': 'Fae is a wumpus ::: Wumpus(Fae, True)', 'and_or': '1. - $\\forall x \\left(Impus(x, False) \\lor Earthy(x, True)\\right)$\n2. - $\\forall x \\left(Impus(x, False) \\lor Jompus(x, True)\\right)$\n3. - $\\forall x \\left(Jompus(x, False) \\lor Small(x, True)\\right)$\n4. - $\\forall x \\left(Jompus(x, False) \\lor Rompus(x, True)\\right)$\n5. - $\\forall x \\left(Rompus(x, False) \\lor Amenable(x, False)\\right)$\n6. - $\\forall x \\left(Rompus(x, False) \\lor Wumpus(x, True)\\right)$\n7. - $\\forall x \\left(Wumpus(x, False) \\lor Wooden(x, True)\\right)$\n8. - $\\forall x \\left(Wumpus(x, False) \\lor Zumpus(x, True)\\right)$\n9. - $\\forall x \\left(Zumpus(x, False) \\lor Temperate(x, True)\\right)$\n10. - $\\forall x \\left(Zumpus(x, False) \\lor Dumpus(x, True)\\right)$\n11. - $\\forall x \\left(Dumpus(x, False) \\lor Dull(x, True)\\right)$\n12. - $\\forall x \\left(Dumpus(x, False) \\lor Vumpus(x, True)\\right)$\n13. - $\\forall x \\left(Vumpus(x, False) \\lor Shy(x, False)\\right)$\n14. - $\\forall x \\left(Yumpus(x, False) \\lor Sweet(x, True)\\right)$\n15. - $\\forall x \\left(Vumpus(x, False) \\lor Numpus(x, True)\\right)$\n16. - $\\forall x \\left(Numpus(x, False) \\lor Sweet(x, False)\\right)$\n17. - $\\forall x \\left(Numpus(x, False) \\lor Tumpus(x, True)\\right)$', 'either_or': None, 'biconditional': None}
+  normalized answers: (True_run=C, False_run=C)
+
+Ground truth: B, Predicted: D
+  id: ProntoQA_17
+  original_context: Each numpus is not nervous. Every numpus is a wumpus. Wumpuses are liquid. Each wumpus is a jompus. Jompuses are fruity. Zumpuses are not opaque. Each jompus is a yumpus. Every yumpus is kind. Yumpuses are vumpuses. Vumpuses are opaque. Every vumpus is an impus. Impuses are not small. Impuses are rompuses. Rompuses are dull. Rompuses are tumpuses. Every tumpus is temperate. Every tumpus is a dumpus. Fae is a numpus.
+  question:  Fae is not opaque.
+  ground_truth: B
+  predicted_label: D
+  search_negation_True final_choice: A
+  search_negation_True final_answer: True
+  search_negation_True reasoning_step: 1. ['Opaque(Fae, True)', '17.  \\forall x (Zumpus(x, False) \\lor Opaque(x, False))', 'Zumpus(Fae, False)']
+2. ['Zumpus(Fae, False)', 'Zumpus(x, True)', 'Contradiction']
+  search_negation_True translated_context: {'Translated_Facts': 'Fae is a numpus ::: Numpus(Fae, True)', 'Translated_Rules': 'Numpus($x, True) >>> Nervous($x, False)\nNumpus($x, True) >>> Wumpus($x, True)\nWumpus($x, True) >>> Liquid($x, True)\nWumpus($x, True) >>> Jompus($x, True)\nJompus($x, True) >>> Fruity($x, True)\nJompus($x, True) >>> Yumpus($x, True)\nYumpus($x, True) >>> Kind($x, True)\nYumpus($x, True) >>> Vumpus($x, True)\nVumpus($x, True) >>> Opaque($x, True)\nVumpus($x, True) >>> Impus($x, True)\nImpus($x, True) >>> Small($x, False)\nImpus($x, True) >>> Rompus($x, True)\nRompus($x, True) >>> Dull($x, True)\nRompus($x, True) >>> Tumpus($x, True)\nTumpus($x, True) >>> Temperate($x, True)\nTumpus($x, True) >>> Dumpus($x, True)\nZumpus($x, True) >>> Opaque($x, False)', 'Translated_Conjecture': 'Opaque(Fae, False)'}
+  search_negation_True normalized_context: {'Fact': 'Fae is a numpus ::: Numpus(Fae, True)', 'and_or': '(No facts provided in the input)\n1. - $\\forall x \\left(Numpus(x, False) \\lor Nervous(x, False)\\right)$\n2. - $\\forall x \\left(Numpus(x, False) \\lor Wumpus(x, True)\\right)$\n3. - $\\forall x \\left(Wumpus(x, False) \\lor Liquid(x, True)\\right)$\n4. - $\\forall x \\left(Wumpus(x, False) \\lor Jompus(x, True)\\right)$\n5. - $\\forall x \\left(Jompus(x, False) \\lor Fruity(x, True)\\right)$\n6. - $\\forall x \\left(Jompus(x, False) \\lor Yumpus(x, True)\\right)$\n7. - $\\forall x \\left(Yumpus(x, False) \\lor Kind(x, True)\\right)$\n8. - $\\forall x \\left(Yumpus(x, False) \\lor Vumpus(x, True)\\right)$\n9. - $\\forall x \\left(Vumpus(x, False) \\lor Opaque(x, True)\\right)$\n10. - $\\forall x \\left(Vumpus(x, False) \\lor Impus(x, True)\\right)$\n11. - $\\forall x \\left(Impus(x, False) \\lor Small(x, False)\\right)$\n12. - $\\forall x \\left(Impus(x, False) \\lor Rompus(x, True)\\right)$\n13. - $\\forall x \\left(Rompus(x, False) \\lor Dull(x, True)\\right)$\n14. - $\\forall x \\left(Rompus(x, False) \\lor Tumpus(x, True)\\right)$\n15. - $\\forall x \\left(Tumpus(x, False) \\lor Temperate(x, True)\\right)$\n16. - $\\forall x \\left(Tumpus(x, False) \\lor Dumpus(x, True)\\right)$\n17. - $\\forall x \\left(Zumpus(x, False) \\lor Opaque(x, False)\\right)$\nZumpus($x, True)', 'either_or': None, 'biconditional': None}
+  search_negation_False final_choice: B
+  search_negation_False final_answer: False
+  search_negation_False reasoning_step: 1. ['Opaque(Fae, False)', '9.  \\forall x (Vumpus(x, False) \\lor Opaque(x, True))', '$ Vumpus(Fae, False) $']
+2. ['$ Vumpus(Fae, False) $', '8.  \\forall x (Yumpus(x, False) \\lor Vumpus(x, True))', 'Yumpus(Fae, False)']
+3. ['Yumpus(Fae, False)', '6.  \\forall x (Jompus(x, False) \\lor Yumpus(x, True))', '$ Jompus(Fae, False) $']
+4. ['$ Jompus(Fae, False) $', '4.  \\forall x (Wumpus(x, False) \\lor Jompus(x, True))', 'Wumpus(Fae, False)']
+5. ['Wumpus(Fae, False)', '2.  \\forall x (Numpus(x, False) \\lor Wumpus(x, True))', 'Numpus(Fae, False)']
+6. ['Numpus(Fae, False)', 'Numpus(Fae, True)', 'Contradiction']
+  search_negation_False translated_context: {'Translated_Facts': 'Fae is a numpus ::: Numpus(Fae, True)', 'Translated_Rules': 'Numpus($x, True) >>> Nervous($x, False)\nNumpus($x, True) >>> Wumpus($x, True)\nWumpus($x, True) >>> Liquid($x, True)\nWumpus($x, True) >>> Jompus($x, True)\nJompus($x, True) >>> Fruity($x, True)\nJompus($x, True) >>> Yumpus($x, True)\nYumpus($x, True) >>> Kind($x, True)\nYumpus($x, True) >>> Vumpus($x, True)\nVumpus($x, True) >>> Opaque($x, True)\nVumpus($x, True) >>> Impus($x, True)\nImpus($x, True) >>> Small($x, False)\nImpus($x, True) >>> Rompus($x, True)\nRompus($x, True) >>> Dull($x, True)\nRompus($x, True) >>> Tumpus($x, True)\nTumpus($x, True) >>> Temperate($x, True)\nTumpus($x, True) >>> Dumpus($x, True)\nZumpus($x, True) >>> Opaque($x, False)', 'Translated_Conjecture': 'Opaque(Fae, False)'}
+  search_negation_False normalized_context: {'Fact': 'Fae is a numpus ::: Numpus(Fae, True)', 'and_or': '(No facts provided in the input)\n1. - $\\forall x \\left(Numpus(x, False) \\lor Nervous(x, False)\\right)$\n2. - $\\forall x \\left(Numpus(x, False) \\lor Wumpus(x, True)\\right)$\n3. - $\\forall x \\left(Wumpus(x, False) \\lor Liquid(x, True)\\right)$\n4. - $\\forall x \\left(Wumpus(x, False) \\lor Jompus(x, True)\\right)$\n5. - $\\forall x \\left(Jompus(x, False) \\lor Fruity(x, True)\\right)$\n6. - $\\forall x \\left(Jompus(x, False) \\lor Yumpus(x, True)\\right)$\n7. - $\\forall x \\left(Yumpus(x, False) \\lor Kind(x, True)\\right)$\n8. - $\\forall x \\left(Yumpus(x, False) \\lor Vumpus(x, True)\\right)$\n9. - $\\forall x \\left(Vumpus(x, False) \\lor Opaque(x, True)\\right)$\n10. - $\\forall x \\left(Vumpus(x, False) \\lor Impus(x, True)\\right)$\n11. - $\\forall x \\left(Impus(x, False) \\lor Small(x, False)\\right)$\n12. - $\\forall x \\left(Impus(x, False) \\lor Rompus(x, True)\\right)$\n13. - $\\forall x \\left(Rompus(x, False) \\lor Dull(x, True)\\right)$\n14. - $\\forall x \\left(Rompus(x, False) \\lor Tumpus(x, True)\\right)$\n15. - $\\forall x \\left(Tumpus(x, False) \\lor Temperate(x, True)\\right)$\n16. - $\\forall x \\left(Tumpus(x, False) \\lor Dumpus(x, True)\\right)$\n17. - $\\forall x \\left(Zumpus(x, False) \\lor Opaque(x, False)\\right)$\nZumpus($x, True)', 'either_or': None, 'biconditional': None}
+  normalized answers: (True_run=A, False_run=B)
