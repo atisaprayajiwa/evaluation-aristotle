@@ -1,6 +1,6 @@
 # Empirical Evaluation of Structured Logical Reasoning in Open-Weight Language Models: Effects of Model Size, Task Complexity, and Language Adaptation
 
-Authors: Ari Saptawijaya, Vander Gerald Sukandi, Mikhael Deo Barli
+Ari Saptawijaya, Vander Gerald Sukandi, Mikhael Deo Barli
 
 This repository contains the codes and data of an independent empirical validation of a decompose-search-resolve framework, Aristotle, under previously unexplored settings involving open-weight large and small language models. 
 
