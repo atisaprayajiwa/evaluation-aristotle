@@ -10,7 +10,7 @@ Xu, J., Fei, H., Luo, M., Liu, Q., Pan, L., Wang, W. Y., Nakov, P., Lee, M.-L., 
 
 with some adaptation for the evaluation purpose in the present work.
 
-**It consists of two evaluation tasks:** 
+**It consists of two evaluation tasks below.** 
 
 ### 1. Evaluation and validation on open-weight LLMs
 The evaluation is on the ProntoQA and ProofWriter datasets with performance compared against naive and few-shot prompting baselines. 
