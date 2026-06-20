@@ -15,7 +15,7 @@ with some adaptation for the evaluation purpose in the present work.
 ## 1. Evaluation and validation on open-weight LLMs
 The evaluation is on the two datasets (ProntoQA and ProofWriter) with performance compared against naive and few-shot prompting baselines. 
 
-**Folder:** openweight-eval
+> **Folder:** openweight-eval
 
 This experiment is built with minimal third-party dependencies.
 ### External Libraries
@@ -39,7 +39,7 @@ This experiment makes use of Python's standard library (recommended: *Python 3.8
 
 ### Usage Instructions
 
-All commands below must be executed from the root directory of your repository.
+All commands below must be executed from the root directory of your repository. In the instructions, DeepInfra is used as an inference-as-a-service provider.
 
 
 #### Method 1: True Naive Prompting Baseline
@@ -177,4 +177,11 @@ python evaluate.py \
 ## 2. Cross-lingual evaluation on open-weight small language models
 The evaluation is on a translation of ProntoQA dataset into Bahasa Indonesia to examine reasoning behavior in a small-scale, non-English setting. 
 
-**Folder:** crosslingual-eval
+> **Folder:** crosslingual-eval
+
+The usage of the codes (including installing the requirements/dependencies) for this study is already set up as Jupyter notebook files in the subfloder *global_runner*. Therein, one runner pipeline is prepared for each model:
+- runner_pipeline_qwen.ipynb, for Qwen2.5-7B
+- runner_pipeline_sealion.ipynb, for SEA-LION-v3-8B
+- runner_pipeline_sahabatai.ipynb, for SahabatAI-v1-8B
+
+
